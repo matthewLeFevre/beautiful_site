@@ -15,10 +15,10 @@ My intrest in Web Development hasn't stoped at front-end I am very passionate ab
  
  ## Goals
  
-  *The core goal is **Semantic Utility**
-    *That means make it **USEFUL** and **Readable**
-  *Next goal is to make it **Modular** and **Lightweight**
-    *In other words there will be a lot to it but it is broken into pieces so you only have to download what you will use (similar to Semantic UI - another CSS framework) of course the complete file will also be avaliable
-  *Dry - (don't repeat yourself) I will do my best to keep my code dry
+  * The core goal is **Semantic Utility**
+    * That means make it **USEFUL** and **Readable**
+  * Next goal is to make it **Modular** and **Lightweight**
+    * In other words there will be a lot to it but it is broken into pieces so you only have to download what you will use (similar to Semantic UI - another CSS framework) of course the complete file will also be avaliable
+  * Dry - (don't repeat yourself) I will do my best to keep my code dry
   
   
