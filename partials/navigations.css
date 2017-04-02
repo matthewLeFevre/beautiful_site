@@ -1,0 +1,88 @@
+/*********************************************************/
+/* 6. Navigation */
+/*********************************************************/
+
+
+/*********Mobile First**********/
+
+.n-image {
+  position: absolute;
+  right: 1em;
+  top: 0;
+  height: 40px;
+  width: 45px;
+  cursor: pointer;
+}
+
+
+.n-bar {
+  display: none;
+  padding: 0 1em;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.n-bar-itm {
+  border-bottom: white 2px solid;
+}
+
+.n-bar-a {
+  display: block;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.n-b-a-g {
+  display: block;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/*********Tablet Second**********/
+
+@media screen and (min-width: 650px){
+  nav {
+    height: 100%;
+  }
+
+  .n-image {
+    display: none;
+  }
+
+
+  .n-bar {
+    float: right;
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  .n-bar-itm {
+    display: inline-block;
+    border: none;
+    transition: all 500ms ease-in-out;
+    margin: 0;
+  }
+
+  .n-bar-a {
+    padding:.75em 1em;
+    width: 100%;
+    transition: all 500ms ease-in-out;
+  }
+
+  .n-b-a-g {
+    padding:.75em 1em;
+    width: 100%;
+  }
+
+  .n-bar-itm:hover, .n-bar-a:hover {
+    background-color: white;
+    color: #E55812;
+  }
+
+}

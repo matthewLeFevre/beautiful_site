@@ -1,0 +1,27 @@
+/*********************************************************/
+/* 5. footers */
+/*********************************************************/
+
+/*********Mobile First**********/
+
+footer {
+  color: white;
+  min-height: 10em;
+}
+
+.ftr-section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*********Tablet Second**********/
+@media screen and (min-width: 650px){
+  .ftr-section {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+
+}

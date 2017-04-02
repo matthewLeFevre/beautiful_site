@@ -1,0 +1,106 @@
+/*********************************************************/
+/* Colors */
+/*********************************************************/
+
+.flm {
+  background-color: #E55812;
+  color: white;
+}
+
+.yg {
+  background-color: #95C623;
+  color: white;
+}
+
+.djg {
+  background-color: #0E4749;
+  color: white;
+}
+
+.dg {
+  background-color: #002626;
+  color: white;
+}
+
+.eb {
+  background-color: #5F634F;
+  color: white;
+}
+
+.pc {
+  background-color: #9BC4CB;
+  color: white;
+}
+
+.sb {
+  background-color: #3E7CB1;
+  color: white;
+}
+
+.pt {
+  background-color: #E6E8E6;
+  color: black;
+}
+
+.pt-o {
+  background-color: rgba(90, 91, 90, .7);
+}
+
+.egg {
+  background-color: #EFE7DA;
+  color: black;
+}
+
+.wht {
+  background-color: #fff;
+}
+
+.ylw {
+  background-color: #FFBF00;
+  color: black;
+}
+
+
+.t-flm {
+  color: #E55812;
+}
+
+.t-yg {
+  color: #95C623;
+}
+
+.t-djg {
+  color: #0E4749;
+}
+
+.t-dg {
+  color: #002626;
+}
+
+.t-eb {
+  color: #5F634F;
+}
+
+.t-pc {
+  color: #9BC4CB;
+}
+
+.t-sb {
+  color: #3E7CB1;
+}
+
+.t-pt {
+  color: #E6E8E6;
+}
+
+.t-egg {
+  color: #EFE7DA;
+}
+
+.t-wht {
+  color: #fff;
+}
+
+.t-blk {
+  color: #000;
+}

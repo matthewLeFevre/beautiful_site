@@ -1,0 +1,108 @@
+/*********************************************************/
+/* Forms */
+/*********************************************************/
+
+/*
+Creating an effective form in bs requires you to use
+the correct syntax for a form. Correct Syntax is:
+*/
+
+/*********Mobile First**********/
+
+.form {
+  padding: 1em;
+  width: 90%;
+  margin: auto;
+}
+
+.f-sml {
+  max-width: 330px;
+}
+
+.f-med {
+  max-width: 720px;
+}
+
+.f-lrg {
+  max-width: 1024px
+}
+
+.f-btn-row {
+  padding: 10px 0 0 0;
+}
+
+.f-input {
+  padding: 5px;
+  display: inline-block;
+}
+
+.f-field-title {
+  display: inline-block;
+  margin: 1em;
+}
+
+.f-headings {
+  font-size: 20px;
+  margin: .5em
+}
+
+.f-row {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 1em;
+  align-items: center;
+}
+
+.f-txt-area {
+  padding: 5px;
+  min-height: 9em;
+  min-width: 16em;
+  resize: none;
+}
+
+.f-exit {
+  position: relative;
+  right: 0;
+  /*    top: -1px;*/
+  height: 40px;
+  width: 45px;
+  cursor: pointer;
+}
+
+.f-exit:hover {
+  transition: all ease-in-out 300ms;
+  background-color: #E55812;
+  border-radius: 15%;
+}
+
+/*********Tablet Second**********/
+
+@media screen and (min-width: 650px){
+  .f-row {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .f-textarea {
+    width: 75%;
+  }
+
+  .f-headings {
+    font-size: 30px;
+  }
+}
+
+
+
+/*Page Forms*/
+
+/*Floating Forms*/
+
+.f-floating {
+  position: fixed;
+  margin: 5em auto;
+  display: none;
+}
+
+/*small forms*/

@@ -1,0 +1,29 @@
+/*********************************************************/
+/* headers */
+/*********************************************************/
+
+/*********Mobile First**********/
+
+header {
+  padding: 5px 1em;
+}
+
+.txt-logo {
+  display: block;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+/*********Tablet Second**********/
+@media screen and (min-width: 650px){
+  header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 1em;
+  }
+
+}

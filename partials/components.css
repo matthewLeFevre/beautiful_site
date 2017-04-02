@@ -1,0 +1,50 @@
+/*********************************************************/
+/* Components (cards, thumbnails)*/
+/*********************************************************/
+
+/*+++++++++++++++++++++++++++++++++*/
+/*Cards*/
+/*+++++++++++++++++++++++++++++++++*/
+
+/*+++++++++++++++++++++++++++++++++*/
+/*Thumbnails*/
+/*+++++++++++++++++++++++++++++++++*/
+
+/*Horizontal Thumbnail*/
+
+.ht {
+/*  width: 100%;*/
+  max-width: 323px;
+  height: 90px;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 1em;
+}
+
+/*Vertical Thumbnail*/
+
+.vt {
+  width: 180px;
+  min-height: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.vt-image {
+  width: 180px;
+}
+
+/*thumbnail*/
+
+.t-item {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.t-sub-item {
+  margin: 0;
+}
+
+.t-padding {
+  padding: 10px
+}
