@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.txt-ctr {
+    text-align: center;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
