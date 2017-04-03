@@ -31,11 +31,29 @@ Pay attention to the classes used!
 ### Mobile Header Active
 ![alt-text][h-m-a]
 
+To create this drop down I use JQuery in order to implement this in your website if you are using BS add in the following code to you javascript file and don't forget to also include the JQuery CDN
+
+#### Here is the JQuery code
+
+```
+
+var main_drop = $('.n-image');
+
+main_drop.click(function(){
+
+    $('.n-bar').slideToggle(200);
+
+});
+
+```
+
 ### Tablet-Desktop Header
 ![alt-text][h-t-d]
 
 ### Tablet-Desktop Header Active
 ![alt-text][h-t-d-a]
+
+When hovering over links on the navbar/header they turn white and the text turns black this is done with CSS and not with javascript.
 
 
 
