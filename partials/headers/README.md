@@ -26,7 +26,7 @@ Pay attention to the classes used!
 ## Images of outcome
 
 ### Mobile Header
-![alt-text](https://github.com/matthewLeFevre/beautiful_site/test/images/header_mobile.JPG 'Header Mobile')
+![alt-text](https://github.com/matthewLeFevre/beautiful_site/blob/master/test/images/header_mobile.JPG 'Header Mobile')
 
 ### Mobile Header Active
 ![alt-text][h-m-a]
