@@ -26,7 +26,7 @@ Pay attention to the classes used!
 ## Images of outcome
 
 ### Mobile Header
-![alt-text](https://github.com/matthewLeFevre/beautiful_site/blob/master/test/images/header_mobile.JPG 'Header Mobile')
+![alt-text][h-m]
 
 ### Mobile Header Active
 ![alt-text][h-m-a]
@@ -39,7 +39,7 @@ Pay attention to the classes used!
 
 
 
-[h-m]: https://github.com/matthewLeFevre/beautiful_site/test/images/header_mobile.JPG 'Header Mobile'
-[h-m-a]: https://github.com/matthewLeFevre/beautiful_site/test/images/header_mobile_active.JPG 'Header Mobile Active'
-[h-t-d]: https://github.com/matthewLeFevre/beautiful_site/test/images/header_tablet-desktop.JPG 'Header Tablet-Desktop'
-[h-t-d-a]: https://github.com/matthewLeFevre/beautiful_site/test/images/header_tablet-desktop_active.JPG 'Header Tablet-Desktop Active'
+[h-m]: https://github.com/matthewLeFevre/beautiful_site/blob/master/test/images/header_mobile.JPG 'Header Mobile'
+[h-m-a]: https://github.com/matthewLeFevre/beautiful_site/blob/master/test/images/header_mobile_active.JPG 'Header Mobile Active'
+[h-t-d]: https://github.com/matthewLeFevre/beautiful_site/blob/master/test/images/header_tablet-desktop.JPG 'Header Tablet-Desktop'
+[h-t-d-a]: https://github.com/matthewLeFevre/beautiful_site/blob/master/test/images/header_tablet-desktop_active.JPG 'Header Tablet-Desktop Active'
