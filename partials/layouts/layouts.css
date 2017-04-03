@@ -1,6 +1,14 @@
+
+
 /*********************************************************/
 /* Layouts */
 /*********************************************************/
+
+/*===============*/
+/*Section General*/
+/*===============*/
+
+@import url('sub-layouts/s-g.css');
 
 /*********Mobile First**********/
 /********* Containers **********/
@@ -35,91 +43,6 @@
   justify-content: space-around;
 }
 
-/*********Mobile First**********/
-/*Section General I plan on making my primary section tool
-It is going to have plug ins in order to customize contents
-whether they be a form or something else like an image.
-*/
-.s-g {
-  min-height: 300px
-}
 
-/*Creates the settings needed for a css image to cover the
-entire section
-*/
-
-.s-g_img {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-/*specific image name
-if multiple images are needed then you can edit the image
-or change the image based on media queries
-*/
-
-.s-g-i-dog {
-  background-image: url('https://static.pexels.com/photos/59523/pexels-photo-59523.jpeg');
-  /*  background-attachment: fixed;*/
-}
-
-/*example with fixed background attachment*/
-
-.s-g-i-cat {
-  background-image: url('https://static.pexels.com/photos/238140/pexels-photo-238140.jpeg');
-  background-attachment: fixed;
-}
-
-/*Centeral items*/
-/*with this added class you can add text to your section
-*/
-
-.s-g_c-itm {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*Multiple Items*/
-/*Check out the 3 article section I may incorporate
-that into this*/
-
-
-
-/*********Tablet Second**********/
-
-@media screen and (min-width: 650px) {
-  .s-g {
-    min-height: 450px;
-  }
-}
-
-/*********Desktop Third**********/
-
-@media screen and (min-width: 1000px){
-  .s-g {
-    height: 500px;
-  }
-}
-
-
-/*********Mobile First**********/
-/*section document*/
-.s-d {
-  margin: 0 3em 0 3em;
-  padding: 1em;
-  max-width: 1000px;
-  min-height: 600px;
-}
-
-/*********Desktop Third**********/
-
-@media screen and (min-width: 1000px){
-  .s-d {
-    margin: auto;
-    min-height: 700px;
-  }
-}
 
 

@@ -2,7 +2,7 @@
 
 There is currently only one header option avaliable in BS but more are coming soon! I haven't named this header yet but it it very simple. Here is an explanation with code as well as an example!
 
-** note: This also explains navigation as well! **
+**note: This also explains navigation as well!**
 
 ## HTML Code
 
