@@ -5,7 +5,7 @@
 /*********Mobile First**********/
 
 footer {
-  color: white;
+/*  color: white;*/
   min-height: 10em;
 }
 
@@ -14,11 +14,14 @@ footer {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  text-align: center;
+/*  text-align: center;*/
 }
 
 /*********Tablet Second**********/
 @media screen and (min-width: 650px){
+  footer {
+    padding: 2em;
+  }
   .ftr-section {
     flex-flow: row nowrap;
     justify-content: space-around;

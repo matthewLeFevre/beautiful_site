@@ -5,7 +5,7 @@ Buttons are a very common on the web. Although there are lots of buttons they ca
 1. <a> anchor/link tags
 1. <button> tags
 1. <input> tags
-1. <p> tags _only if needed_
+1. <p> tags
 
 ## Btn-sml
 

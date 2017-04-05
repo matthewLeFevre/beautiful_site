@@ -35,6 +35,16 @@ p {
   font-family: Georgia, serif;
 }
 
+.pm {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 100;
+  border-bottom: black 1px solid;
+  color: #E80900;
+}
+
+.pm + p {
+  line-height: 1.5
+}
 
 .text-backdrop {
   padding: 5px;

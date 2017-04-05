@@ -40,6 +40,11 @@ or change the image based on media queries
     background-attachment: fixed;
 }
 
+.s-g-i-pepper {
+  background-image: url('https://static.pexels.com/photos/63596/fruit-pepper-vegetable-vegetables-63596.jpeg');
+  background-attachment: fixed;
+}
+
 /*Centeral items*/
 /*with this added class you can add text to your section
 does not create a grid only centers the items idealy only have one item
@@ -131,17 +136,17 @@ that into this*/
 /*********Mobile First**********/
 /*section document*/
 .s-d {
-    margin: 0 3em 0 3em;
-    padding: 1em;
-    max-width: 1000px;
-    min-height: 600px;
+  padding: 1em;
+  max-width: 1000px;
+  min-height: 600px;
 }
 
 /*********Desktop Third**********/
 
 @media screen and (min-width: 1000px){
     .s-d {
-        margin: auto;
-        min-height: 700px;
+      margin: 0 3em 0 3em;
+      margin: auto;
+      min-height: 700px;
     }
 }
