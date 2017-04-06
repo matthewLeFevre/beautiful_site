@@ -34,4 +34,4 @@ Here are some example blog posts advertised with the info thumbnails.
 
 ![alt-text][it]
 
-[it]: url('https://github.com/matthewLeFevre/beautiful_site/blob/master/test/images/info-thumbnail.JPG')
+[it]: https://github.com/matthewLeFevre/beautiful_site/blob/master/test/images/info-thumbnail.JPG
