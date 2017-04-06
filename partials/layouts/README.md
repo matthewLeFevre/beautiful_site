@@ -2,9 +2,7 @@
 
 ## Table of Contents
 
-    1. Section General
-    1.
-    1.
+  1. Section General
 
 ## Section General
 
