@@ -9,10 +9,15 @@ It is going to have plug ins in order to customize contents
 whether they be a form or something else like an image.
 */
 
+.s-g-sml {
+  min-height: 150px;
+}
+
 .s-g {
     min-height: 300px;
     padding-top: 1em;
 }
+
 
 /*Creates the settings needed for a css image to cover the
 entire section
@@ -70,6 +75,9 @@ that into this*/
 /*********Tablet Second**********/
 
 @media screen and (min-width: 650px) {
+    .s-g-sml {
+      min-height: 300px;
+    }
     .s-g {
         min-height: 450px;
     }

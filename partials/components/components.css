@@ -10,6 +10,33 @@
 /*Thumbnails*/
 /*+++++++++++++++++++++++++++++++++*/
 
+/*item thumbnail*/
+
+.it {
+  margin-top: 2em;
+  height: 100px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.it-img {
+  height: 100%;
+  Width: 150px;
+}
+
+.it-info {
+  padding: 10px;
+  height: 100%;
+  width: 150px;
+}
+
+@media screen and (min-width: 650px) {
+  .it{
+    margin-left: 1em;
+  }
+}
+
 /*Horizontal Thumbnail*/
 
 .ht {
