@@ -79,10 +79,19 @@ p {
     text-align: center;
   }
 
+.fs-lrg-responsive {
+  font-size: 40px;
+}
+
 
 @media screen and (min-width: 650px) {
-  .fback-drop {
+
+  .text-backdrop {
     /*    max-width: 650px;*/
     margin: auto;
+  }
+
+  .fs-lrg-responsive {
+    font-size: 60px;
   }
 }

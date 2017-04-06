@@ -10,7 +10,8 @@ whether they be a form or something else like an image.
 */
 
 .s-g {
-    min-height: 300px
+    min-height: 300px;
+    padding-top: 1em;
 }
 
 /*Creates the settings needed for a css image to cover the
@@ -43,6 +44,10 @@ or change the image based on media queries
 .s-g-i-pepper {
   background-image: url('https://static.pexels.com/photos/63596/fruit-pepper-vegetable-vegetables-63596.jpeg');
   background-attachment: fixed;
+}
+
+.s-g-i-clients {
+  background-image: url('https://static.pexels.com/photos/40120/pexels-photo-40120.jpeg');
 }
 
 /*Centeral items*/
@@ -92,26 +97,32 @@ that into this*/
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
-    text-align: center;
 }
 
-.s-g_m-itm_a {
+.s-g_itm-a {
     margin: 1em;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    padding: 0 2em 1em 2em;
-    width: 320px;
+    padding: 1em 2em 1em 2em;
+    max-width: 320px;
+}
 
+.s-g_itm-a-fixed {
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: 1em 2em 1em 2em;
+  max-width: 320px;
 }
 
 /*********Tablet Second**********/
 
 @media screen and (min-width: 650px) {
-    .s-g_m-itm_a {
+    .s-g_itm-a {
         margin-top: 1em;
         max-width: 350px;
-
     }
 
     .s-g_m-itm {
@@ -128,10 +139,36 @@ that into this*/
 /*********Desktop Third**********/
 
 @media screen and (min-width: 1000px){
-
-
+  .s-g_itm-a {
+    margin-top: 1em;
+    max-width: 550px;
+  }
 
 }
+
+/*********Mobile First**********/
+
+.s-g_itm-grid {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*********Tablet Second**********/
+
+@media screen and (min-width: 650px) {
+  .s-g_itm-grid {
+    width: 100%;
+    flex-flow: row wrap;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+
 
 /*********Mobile First**********/
 /*section document*/

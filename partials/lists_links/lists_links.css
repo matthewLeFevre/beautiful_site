@@ -16,3 +16,34 @@
 .link-generic {
   list-style: none;
 }
+
+/*********Mobile First**********/
+
+/*============*/
+/*Social Links*/
+/*============*/
+
+.socl-link-cont {}
+
+#facebook:hover {
+  background-color: #3b5998;
+  transition: all 300ms ease;
+}
+
+#twitter:hover {
+  background-color: #0077b5;
+  transition: all 300ms ease;
+}
+
+#googleplus:hover {
+  background-color: #ea4335;
+  transition: all 300ms ease;
+}
+
+#github:hover {
+  background-color: #d1d1d1;
+  transition: all 300ms ease;
+}
+
+
+

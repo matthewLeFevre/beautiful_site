@@ -37,6 +37,10 @@
   max-width: 700px;
 }
 
+.img-circle {
+  border-radius: 100%;
+}
+
 .img-backdrop {
   background-position: center;
   background-size: cover;
