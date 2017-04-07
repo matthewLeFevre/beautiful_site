@@ -10,38 +10,6 @@
 
 @import url('sub-layouts/s-g.css');
 
-/*********Mobile First**********/
-/********* Containers **********/
-
-/* Responsive flex container with only one item*/
-/*
- r- responsive
- flx - flex
- s- single
- m- multile
- c- container
-*/
-
-.r-flx-c {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-}
-
-/*
-{
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-}
-*/
-
-.testas{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-}
 
 .margin-none {
   margin: 0;
