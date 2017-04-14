@@ -4,7 +4,7 @@
 
 /*********Mobile First**********/
 
-footer {
+.ftr {
 /*  color: white;*/
   min-height: 10em;
 }
@@ -19,7 +19,7 @@ footer {
 
 /*********Tablet Second**********/
 @media screen and (min-width: 650px){
-  footer {
+  .ftr {
     padding: 2em;
   }
   .ftr-section {

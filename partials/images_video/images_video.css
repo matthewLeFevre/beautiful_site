@@ -16,15 +16,6 @@
   height: 90px;
 }
 
-.img-icon-ib {
-  display: inline-block;
-}
-
-.img-icon-ib:hover {
-  transition: all 500ms ease;
-  background-color: white;
-}
-
 .img-sml {
   width: 200px;
 }
@@ -35,10 +26,6 @@
 
 .img-lrg {
   max-width: 700px;
-}
-
-.img-circle {
-  border-radius: 100%;
 }
 
 .img-backdrop {

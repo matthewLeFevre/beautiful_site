@@ -9,44 +9,44 @@ the correct syntax for a form. Correct Syntax is:
 
 /*********Mobile First**********/
 
-.form {
+.frm {
   padding: 1em;
   width: 90%;
   margin: auto;
 }
 
-.f-sml {
+.frm-sml {
   max-width: 330px;
 }
 
-.f-med {
+.frm-med {
   max-width: 720px;
 }
 
-.f-lrg {
+.frm-lrg {
   max-width: 1024px
 }
 
-.f-btn-row {
+.frm-btn-row {
   padding: 10px 0 0 0;
 }
 
-.f-input {
+.frm-input {
   padding: 5px;
   display: inline-block;
 }
 
-.f-field-title {
+.frm-field-title {
   display: inline-block;
   margin: 1em;
 }
 
-.f-headings {
+.frm-headings {
   font-size: 20px;
   margin: .5em
 }
 
-.f-row {
+.frm-row {
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -54,14 +54,14 @@ the correct syntax for a form. Correct Syntax is:
   align-items: center;
 }
 
-.f-txt-area {
+.frm-txt-area {
   padding: 5px;
   min-height: 9em;
   min-width: 16em;
   resize: none;
 }
 
-.f-exit {
+.frm-exit {
   position: relative;
   right: 0;
   /*    top: -1px;*/
@@ -70,7 +70,7 @@ the correct syntax for a form. Correct Syntax is:
   cursor: pointer;
 }
 
-.f-exit:hover {
+.frm-exit:hover {
   transition: all ease-in-out 300ms;
   background-color: #E55812;
   border-radius: 15%;
@@ -79,16 +79,16 @@ the correct syntax for a form. Correct Syntax is:
 /*********Tablet Second**********/
 
 @media screen and (min-width: 650px){
-  .f-row {
+  .frm-row {
     flex-flow: row nowrap;
     justify-content: space-between;
   }
 
-  .f-textarea {
+  .frm-textarea {
     width: 75%;
   }
 
-  .f-headings {
+  .frm-headings {
     font-size: 30px;
   }
 }
@@ -99,7 +99,7 @@ the correct syntax for a form. Correct Syntax is:
 
 /*Floating Forms*/
 
-.f-floating {
+.frm-floating {
   position: fixed;
   margin: 5em auto;
   display: none;

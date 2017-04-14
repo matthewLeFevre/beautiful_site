@@ -44,6 +44,22 @@
 }
 
 
+
+/*=============*/
+/*Sticky Header*/
+/*=============*/
+.sticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.sticky-comp {
+  margin-top: 3em;
+}
+
+
+
 /*=============*/
 /*Logos*/
 /*=============*/

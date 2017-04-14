@@ -10,7 +10,7 @@ h4, h5, h6, a, span {
   font-family: Verdana, Geneva, sans-serif;
 }
 
-p {
+p, input{
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -35,63 +35,4 @@ p {
   font-family: Georgia, serif;
 }
 
-.pm {
-  font-family: 'Permanent Marker', cursive;
-  font-weight: 100;
-  border-bottom: black 1px solid;
-  color: #E80900;
-}
 
-.pm + p {
-  line-height: 1.5
-}
-
-.text-backdrop {
-  padding: 5px;
-  background-color: rgba(37, 35, 23, .6);
-}
-
-  .fs-12 {
-    font-size: 12px;
-  }
-
-  .fs-14 {
-    font-size: 14px;
-  }
-
-  .fs-16 {
-    font-size: 16px;
-  }
-
-  .fs-18 {
-    font-size: 18px;
-  }
-
-.fs-24 {
-    font-size: 24px;
-}
-
-.fs-28 {
-    font-size: 28px;
-}
-
-  .txt-algn-center {
-    text-align: center;
-  }
-
-.fs-lrg-responsive {
-  font-size: 40px;
-}
-
-
-@media screen and (min-width: 650px) {
-
-  .text-backdrop {
-    /*    max-width: 650px;*/
-    margin: auto;
-  }
-
-  .fs-lrg-responsive {
-    font-size: 60px;
-  }
-}

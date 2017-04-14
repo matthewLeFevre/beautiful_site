@@ -67,9 +67,23 @@
 /* Borders */
 /******************************************************/
 
-.border-generic {
-  border: 3px solid #000;
-}
+.border-blk { border: 3px solid #000;}
+
+.border-flm { border: 3px solid #E55812;}
+
+.border-yg  { border: 3px solid #95C623;}
+
+.border-djg { border: 3px solid #0E4749;}
+
+.border-dg  { border: 3px solid #002626;}
+
+.border-eb  { border: 3px solid #5F634F;}
+
+.border-pc  { border: 3px solid #9BC4CB;}
+
+.border-sb  { border: 3px solid #3E7CB1;}
+
+.border-pt  { border: 3px solid #E6E8E6;}
 
 
 
