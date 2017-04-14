@@ -1,103 +1,80 @@
 /*===============*/
 /*Section General*/
 /*===============*/
+/*Primary section tool
+- Optomized for pictures grids and for single elements*/
+/*Section-General-Small*/
+
 
 
 /*********Mobile First**********/
-/*Section General I plan on making my primary section tool
-It is going to have plug ins in order to customize contents
-whether they be a form or something else like an image.
-*/
-
 .s-g-sml {
   min-height: 150px;
 }
 
+
+
+/*Section-General -- Original*/
 .s-g {
     min-height: 300px;
     padding-top: 1em;
 }
 
 
-/*Creates the settings needed for a css image to cover the
-entire section
-*/
 
+/*********Tablet Second**********/
+
+@media screen and (min-width: 650px) {
+  .s-g-sml {
+    min-height: 300px;
+  }
+
+
+
+  .s-g {
+    min-height: 450px;
+  }
+}
+
+/*********Desktop Third**********/
+
+@media screen and (min-width: 1000px){
+  .s-g {
+    min-height: 500px;
+  }
+
+
+  /*section-general-grale
+  -sets a limit on the width to provide margins on each side*/
+  .s-g-grale {
+    max-width: 1300px;
+    margin: auto
+  }
+}
+
+
+
+/*Section-General_Image -- aligns and centers image*/
 .s-g_img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-/*specific image name
-if multiple images are needed then you can edit the image
-or change the image based on media queries
-*/
 
-.s-g-i-dog {
-    background-image: url('https://static.pexels.com/photos/59523/pexels-photo-59523.jpeg');
-    /*  background-attachment: fixed;*/
-}
 
-/*example with fixed background attachment*/
-
-.s-g-i-cat {
-    background-image: url('https://static.pexels.com/photos/238140/pexels-photo-238140.jpeg');
-    background-attachment: fixed;
-}
-
-.s-g-i-pepper {
-  background-image: url('https://static.pexels.com/photos/63596/fruit-pepper-vegetable-vegetables-63596.jpeg');
-  background-attachment: fixed;
-}
-
-.s-g-i-clients {
-  background-image: url('https://static.pexels.com/photos/40120/pexels-photo-40120.jpeg');
-}
-
-/*Centeral items*/
-/*with this added class you can add text to your section
-does not create a grid only centers the items idealy only have one item
-*/
-
+/*section-general_center-item
+- only centers a single item/container*/
 .s-g_c-itm {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/*Multiple Items*/
-/*Check out the 3 article section I may incorporate
-that into this*/
 
 
-
-/*********Tablet Second**********/
-
-@media screen and (min-width: 650px) {
-    .s-g-sml {
-      min-height: 300px;
-    }
-    .s-g {
-        min-height: 450px;
-    }
-}
-
-/*********Desktop Third**********/
-
-@media screen and (min-width: 1000px){
-    .s-g {
-        min-height: 500px;
-    }
-
-    /*s-g-grale sets a limit on the width of the
-    to provide margins on each side*/
-    .s-g-grale {
-        max-width: 1300px;
-        margin: auto
-    }
-}
-
+/*Section-General_Multiple-item
+- aligns a single row of multiple items/containers*/
 /*********Mobile First**********/
 
 .s-g_m-itm {
@@ -107,6 +84,10 @@ that into this*/
     align-items: center;
 }
 
+
+
+/*Section-General_item-article
+- a flexible container preferably an article or div*/
 .s-g_itm-a {
     margin: 1em;
     display: flex;
@@ -116,6 +97,10 @@ that into this*/
     max-width: 320px;
 }
 
+
+
+/*Section-General_item-article-fixed
+- a flixed-width container preferably an article or div*/
 .s-g_itm-a-fixed {
   margin: 1em;
   display: flex;
@@ -125,6 +110,8 @@ that into this*/
   max-width: 320px;
 }
 
+
+
 /*********Tablet Second**********/
 
 @media screen and (min-width: 650px) {
@@ -133,15 +120,17 @@ that into this*/
         max-width: 350px;
     }
 
+
+
     .s-g_m-itm {
         width: 100%;
         flex-flow: row nowrap;
         margin: auto;
-/*        justify-content: space-between;*/
         align-items: center;
         align-content: center;
     }
 }
+
 
 
 /*********Desktop Third**********/
@@ -151,17 +140,22 @@ that into this*/
     margin-top: 1em;
     max-width: 550px;
   }
-
 }
 
-/*********Mobile First**********/
 
+
+/*Section-general_item-grid
+- responsive grid for items or containers unlimited row/col*/
+/*********Mobile First**********/
 .s-g_itm-grid {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
 }
+
+
+
 
 /*********Tablet Second**********/
 
@@ -177,21 +171,3 @@ that into this*/
 }
 
 
-
-/*********Mobile First**********/
-/*section document*/
-.s-d {
-  padding: 1em;
-  max-width: 1000px;
-  min-height: 600px;
-}
-
-/*********Desktop Third**********/
-
-@media screen and (min-width: 1000px){
-    .s-d {
-      margin: 0 3em 0 3em;
-      margin: auto;
-      min-height: 700px;
-    }
-}

@@ -50,7 +50,7 @@
 
 @media screen and (min-width: 650px){
 
-  .simple-nav {
+  .n-simple {
     height: 100%;
   }
 
@@ -98,7 +98,7 @@
 
 /*********Mobile First**********/
 
-.bottom-nav {
+.n-bottom {
   display: none;
 }
 
@@ -117,16 +117,12 @@
 /*********Tablet Second**********/
 
 @media screen and (min-width: 650px){
-
-  .bottom-nav {
+  .n-simple {
     display: block;
-/*    max-width: 800px;*/
-/*    margin: auto;*/
     text-align: center;
   }
 
   .bn-image {
     display: none;
   }
-
 }

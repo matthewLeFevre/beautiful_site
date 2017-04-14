@@ -41,19 +41,7 @@ window.onload = function () {
           setTimeout(carousel.doSlideshow, 4000);
       })
     }
-  }
-
-
-
-//  function doSlideshow() {
-//    if(nextimg>=imgs.length){nextimg=0;}
-//    $(car.el)
-//      .css('background-image', 'url("'+imgs[nextimg++]+'")')
-//      .fadeIn(1000,function(){
-//        setTimeout(doSlideshow,5000);
-//      });
-//  }
-
+  };
 
 
   carousel.doSlideshow();

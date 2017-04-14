@@ -4,16 +4,16 @@
 
 /*********Mobile First**********/
 
-.list-tool {
+.lst-tool {
   list-style: none;
   padding: 0;
 }
 
-.li-tool {
+.lst-tool {
   margin-right: 1em;
 }
 
-.link-generic {
+.lnk-generic {
   list-style: none;
 }
 
@@ -23,7 +23,7 @@
 /*Social Links*/
 /*============*/
 
-.socl-link-cont {}
+.scl-lnk-cont {}
 
 #facebook:hover {
   background-color: #3b5998;
@@ -45,5 +45,14 @@
   transition: all 300ms ease;
 }
 
+#youtube:hover {
+  transition: all 300ms ease;
+  background-color: #e62117;
+}
+
+#instagram:hover {
+  transition: all 300ms ease;
+  background-color: rosybrown;
+}
 
 

@@ -10,6 +10,10 @@ body {
     margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .inline {
     display: inline-block;
 }
@@ -26,10 +30,11 @@ body {
     margin: auto;
 }
 
+.m-none {
+  margin: 0;
+}
+
 .circle {
   border-radius: 100%;
 }
 
-a {
-    text-decoration: none;
-}

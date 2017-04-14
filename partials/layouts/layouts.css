@@ -11,10 +11,11 @@
 @import url('sub-layouts/s-g.css');
 
 
-.margin-none {
-  margin: 0;
-}
+/*================*/
+/*Section document*/
+/*================*/
 
+@import url('sub-layouts/s-d.css');
 
 
 
