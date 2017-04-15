@@ -23,7 +23,7 @@ My intrest in Web Development hasn't stoped at front-end I am very passionate ab
     * In other words there will be a lot to it but it is broken into pieces so you only have to download what you will use (similar to Semantic UI - another CSS framework) of course the complete file will also be avaliable
   * Dry - (don't repeat yourself) I will do my best to keep my code dry
 
-  ## Current Version is bs 1.0.0
+  ## Current Version is bs 1.0.1
 
   Be sure to read the readmes to better understand how to use BS and also check out the Wiki for this repository!!!
 
