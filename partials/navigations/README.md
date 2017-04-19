@@ -22,7 +22,7 @@ Navigation code is shown here however there are pictues and better descriptions 
 The .bn-image goes inside of the .top-header or the header configuration you have selected.
 
 ```
-<nav class="n-simple">
+<nav class="n-bottom">
   <ul class="bn-bar">
   <li class="n-bar-itm"><a class="n-bar-a" href="(link location)">Nav tab</a></li>
   </ul>

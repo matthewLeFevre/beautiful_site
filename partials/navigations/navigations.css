@@ -117,11 +117,10 @@
 /*********Tablet Second**********/
 
 @media screen and (min-width: 650px){
-  .n-simple {
+  .n-bottom {
     display: block;
     text-align: center;
   }
-
   .bn-image {
     display: none;
   }

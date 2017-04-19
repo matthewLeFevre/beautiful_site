@@ -6,7 +6,7 @@ window.onload = function () {
   };
 
   var nav = {
-    simple:       $('.simple-nav'),
+    simple:       $('.n-simple'),
     simple_img:   $('.n-image'),
     simple_bar:   $('.n-bar'),
     simple_drop:  function () {
@@ -15,7 +15,7 @@ window.onload = function () {
 
     },
 
-    bottom:       $('.bottom-nav'),
+    bottom:       $('.n-bottom'),
     bottom_img:   $('.bn-image'),
     bottom_bar:   $('bn-bar'),
     bottom_drop:  function () {

@@ -5,12 +5,9 @@
 /*********Mobile First**********/
 
 .lst-tool {
+  margin-right: 1em;
   list-style: none;
   padding: 0;
-}
-
-.lst-tool {
-  margin-right: 1em;
 }
 
 .lnk-generic {
