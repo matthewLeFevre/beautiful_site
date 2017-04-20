@@ -61,6 +61,10 @@
   color: black;
 }
 
+.blk {
+  background-color: #000;
+  color: #FFF;
+}
 
 .t-flm {
   color: #E55812;

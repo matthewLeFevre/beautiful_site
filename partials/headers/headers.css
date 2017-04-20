@@ -45,6 +45,19 @@
 
 
 
+
+/*=============*/
+/*  Logo Header*/
+/*=============*/
+.logo-header {
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
 /*=============*/
 /*Sticky Header*/
 /*=============*/
@@ -72,10 +85,32 @@
   text-decoration: underline;
 }
 
-.img-logo {
+.img-logo-sml {
+  height: 45px;
+
+}
+
+.img-logo-med {
   height: 90px;
 }
 
-.img-logo-sml {
-  height: 45px
+.img-logo-lrg {
+  height: 180px;
+}
+
+.img-logo-progressive {
+  height: 90px;
+  transition: all 500ms ease;
+}
+
+@media screen and (min-width: 650px){
+  .img-logo-progressive {
+    height: 120px;
+  }
+  }
+
+@media screen and (min-width: 1000px){
+    .img-logo-progressive {
+      height: 180px;
+  }
 }
