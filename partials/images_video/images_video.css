@@ -2,6 +2,23 @@
 /* 10. Images and Video */
 /*********************************************************/
 
+.img-icon-responsive {
+  height: 20px;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 650px){
+  .img-icon-responsive {
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .img-icon-responsive {
+    height: 50px;
+  }
+}
+
 .img-icon-sml {
   height: 1.5em;
 }

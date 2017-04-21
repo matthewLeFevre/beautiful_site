@@ -20,9 +20,18 @@ window.onload = function () {
     bottom_bar:   $('bn-bar'),
     bottom_drop:  function () {
 
-      nav.bottom_img.click(function (){nav.bottom.slideToggle(200); } )
+      nav.bottom_img.click(function (){nav.bottom.slideToggle(200); })
 
     },
+
+    menu:         $('.n-menu'),
+    menu_btn:     $('.n-menu-btn'),
+    menu_bar:     $('.nm-bar'),
+    menu_drop:    function () {
+
+      nav.menu_btn.click(function (){nav.menu_bar.slideToggle(500); })
+
+    }
 
   };
 
@@ -47,6 +56,7 @@ window.onload = function () {
   carousel.doSlideshow();
   nav.simple_drop();
   nav.bottom_drop();
+  nav.menu_drop();
   };
 
 

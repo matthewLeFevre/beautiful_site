@@ -130,10 +130,41 @@
 
 
 /*==========================*/
-/*Menu*/
+/*Menu Nav*/
 /*==========================*/
 
-.menu {
+/*********Mobile First**********/
+
+.n-menu{
+
+}
+
+  .nm-bar {
+    display: none;
+    padding: 1em;
+    list-style: none;
+    margin: 0;
+  }
+
+    .nm-bar-itm {
+      margin-bottom: 1em;
+      border-bottom: 2px solid rgba(0,0,0,.5);
+    }
+
+    .nm-bar-a{
+      display: block;
+      height: 30px;
+      display: flex;
+/*      width: 6em;*/
+      align-items: center;
+      justify-content: space-around
+    }
+
+      .nm-txt{
+
+      }
+
+.n-menu-btn {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -141,34 +172,63 @@
   border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   max-width: 77px;
+  cursor: pointer;
+  transition: all 700ms ease;
 }
 
-.menu-img {
-  height: 20px;
-  width: 28px
+.n-menu-btn:hover {
+  background-color: blue;
 }
 
-.menu-name {
-  font-size: 12px;
-  margin-right: 3px;
-}
+  .n-menu-img {
+    height: 20px;
+    width: 28px
+  }
+
+  .n-menu-name {
+    font-size: 12px;
+    margin-right: 3px;
+  }
 
 @media screen and (min-width: 450px){
-  .menu {
+  .n-menu-btn {
     padding: 0 12px;
     max-width: 100px;
   }
-  .menu-img {
+  .n-menu-img {
     height: 30px;
     width: 33.3px;
   }
-  .menu-name {
+  .n-menu-name {
     font-size: 16px;
   }
 }
 
 @media screen and (min-width: 1000px){
-  .menu{
+  .head-wrap{
+    height: 100vh;
+    width: 25%;
+    pointer-events: fixed;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .n-menu {
+/*    position: fixed;*/
+/*    width: 100%;*/
+
+  }
+
+  .nm-bar {
+    display: block;
+/*    height: auto;*/
+    flex-grow: 1;
+  }
+
+  .nm-txt {
+    display: none;
+  }
+
+  .n-menu-btn{
     display: none;
   }
 }
