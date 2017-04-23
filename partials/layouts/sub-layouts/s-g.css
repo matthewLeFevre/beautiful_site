@@ -1,61 +1,111 @@
 /*===============*/
 /*Section General*/
 /*===============*/
-/*Primary section tool
-- Optomized for pictures grids and for single elements*/
-/*Section-General-Small*/
+
+/* Description:
+- Section General is a compilation of
+containers and items that are used as
+the primary sectioning/layout tool of
+BS there is a plethera of Grids and
+other tools that make css images
+and layouts fast and easy.*/
+
+/*Table of contents
+- 1. Containers
+- 2. Container Configurations
+- 3. Items
+*/
 
 
 
-/*********Mobile First**********/
+/*Containers
+- Container classes go inside of
+container elements such as section
+article or div. They can also be used
+for header of navigation as well.
+*/
+
+/*********Mobile Styles**********/
+
+/*Section General Small*/
 .s-g-sml {
   min-height: 150px;
 }
 
+/*Section General Medium*/
+.s-g-med {
+  min-height: 300px;
+}
 
-
-/*Section-General -- Original*/
-.s-g {
-    min-height: 300px;
-    padding-top: 1em;
+/*Section General Large*/
+.s-g-lrg {
+  min-height: 450px;
 }
 
 
 
-/*********Tablet Second**********/
-
+/*********Tablet Styles**********/
 @media screen and (min-width: 650px) {
+
   .s-g-sml {
     min-height: 300px;
   }
 
-
-
-  .s-g {
+  .s-g-med {
     min-height: 450px;
   }
+
+  .s-g-lrg {
+    min-height: 600px;
+  }
+
 }
 
-/*********Desktop Third**********/
+/*********Desktop Styles**********/
 
 @media screen and (min-width: 1000px){
-  .s-g {
+
+  .s-g-med {
     min-height: 500px;
-  }
-
-
-  /*section-general-grale
-  -sets a limit on the width to provide margins on each side*/
-  .s-g-grale {
-    max-width: 1300px;
-    margin: auto
   }
 }
 
 
 
+
+/*Container Configurations
+- Container Configurations modify
+containers for specific purposes
+there are 3 different types of
+configurations. One of each type
+can be applied to a container so a
+container can have up to 3 configurations
+configurations can be applied to
+any kind of contianer not just
+section general
+*/
+/*Table of contents for configurations
+- 1. Limiters
+- 2. Backgrounds
+- 3. Layouts
+*/
+
+
+/*Limiters - limit the container size*/
+
+/*section-general-grale
+-sets a limit on the width to provide margins on each side*/
+.s-g-grale {
+  max-width: 1300px;
+  margin: auto
+}
+
+
+
+/*Backgrounds - assigns background styles*/
+
 /*Section-General_Image -- aligns and centers image*/
-.s-g_img {
+.s-g-img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -63,101 +113,47 @@
 
 
 
+/*Layouts -  dictates how content is presented*/
+
 /*section-general_center-item
 - only centers a single item/container*/
-.s-g_c-itm {
+.s-g_center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-
 /*Section-General_Multiple-item
 - aligns a single row of multiple items/containers*/
-/*********Mobile First**********/
-
-.s-g_m-itm {
+.s-g_multi {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
 }
 
-
-
-/*Section-General_item-article
-- a flexible container preferably an article or div*/
-.s-g_itm-a {
-    margin: 1em;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    padding: 1em 2em 1em 2em;
-    max-width: 320px;
-}
-
-
-
-/*Section-General_item-article-fixed
-- a flixed-width container preferably an article or div*/
-.s-g_itm-a-fixed {
-  margin: 1em;
-  display: flex;
-  align-items: center;
-  flex-flow: column nowrap;
-  padding: 1em 2em 1em 2em;
-  max-width: 320px;
-}
-
-
-
-/*********Tablet Second**********/
-
 @media screen and (min-width: 650px) {
-    .s-g_itm-a {
-        margin-top: 1em;
-        max-width: 350px;
-    }
 
-
-
-    .s-g_m-itm {
-        width: 100%;
-        flex-flow: row nowrap;
-        margin: auto;
-        align-items: center;
-        align-content: center;
-    }
-}
-
-
-
-/*********Desktop Third**********/
-
-@media screen and (min-width: 1000px){
-  .s-g_itm-a {
-    margin-top: 1em;
-    max-width: 550px;
+  .s-g_multi {
+    width: 100%;
+    flex-flow: row nowrap;
+    margin: auto;
+    align-items: center;
+    align-content: center;
   }
-}
 
+}
 
 
 /*Section-general_item-grid
 - responsive grid for items or containers unlimited row/col*/
-/*********Mobile First**********/
 .s-g_itm-grid {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
 }
-
-
-
-
-/*********Tablet Second**********/
 
 @media screen and (min-width: 650px) {
   .s-g_itm-grid {
@@ -169,5 +165,82 @@
     align-content: center;
   }
 }
+
+
+
+/*Items
+- Items are smaller contaienrs
+that are filled with content. They
+are smaller and can be forms, sevices
+or any kind of content;
+*/
+
+
+
+/*Section-General_item-article
+- a flexible container preferably an article or div*/
+.s-g_itm {
+    margin: 1em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 1em 2em 1em 2em;
+    max-width: 320px;
+}
+
+@media screen and (min-width: 650px) {
+  .s-g_itm {
+    margin-top: 1em;
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .s-g_itm {
+    margin-top: 1em;
+    max-width: 550px;
+  }
+}
+
+
+/*Section-General_item-article-fixed
+- a flixed-width container preferably an article or div*/
+.s-g_itm-fixed {
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  padding: 1em 2em 1em 2em;
+  max-width: 320px;
+}
+
+
+
+/* Section general item split
+-Splits the section in half if two elements
+are present fills section if only one elment
+is present
+*/
+
+.s-g_itm-split {
+
+}
+
+@media screen and (min-width: 650px) {
+
+
+  .s-g_itm-split {
+    flex-grow: 1;
+    min-height: 500px;
+  }
+}
+
+
+
+
+
+
+
+
 
 
