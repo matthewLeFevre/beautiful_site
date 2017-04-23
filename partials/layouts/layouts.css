@@ -17,5 +17,11 @@
 
 @import url('sub-layouts/s-d.css');
 
+/*================*/
+/*Section document*/
+/*================*/
+
+@import url('sub-layouts/s-m.css');
+
 
 

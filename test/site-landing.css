@@ -1,0 +1,20 @@
+.c1 { background-color: #BBDEF0;}
+.c2 { background-color: #1982C4;}
+.c3 { background-color: #FFCA3A;}
+.c4 { background-color: #D72638;}
+.c5 { background-color: #95C623;}
+
+
+@media screen and (min-width: 1000px){
+
+  .head-wrap{
+    position: fixed;
+    width: 250px;
+
+  }
+
+  main {
+  margin-left: 250px;
+  }
+
+}

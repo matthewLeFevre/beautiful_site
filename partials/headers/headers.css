@@ -59,8 +59,7 @@
 
 @media screen and (min-width: 1000px){
   .logo-header {
-/*    max-width: 25%;*/
-    flex-grow: 1;
+    min-height: 210px;
   }
 }
 
