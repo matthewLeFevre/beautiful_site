@@ -148,7 +148,7 @@ section general
 
 /*Section-general_item-grid
 - responsive grid for items or containers unlimited row/col*/
-.s-g_itm-grid {
+.s-g_grid {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
@@ -156,7 +156,7 @@ section general
 }
 
 @media screen and (min-width: 650px) {
-  .s-g_itm-grid {
+  .s-g_grid {
     width: 100%;
     flex-flow: row wrap;
     margin: auto;
