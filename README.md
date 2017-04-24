@@ -4,7 +4,7 @@ beautiful_site is my very own CSS3 framework!  I know what your thinking _"Thats
 ## About
 Since I started learning front-end Web Development I have found CSS fascinating never before had I felt so much fullfilment in writing code! Ever since I have been learning about it and extending my knowledge on it I have been trying my best to impliment best practice.
 
-Inspiration for BS stems from my passion for CSS in particular. The nameing convention for BS follows BEM naming in most cases that means it is relatively easy to read and understand although many class names have few meanings so memorizing what different class names do is your best bet at understand it.
+Inspiration for BS stems from my passion for CSS in particular. The nameing convention for BS follows BEM style naming which means every css class is easy to read and understand. BS is not a traditional framework in a sense that is creates a set grid on which to develop your website. BS instead comes included with layout templates that can be used and modified at your leasure, this of course is not the main reason BS was developed. The real power of BS comes from your ability to create new things with the many styles and components avaliable.
 
 My intrest in Web Development hasn't stoped at front-end I am very passionate about full stack development in particular the MEAN stack. Learning back-end with nodejs and express has opened my mind up for even more possiblities, however as I have been learning via courses online I have found that most instructors that teach back end impliment a CSS framework such as bootsrap into thier courses. I have never wanted to learn bootstrap for two reasons:
 
