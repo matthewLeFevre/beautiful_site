@@ -4,6 +4,10 @@
 
 /*********Mobile First**********/
 
+.lst-generic {
+  list-style: none;
+}
+
 .lst-tool {
   margin-right: 1em;
   list-style: none;
