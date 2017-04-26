@@ -16,8 +16,8 @@ window.onload = function () {
     },
 
     bottom:       $('.n-bottom'),
-    bottom_img:   $('.bn-image'),
-    bottom_bar:   $('bn-bar'),
+    bottom_img:   $('.bn-img'),
+    bottom_bar:   $('.bn-bar'),
     bottom_drop:  function () {
 
       nav.bottom_img.click(function (){nav.bottom.slideToggle(200); })

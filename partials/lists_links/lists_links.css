@@ -56,4 +56,10 @@
   background-color: rosybrown;
 }
 
+#mail:hover {
+  transition: all 300ms ease;
+  background-color: #f7f7f7;
+  border-radius: 20%;
+}
+
 
