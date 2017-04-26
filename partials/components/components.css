@@ -2,6 +2,37 @@
 /* Components (cards, thumbnails)*/
 /*********************************************************/
 
+
+/*+++++++++++++++++++++++++++++++++*/
+/*Chips*/
+/*+++++++++++++++++++++++++++++++++*/
+
+.chip {
+  height: 60px;
+  /*  width: 300px;*/
+  border-radius: 100px;
+  margin: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1em;
+}
+
+.chip-img {
+  height: 100%;
+  border-radius: 100px;
+  margin-right: 1em;
+}
+
+.chip-itm {
+  margin-left: 1em;
+}
+
+.chip span {
+  font-size: 12px
+}
+
+
 /*+++++++++++++++++++++++++++++++++*/
 /*Cards*/
 /*+++++++++++++++++++++++++++++++++*/
@@ -49,6 +80,47 @@
         padding: 16px 16px;
         display: flex;
       }
+
+/*Card Profile*/
+
+.card-profile {
+  max-width: 300px;
+  min-height: 300px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card-profile-img {
+  max-width: 100%;
+  max-height: 300px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/*Card Profile Small*/
+
+card-p-sml-vert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 1em
+}
+
+.card-p-sml-img {
+  border-radius: 10px;
+  max-width: 200px;
+}
+
+.card-profile-sml {
+  max-width: 200px;
+  min-height: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 1em
+}
 
 
 /*+++++++++++++++++++++++++++++++++*/
