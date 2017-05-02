@@ -3,36 +3,36 @@
 /*********************************************************/
 
 h1, h2, h3 {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: $san-1;
 }
 
 h4, h5, h6, a, span {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: $san-2;
 }
 
 p, input{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $san-3;
 }
 
 
 .san-1 {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: $san-1;
 }
 
 .san-2 {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: $san-2;
 }
 
 .san-3 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $san-3;
 }
 
 .san-4 {
-  font-family: Tahoma, Geneva, sans-serif;
+  font-family: $san-4;
 }
 
 .serif-1 {
-  font-family: Georgia, serif;
+  font-family: $ser;
 }
 
 

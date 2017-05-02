@@ -2,6 +2,10 @@
 //-- Main SASS Style Sheet
 //
 
+// Config
+@import 'config/config';
+@import 'config/mixins';
+
 // Buttons
 @import 'buttons/buttons';
 

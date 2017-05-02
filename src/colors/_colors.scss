@@ -2,64 +2,48 @@
 /* Colors */
 /*********************************************************/
 
-// Variables
-
-$flm: #E55812;
-$yg: #95C623;
-$djg: #0E4749;
-$dg: #002626;
-$eb: #5F634F;
-$pc: #9BC4CB;
-$sb: #3E7CB1;
-$pt: #E6E8E6;
-$egg: #EFE7DA;
-$wht: #fff;
-$ylw: #FFBF00;
-$blk: #000;
-
-
 .flm {
-  background-color: $flm;
+  @include flm;
   color: white;
 }
 
 .yg {
-  background-color: $yg;
+  @include yg;
   color: white;
 }
 
 .djg {
-  background-color: $djg;
+  @include djg;
   color: white;
 }
 
 .dg {
-  background-color: $dg;
+  @include dg;
   color: white;
 }
 
 .eb {
-  background-color: $eb;
+  @include eb;
   color: white;
 }
 
 .pc {
-  background-color: $pc;
+  @include pc;
   color: white;
 }
 
 .sb {
-  background-color: $sb;
+  @include sb;
   color: white;
 }
 
 .pt {
-  background-color: $pt;
+  @include pt;
   color: black;
 }
 
 .egg {
-  background-color: $egg;
+  @include egg;
   color: black;
 }
 
