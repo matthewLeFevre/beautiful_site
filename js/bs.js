@@ -52,6 +52,27 @@ window.onload = function () {
     }
   };
 
+// Creates an on scroll function
+  var scroll = {
+    w: $(window),
+    d: $(document),
+    h: $('header'),
+    l: $(".logo"),
+    n: $('.name'),
+    na: $('.na'),
+
+    shrink: function () {
+      scroll.w.on('scroll touchmove', function () {
+        console.log('scroll');
+        scroll.na.toggleClass('na-shrink', header.d.scrollTop() > 0);
+        scroll.l.toggleClass('l-shrink', header.d.scrollTop() > 0);
+        scroll.n.toggleClass('n-shrink', header.d.scrollTop() > 0);
+        scroll.h.toggleClass('shrink', header.d.scrollTop() > 0);
+      });
+  }
+
+
+
 
   carousel.doSlideshow();
   nav.simple_drop();
