@@ -5,16 +5,11 @@
 /*********Mobile First**********/
 
 .ftr {
-/*  color: white;*/
   min-height: 10em;
 }
 
 .ftr-section {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-/*  text-align: center;*/
+  @include flex-c(column, nowrap, center, center);
 }
 
 /*********Tablet Second**********/
@@ -23,8 +18,7 @@
     padding: 2em;
   }
   .ftr-section {
-    flex-flow: row nowrap;
-    justify-content: space-around;
+    @include flex-c(row, nowrap, space-around, center);
   }
 
 }

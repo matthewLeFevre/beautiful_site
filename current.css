@@ -374,7 +374,6 @@ p, input {
 /*********************************************************/
 /*********Mobile First**********/
 .ftr {
-  /*  color: white;*/
   min-height: 10em; }
 
 .ftr-section {
@@ -385,18 +384,21 @@ p, input {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
-  /*  text-align: center;*/ }
+      align-items: center; }
 
 /*********Tablet Second**********/
 @media screen and (min-width: 650px) {
   .ftr {
     padding: 2em; }
   .ftr-section {
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-flow: row nowrap;
         flex-flow: row nowrap;
     -ms-flex-pack: distribute;
-        justify-content: space-around; } }
+        justify-content: space-around;
+    -ms-flex-align: center;
+        align-items: center; } }
 
 /*********************************************************/
 /* Forms */
@@ -780,60 +782,31 @@ section general
 /*section-general_center-item
 - only centers a single item/container*/
 .s-g_center {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center; }
+  @indlude flex-c; }
 
 /*Section-General_Multiple-item
 - aligns a single row of multiple items/containers*/
 .s-g_multi {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-align: center;
-      align-items: center; }
-
-@media screen and (min-width: 650px) {
-  .s-g_multi {
-    width: 100%;
-    -ms-flex-flow: row nowrap;
-        flex-flow: row nowrap;
-    margin: auto;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center; } }
+  @indlude flex-c(column, nowrap, space-around, center); }
+  @media screen and (min-width: 650px) {
+    .s-g_multi {
+      @indlude flex-c(row, nowrap, space-around, center);
+      width: 100%;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      margin: auto; } }
 
 /*Section-general_item-grid
 - responsive grid for items or containers unlimited row/col*/
 .s-g_grid {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-align: center;
-      align-items: center; }
-
-@media screen and (min-width: 650px) {
-  .s-g_grid {
-    width: 100%;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-    margin: auto;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center; } }
+  @indlude flex-c(column, nowrap, space-around, center); }
+  @media screen and (min-width: 650px) {
+    .s-g_grid {
+      @indlude flex-c(row, nowrap, space-around, center);
+      width: 100%;
+      margin: auto;
+      -ms-flex-line-pack: center;
+          align-content: center; } }
 
 /*Items
 - Items are smaller contaienrs
