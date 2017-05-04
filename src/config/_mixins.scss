@@ -13,6 +13,18 @@
   align-items: $align;
 }
 
+@mixin flex-center{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+@mixin flex($axis) {
+  display: flex;
+  flex-flow: $axis nowrap;
+}
+
+
 //
 // Colors
 //
@@ -36,6 +48,8 @@
   background-color: $background;
   color: $txtcolor;
 }
+
+
 
 
 

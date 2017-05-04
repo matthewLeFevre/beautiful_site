@@ -118,7 +118,7 @@ section general
 /*section-general_center-item
 - only centers a single item/container*/
 .s-g_center {
-  @indlude flex-c;
+  @include flex-c;
 //    display: flex;
 //    justify-content: center;
 //    align-items: center;
@@ -128,13 +128,13 @@ section general
 /*Section-General_Multiple-item
 - aligns a single row of multiple items/containers*/
 .s-g_multi {
-  @indlude flex-c(column, nowrap, space-around, center);
+  @include flex-c(column, nowrap, space-around, center);
 //    display: flex;
 //    flex-flow: column nowrap;
 //    justify-content: space-around;
 //    align-items: center;
   @media screen and (min-width: 650px) {
-    @indlude flex-c(row, nowrap, space-around, center);
+    @include flex-c(row, nowrap, space-around, center);
     width: 100%;
 //    flex-flow: row nowrap;
 //    align-items: center;
@@ -149,13 +149,13 @@ section general
 /*Section-general_item-grid
 - responsive grid for items or containers unlimited row/col*/
 .s-g_grid {
-  @indlude flex-c(column, nowrap, space-around, center);
+  @include flex-c(column, nowrap, space-around, center);
 //  display: flex;
 //  flex-flow: column nowrap;
 //  justify-content: space-around;
 //  align-items: center;
   @media screen and (min-width: 650px) {
-    @indlude flex-c(row, nowrap, space-around, center);
+    @include flex-c(row, nowrap, space-around, center);
       width: 100%;
 //      flex-flow: row wrap;
       margin: auto;

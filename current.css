@@ -256,7 +256,7 @@
   border-radius: 10px; }
 
 /*Card Profile Small*/
-card-p-sml-vert {
+.card-p-sml-vert {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -278,6 +278,85 @@ card-p-sml-vert {
   padding: 5px;
   border-radius: 10px;
   margin: 1em; }
+
+.card-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; }
+
+.staff-card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  min-width: 310px; }
+  .staff-card > img {
+    width: 90px; }
+  .staff-card figcaption {
+    width: 200px; }
+    .staff-card figcaption h2 {
+      font-size: 20px;
+      margin: 0; }
+    .staff-card figcaption span {
+      font-size: 12px; }
+    .staff-card figcaption p {
+      margin: 0;
+      font-size: 15px; }
+
+@media screen and (min-width: 400px) {
+  .staff-card {
+    min-width: 380px; }
+    .staff-card > img {
+      min-width: 100px;
+      max-width: 300px;
+      margin-right: 1em;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+    .staff-card figcaption {
+      width: 250px; }
+      .staff-card figcaption h2 {
+        font-size: 25px;
+        margin: 0; }
+      .staff-card figcaption span {
+        font-size: 13px; }
+      .staff-card figcaption p {
+        font-size: 15px;
+        line-height: 130%; } }
+
+@media screen and (min-width: 600px) {
+  .staff-card {
+    min-width: 460px;
+    max-width: 480px; }
+    .staff-card > img {
+      min-width: 100px;
+      max-width: 300px;
+      margin-right: 1em;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+    .staff-card figcaption h2 {
+      font-size: 28px;
+      margin: 0; }
+    .staff-card figcaption span {
+      font-size: 15px; }
+    .staff-card figcaption p {
+      padding: 10px;
+      font-size: 17px;
+      line-height: 130%; } }
+
+@media screen and (min-width: 900px) {
+  .card-container {
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 1100px; } }
 
 /*+++++++++++++++++++++++++++++++++*/
 /*Thumbnails*/
@@ -782,15 +861,36 @@ section general
 /*section-general_center-item
 - only centers a single item/container*/
 .s-g_center {
-  @indlude flex-c; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
 
 /*Section-General_Multiple-item
 - aligns a single row of multiple items/containers*/
 .s-g_multi {
-  @indlude flex-c(column, nowrap, space-around, center); }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center; }
   @media screen and (min-width: 650px) {
     .s-g_multi {
-      @indlude flex-c(row, nowrap, space-around, center);
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-align: center;
+          align-items: center;
       width: 100%;
       -ms-flex-line-pack: center;
           align-content: center;
@@ -799,10 +899,24 @@ section general
 /*Section-general_item-grid
 - responsive grid for items or containers unlimited row/col*/
 .s-g_grid {
-  @indlude flex-c(column, nowrap, space-around, center); }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center; }
   @media screen and (min-width: 650px) {
     .s-g_grid {
-      @indlude flex-c(row, nowrap, space-around, center);
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -ms-flex-align: center;
+          align-items: center;
       width: 100%;
       margin: auto;
       -ms-flex-line-pack: center;
@@ -892,31 +1006,31 @@ is present
 /*============*/
 /*Social Links*/
 /*============*/
-#facebook:hover {
+.facebook:hover {
   background-color: #3b5998;
   transition: all 300ms ease; }
 
-#twitter:hover {
+.twitter:hover {
   background-color: #0077b5;
   transition: all 300ms ease; }
 
-#googleplus:hover {
+.googleplus:hover {
   background-color: #ea4335;
   transition: all 300ms ease; }
 
-#github:hover {
+.github:hover {
   background-color: #d1d1d1;
   transition: all 300ms ease; }
 
-#youtube:hover {
+.youtube:hover {
   transition: all 300ms ease;
   background-color: #e62117; }
 
-#instagram:hover {
+.instagram:hover {
   transition: all 300ms ease;
   background-color: rosybrown; }
 
-#mail:hover {
+.mail:hover {
   transition: all 300ms ease;
   background-color: #f7f7f7;
   border-radius: 20%; }

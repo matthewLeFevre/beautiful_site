@@ -99,7 +99,7 @@
 
 /*Card Profile Small*/
 
-card-p-sml-vert {
+.card-p-sml-vert {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,6 +121,122 @@ card-p-sml-vert {
   border-radius: 10px;
   margin: 1em
 }
+
+.card-container {
+  @include flex(column);
+}
+
+.staff-card {
+  @include flex(row);
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 310px;
+
+  > img {
+    width: 90px;
+  }
+
+  figcaption {
+    width: 200px;
+    h2{
+      font-size: 20px;
+      margin: 0;
+    }
+    span {
+      font-size: 12px;
+    }
+
+    .contact-container {
+
+    }
+
+    p {
+      margin: 0;
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 400px){
+  .staff-card {
+    min-width: 380px;
+
+    > img {
+      min-width: 100px;
+      max-width: 300px;
+      margin-right: 1em;
+      flex-grow: 1;
+    }
+
+    figcaption {
+      width: 250px;
+      h2{
+        font-size: 25px;
+        margin: 0;
+      }
+      span {
+        font-size: 13px;
+      }
+
+      .contact-container {
+
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 130%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px){
+  .staff-card {
+    min-width: 460px;
+    max-width: 480px;
+
+    > img {
+      min-width: 100px;
+      max-width: 300px;
+      margin-right: 1em;
+      flex-grow: 1;
+    }
+
+    figcaption {
+
+      h2{
+        font-size: 28px;
+        margin: 0;
+      }
+      span {
+        font-size: 15px;
+      }
+
+      .contact-container {
+
+      }
+
+      p {
+
+        padding: 10px;
+        font-size: 17px;
+        line-height: 130%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px){
+  .card-container {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 1100px;
+  }
+}
+
+
+
 
 
 /*+++++++++++++++++++++++++++++++++*/
