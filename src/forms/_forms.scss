@@ -9,22 +9,22 @@ the correct syntax for a form. Correct Syntax is:
 
 /*********Mobile First**********/
 
-.frm {
+.form {
   padding: 1em;
   width: 90%;
   margin: auto;
 }
 
-.frm-sml {
-  max-width: 330px;
+.form-sml {
+  max-width: $mobile-fit;
 }
 
-.frm-med {
-  max-width: 720px;
+.form-med {
+  max-width: $tablet-fit;
 }
 
-.frm-lrg {
-  max-width: 1024px
+.form-lrg {
+  max-width: tablet-fit;
 }
 
 .frm-btn-row {

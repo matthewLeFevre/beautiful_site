@@ -27,11 +27,11 @@ a {
 }
 
 .m-auto {
-    margin: auto;
+    @include margin(auto);
 }
 
 .m-none {
-  margin: 0;
+  @include margin(0);
 }
 
 .circle {

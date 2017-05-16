@@ -11,7 +11,7 @@
   height: 60px;
   /*  width: 300px;*/
   border-radius: 100px;
-  margin: 1em;
+  margin: $margin-main;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,14 +38,13 @@
 /*+++++++++++++++++++++++++++++++++*/
 
 .card {
-  min-height: 300px;
-  width: 320px;
+  min-height: $px-med;
+  width: $mobile-fit;
 
   transition: 0.3s;
   border-radius: 5px;
-  margin: 1em;
-  display: flex;
-  flex-flow: column nowrap;
+  margin: $margin-main;
+  @include flex(column);
   justify-content: space-between;
 }
 

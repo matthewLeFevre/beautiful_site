@@ -801,6 +801,9 @@ article or div. They can also be used
 for header of navigation as well.
 */
 /*********Mobile Styles**********/
+.s-g-strip {
+  min-height: 100px; }
+
 /*Section General Small*/
 .s-g-sml {
   min-height: 150px; }

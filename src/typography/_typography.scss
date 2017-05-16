@@ -2,6 +2,8 @@
 /* fonts and text */
 /*********************************************************/
 
+//General Styles
+
 h1, h2, h3 {
   font-family: $san-1;
 }
@@ -14,6 +16,30 @@ p, input{
   font-family: $san-3;
 }
 
+//
+// font - mixins
+//
+
+@mixin set-font-responsive ($small: 15px, $medium: 22.5px, $large: 25px){
+  font-size: $small;
+
+  @media screen and (min-width: 600px){
+    font-size: $medium;
+  }
+
+  @media screen and (min-width: 900px){
+    font-size: $large;
+  }
+}
+
+//
+// font-classes
+//
+
+.text-responsive {
+  @include set-font-responsive();
+  color: $r1;
+}
 
 .san-1 {
   font-family: $san-1;
@@ -34,5 +60,7 @@ p, input{
 .serif-1 {
   font-family: $ser;
 }
+
+
 
 

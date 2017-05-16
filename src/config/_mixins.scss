@@ -6,6 +6,10 @@
 // Layouts
 //
 
+@mixin margin($amount: 1em){
+  margin: $amount;
+}
+
 @mixin flex-c($axis: row, $wrap: nowrap, $justify: center, $align: center) {
   display: flex;
   flex-flow: $axis $wrap;

@@ -33,6 +33,27 @@ $san-2: Verdana, Geneva, sans-serif;
 $san-3: Arial, Helvetica, sans-serif;
 $san-4: Tahoma, Geneva, sans-serif;
 
+//
+// font - sizes
+//
+
+// Heading
+$heading-largest: 35px;
+$heading-large: 30px;
+$main-heading: 25px;
+$sub-heading: 20px;
+$small-heading: 15px;
+
+// Text
+$text-medium: 15px;
+$text-large: 20px;
+$text-larger: 25px;
+$text-largest: 30px;
+
+// Line Height
+$line-height-normal: 140%;
+$line-height-large: 155%;
+
 
 
 //
@@ -48,3 +69,18 @@ $fourth: 25%;
 $px-sml: 100px;
 $px-med: 300px;
 $px-lrg: 600px;
+
+//Pixels cont...
+$mobile-fit: 320px;
+$tablet-fit: 720px;
+$screen-fit: 1024px;
+
+//Viewport Height
+$screen-height: 100vh;
+$screen-width: 100vw;
+
+//
+//Margins
+//
+
+$margin-main: 1em;
