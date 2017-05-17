@@ -170,35 +170,53 @@
 .t-blk {
   color: #000; }
 
-/*********************************************************/
-/* Components (cards, thumbnails)*/
-/*********************************************************/
 /*+++++++++++++++++++++++++++++++++*/
-/*Chips*/
+/*Tags*/
 /*+++++++++++++++++++++++++++++++++*/
-.chip {
-  height: 60px;
-  /*  width: 300px;*/
-  border-radius: 100px;
+.tag-lrg {
+  padding: 10px;
+  min-width: 150px;
   margin: 1em;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
-  padding-right: 1em; }
+  border-radius: 8px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block; }
+  .tag-lrg * {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center; }
 
-.chip-img {
-  height: 100%;
-  border-radius: 100px;
-  margin-right: 1em; }
+.tag-med {
+  padding: 8px;
+  min-width: 150px;
+  margin: 1em;
+  border-radius: 8px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block; }
+  .tag-med * {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center; }
 
-.chip-itm {
-  margin-left: 1em; }
-
-.chip span {
-  font-size: 12px; }
+.tag-sml {
+  padding: 5px;
+  min-width: 100px;
+  margin: 1em;
+  border-radius: 8px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block; }
+  .tag-sml * {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center; }
 
 /*+++++++++++++++++++++++++++++++++*/
 /*Cards*/
@@ -433,6 +451,16 @@ h4, h5, h6, a, span {
 p, input {
   font-family: Arial, Helvetica, sans-serif; }
 
+.text-responsive {
+  font-size: 15px;
+  color: #002626; }
+  @media screen and (min-width: 600px) {
+    .text-responsive {
+      font-size: 22.5px; } }
+  @media screen and (min-width: 900px) {
+    .text-responsive {
+      font-size: 25px; } }
+
 .san-1 {
   font-family: "Trebuchet MS", Helvetica, sans-serif; }
 
@@ -487,19 +515,19 @@ Creating an effective form in bs requires you to use
 the correct syntax for a form. Correct Syntax is:
 */
 /*********Mobile First**********/
-.frm {
+.form {
   padding: 1em;
   width: 90%;
   margin: auto; }
 
-.frm-sml {
-  max-width: 330px; }
+.form-sml {
+  max-width: 320px; }
 
-.frm-med {
+.form-med {
   max-width: 720px; }
 
-.frm-lrg {
-  max-width: 1024px; }
+.form-lrg {
+  max-width: tablet-fit; }
 
 .frm-btn-row {
   padding: 10px 0 0 0; }
