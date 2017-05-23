@@ -15,6 +15,41 @@ window.onload = function () {
     top:    $('.top-header'),
   };
 
+  // Creates an on scroll function for a header element
+  var scroll = {
+    w: $(window),
+    d: $(document),
+    h: $('header'),
+    l: $(".logo"),
+    n: $('.name'),
+    na: $('.na'),
+
+    shrink: function () {
+      scroll.w.on('scroll touchmove', function () {
+        console.log('scroll');
+        scroll.na.toggleClass('na-shrink', header.d.scrollTop() > 0);
+        scroll.l.toggleClass('l-shrink', header.d.scrollTop() > 0);
+        scroll.n.toggleClass('n-shrink', header.d.scrollTop() > 0);
+        scroll.h.toggleClass('shrink', header.d.scrollTop() > 0);
+      });
+    }
+
+
+
+
+    carousel.doSlideshow();
+    nav.simple_drop();
+    nav.bottom_drop();
+    nav.menu_drop();
+  };
+
+  /* Similarly to the header object the nav object contains class
+  * selectors for navigations present in BS instead of just comming
+  * with a single selector for the main element itself other classes
+  * are provided to attach to other elements inside of a navigation
+  * for more information on bs navigations visit BS wiki.
+  */
+
   var nav = {
     simple:       $('.n-simple'),
     simple_img:   $('.n-image'),
@@ -45,6 +80,11 @@ window.onload = function () {
 
   };
 
+/* Carousel object is used to create an image carousel with css and not
+* html this can be very useful however the carousel needs help it does function
+* but it is slow in loading the css images which are normally loaded when the
+* browser reads the css file
+*/
   var carousel = {
     c: $('#c'),
     ch: $('#ch'),
@@ -61,36 +101,3 @@ window.onload = function () {
       })
     }
   };
-
-// Creates an on scroll function
-  var scroll = {
-    w: $(window),
-    d: $(document),
-    h: $('header'),
-    l: $(".logo"),
-    n: $('.name'),
-    na: $('.na'),
-
-    shrink: function () {
-      scroll.w.on('scroll touchmove', function () {
-        console.log('scroll');
-        scroll.na.toggleClass('na-shrink', header.d.scrollTop() > 0);
-        scroll.l.toggleClass('l-shrink', header.d.scrollTop() > 0);
-        scroll.n.toggleClass('n-shrink', header.d.scrollTop() > 0);
-        scroll.h.toggleClass('shrink', header.d.scrollTop() > 0);
-      });
-  }
-
-
-
-
-  carousel.doSlideshow();
-  nav.simple_drop();
-  nav.bottom_drop();
-  nav.menu_drop();
-  };
-
-
-
-
-
