@@ -1,4 +1,14 @@
+//
+// - BS JavaScript
+//
+
+// Window.onload ensures that all the assets of the browser are loaded before
+// executing code in this file.
+
 window.onload = function () {
+
+  // The header object contains the class selector for all of the
+  // header styles and types created by BS.
 
   var header = {
     simple: $('.simple-header'),

@@ -5,44 +5,23 @@
 // Config
 @import 'config/config';
 @import 'config/mixins';
-
-// Buttons
-@import 'buttons/buttons';
-
-// Colors
-@import 'colors/colors';
+@import 'config/typography';
+@import 'config/generals';
+@import 'config/colors';
 
 // Components
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/lists_links';
 @import 'components/tags';
 @import 'components/cards';
 @import 'components/thumbnails';
-
-// Fonts
-@import 'typography/typography';
-
-// Footers
-@import 'footers/footers';
-
-// Forms
-@import 'forms/forms';
-
-// Generals
-@import 'generals/generals';
-
-// Headers
-@import 'headers/headers';
-
-
-// Images_video
-@import 'images_video/images_video';
+@import 'components/images_video';
 
 // Layouts
+@import 'layout/headers';
+@import 'layout/navigations';
+@import 'layout/footers';
 @import 'layout/s-d';
 @import 'layout/s-g';
 @import 'layout/s-m';
-
-// Lists_links
-@import 'lists_links/lists_links';
-
-// Navigations
-@import 'navigations/navigations'
