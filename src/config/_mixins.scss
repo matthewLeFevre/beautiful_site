@@ -28,6 +28,26 @@
   flex-flow: $axis nowrap;
 }
 
+@mixin grid-2-col($rows: 4, $height: auto, $gap: 5px){
+  display: grid;
+  grid-gap: $gap;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat($rows, $height);
+}
+
+@mixin grid-10-col($rows: 4, $height: auto){
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat($rows, $height);
+}
+
+@mixin grid-12-col($rows: 4, $height: auto){
+  display: grid;
+  grid-template-columns: repeat(12, 8.33%);
+  grid-template-rows: repeat($rows, $height);
+}
+
+
 
 //
 // Colors
