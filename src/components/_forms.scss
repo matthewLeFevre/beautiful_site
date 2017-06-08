@@ -7,102 +7,23 @@ Creating an effective form in bs requires you to use
 the correct syntax for a form. Correct Syntax is:
 */
 
-/*********Mobile First**********/
+//.bs-input {
+//
+//}
+//
+//.bs-radio {
+//
+//}
+//
+//.bs-checkbox {
+//
+//}
+//
+//.bs-label {
+//
+//}
+//
+//.bs-textarea {
+//
+//}
 
-.form {
-  padding: 1em;
-  width: 90%;
-  margin: auto;
-}
-
-.form-sml {
-  max-width: $mobile-fit;
-}
-
-.form-med {
-  max-width: $tablet-fit;
-}
-
-.form-lrg {
-  max-width: tablet-fit;
-}
-
-.frm-btn-row {
-  padding: 10px 0 0 0;
-}
-
-.frm-input {
-  padding: 5px;
-  display: inline-block;
-}
-
-.frm-field-title {
-  display: inline-block;
-  margin: 1em;
-}
-
-.frm-headings {
-  font-size: 20px;
-  margin: .5em
-}
-
-.frm-row {
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  margin-bottom: 1em;
-  align-items: center;
-}
-
-.frm-txt-area {
-  padding: 5px;
-  min-height: 9em;
-  min-width: 16em;
-  resize: none;
-}
-
-.frm-exit {
-  position: relative;
-  right: 0;
-  /*    top: -1px;*/
-  height: 40px;
-  width: 45px;
-  cursor: pointer;
-}
-
-.frm-exit:hover {
-  transition: all ease-in-out 300ms;
-  background-color: #E55812;
-  border-radius: 15%;
-}
-
-/*********Tablet Second**********/
-
-@media screen and (min-width: 650px){
-  .frm-row {
-    flex-flow: row nowrap;
-    justify-content: space-between;
-  }
-
-  .frm-textarea {
-    width: 75%;
-  }
-
-  .frm-headings {
-    font-size: 30px;
-  }
-}
-
-
-
-/*Page Forms*/
-
-/*Floating Forms*/
-
-.frm-floating {
-  position: fixed;
-  margin: 5em auto;
-  display: none;
-}
-
-/*small forms*/

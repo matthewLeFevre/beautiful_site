@@ -244,85 +244,6 @@ a {
 Creating an effective form in bs requires you to use
 the correct syntax for a form. Correct Syntax is:
 */
-/*********Mobile First**********/
-.form {
-  padding: 1em;
-  width: 90%;
-  margin: auto; }
-
-.form-sml {
-  max-width: 320px; }
-
-.form-med {
-  max-width: 720px; }
-
-.form-lrg {
-  max-width: tablet-fit; }
-
-.frm-btn-row {
-  padding: 10px 0 0 0; }
-
-.frm-input {
-  padding: 5px;
-  display: inline-block; }
-
-.frm-field-title {
-  display: inline-block;
-  margin: 1em; }
-
-.frm-headings {
-  font-size: 20px;
-  margin: .5em; }
-
-.frm-row {
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-  margin-bottom: 1em;
-  -ms-flex-align: center;
-      align-items: center; }
-
-.frm-txt-area {
-  padding: 5px;
-  min-height: 9em;
-  min-width: 16em;
-  resize: none; }
-
-.frm-exit {
-  position: relative;
-  right: 0;
-  /*    top: -1px;*/
-  height: 40px;
-  width: 45px;
-  cursor: pointer; }
-
-.frm-exit:hover {
-  transition: all ease-in-out 300ms;
-  background-color: #E55812;
-  border-radius: 15%; }
-
-/*********Tablet Second**********/
-@media screen and (min-width: 650px) {
-  .frm-row {
-    -ms-flex-flow: row nowrap;
-        flex-flow: row nowrap;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-  .frm-textarea {
-    width: 75%; }
-  .frm-headings {
-    font-size: 30px; } }
-
-/*Page Forms*/
-/*Floating Forms*/
-.frm-floating {
-  position: fixed;
-  margin: 5em auto;
-  display: none; }
-
-/*small forms*/
 /*********************************************************/
 /* Lists */
 /*********************************************************/
@@ -864,124 +785,54 @@ that has the background-image: url('image path')*/
 /*Bottom Nav*/
 /*==========================*/
 /*********Mobile First**********/
-.n-bottom {
-  display: none; }
-
-.bn-img {
-  height: 40px;
-  width: 45px;
-  cursor: pointer; }
-
-.bn-bar {
-  padding: 0 1em;
-  list-style: none;
-  margin: 0; }
-
-/*********Tablet Second**********/
-@media screen and (min-width: 650px) {
-  .n-bottom {
-    display: block;
-    text-align: center; }
-  .bn-img {
-    display: none; } }
-
-/*==========================*/
-/*Menu Nav*/
-/*==========================*/
-/*********Mobile First**********/
-.nm-bar {
-  display: none;
-  padding: 1em;
-  list-style: none;
-  margin: 0; }
-
-.nm-bar-itm {
-  margin-bottom: 1em;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.5); }
-
-.nm-bar-a {
-  display: block;
-  height: 30px;
-  display: -ms-flexbox;
-  display: flex;
-  /*      width: 6em;*/
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
-.n-menu-btn {
+.nav-btn {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-align: center;
       align-items: center;
-  padding: 0 8px 0 8px;
-  border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  max-width: 77px;
+  width: 120px;
   cursor: pointer;
-  transition: all 700ms ease; }
+  transition: all 700ms ease;
+  padding: 10px; }
+  @media screen and (min-width: 650px) {
+    .nav-btn {
+      display: none; } }
 
-.n-menu-btn:hover {
-  background-color: blue; }
-
-.n-menu-img {
-  height: 20px;
-  width: 28px; }
-
-.n-menu-name {
-  font-size: 12px;
-  margin-right: 3px; }
-
-@media screen and (min-width: 450px) {
-  .n-menu-btn {
-    padding: 0 12px;
-    max-width: 100px; }
-  .n-menu-img {
-    height: 30px;
-    width: 33.3px; }
-  .n-menu-name {
-    font-size: 16px; } }
-
-@media screen and (min-width: 1000px) {
-  .head-wrap {
-    height: 100vh;
-    width: 210px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: column nowrap;
-        flex-flow: column nowrap;
-    /*    position: fixed;*/ }
-  .n-menu {
-    /*    position: fixed;*/
-    /*    width: 20%;*/
-    height: 100vh;
-    /*    flex-grow: 3;*/
-    display: -ms-flexbox;
-    display: flex; }
-  .nm-bar {
+.nav-btn--icon {
+  position: relative;
+  height: 4px;
+  width: 35px;
+  background-color: black;
+  transition: all 300ms ease; }
+  .nav-btn--icon::before {
+    content: ' ';
+    position: absolute;
     display: block;
-    width: 100%; }
-  .nm-bar-itm {
-    margin-bottom: 1em;
-    border-bottom: none;
-    height: auto; }
-  .nm-bar-a {
-    transition: all 300ms ease;
+    background-color: black;
+    height: 4px;
+    width: 35px;
+    bottom: 10px;
+    transition: all 300ms ease; }
+  .nav-btn--icon::after {
+    content: ' ';
+    position: absolute;
     display: block;
-    height: auto; }
-  .nm-bar-a {
-    display: -ms-flexbox;
-    display: flex; }
-  .nm-txt {
-    transition: all 1000ms ease;
-    display: inline-block;
-    margin-right: 2em;
-    font-size: 20px; }
-  .n-menu-btn {
-    display: none; } }
+    background-color: black;
+    height: 4px;
+    width: 35px;
+    top: 10px; }
+
+.nav-btn--icon_clicked {
+  transform: rotate(45deg); }
+  .nav-btn--icon_clicked::before {
+    transform: rotate(-90deg);
+    bottom: 0; }
+  .nav-btn--icon_clicked::after {
+    display: none;
+    transform: rotate(-45deg); }
 
 /*********************************************************/
 /* 5. footers */

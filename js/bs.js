@@ -33,15 +33,8 @@ window.onload = function () {
         scroll.h.toggleClass('shrink', header.d.scrollTop() > 0);
       });
     }
-
-
-
-
-    carousel.doSlideshow();
-    nav.simple_drop();
-    nav.bottom_drop();
-    nav.menu_drop();
   };
+
 
   /* Similarly to the header object the nav object contains class
   * selectors for navigations present in BS instead of just comming
@@ -80,6 +73,17 @@ window.onload = function () {
 
   };
 
+  var nav_animate = {
+    nav: $('nav'),
+    btn: $('.nav-btn'),
+    bar: $('.nav-btn--icon'),
+    drop:  function () {
+      nav_animate.btn.click(function () {nav_animate.nav.slideToggle(200); nav_animate.bar.toggleClass('nav-btn--icon_clicked');})
+    },
+  }
+
+
+
 /* Carousel object is used to create an image carousel with css and not
 * html this can be very useful however the carousel needs help it does function
 * but it is slow in loading the css images which are normally loaded when the
@@ -101,3 +105,9 @@ window.onload = function () {
       })
     }
   };
+  nav_animate.drop();
+  carousel.doSlideshow();
+  nav.simple_drop();
+  nav.bottom_drop();
+  nav.menu_drop();
+}
