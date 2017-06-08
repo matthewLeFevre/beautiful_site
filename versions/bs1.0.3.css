@@ -1,0 +1,1110 @@
+/*********************************************************/
+/* fonts and text */
+/*********************************************************/
+h1, h2, h3 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif; }
+
+h4, h5, h6, a, span {
+  font-family: Verdana, Geneva, sans-serif; }
+
+p, input {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.text-responsive {
+  font-size: 15px;
+  color: #002626; }
+@media screen and (min-width: 600px) {
+  .text-responsive {
+    font-size: 22.5px; } }
+@media screen and (min-width: 900px) {
+  .text-responsive {
+    font-size: 25px; } }
+
+.san-1 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif; }
+
+.san-2 {
+  font-family: Verdana, Geneva, sans-serif; }
+
+.san-3 {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.san-4 {
+  font-family: Tahoma, Geneva, sans-serif; }
+
+.serif-1 {
+  font-family: Georgia, serif; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+.inline {
+  display: inline-block; }
+
+.block {
+  display: block; }
+
+.txt-ctr {
+  text-align: center; }
+
+.m-auto {
+  margin: auto; }
+
+.m-none {
+  margin: 0; }
+
+.circle {
+  border-radius: 100%; }
+
+/*********************************************************/
+/* Colors */
+/*********************************************************/
+.flm {
+  background-color: #E55812;
+  color: white; }
+
+.yg {
+  background-color: #95C623;
+  color: white; }
+
+.djg {
+  background-color: #0E4749;
+  color: white; }
+
+.dg {
+  background-color: #002626;
+  color: white; }
+
+.eb {
+  background-color: #5F634F;
+  color: white; }
+
+.pc {
+  background-color: #9BC4CB;
+  color: white; }
+
+.sb {
+  background-color: #3E7CB1;
+  color: white; }
+
+.pt {
+  background-color: #E6E8E6;
+  color: black; }
+
+.egg {
+  background-color: #EFE7DA;
+  color: black; }
+
+.wht {
+  background-color: #fff;
+  color: black; }
+
+.ylw {
+  background-color: #FFBF00;
+  color: black; }
+
+.blk {
+  background-color: #000;
+  color: #FFF; }
+
+.t-flm {
+  color: #E55812; }
+
+.t-yg {
+  color: #95C623; }
+
+.t-djg {
+  color: #0E4749; }
+
+.t-dg {
+  color: #002626; }
+
+.t-eb {
+  color: #5F634F; }
+
+.t-pc {
+  color: #9BC4CB; }
+
+.t-sb {
+  color: #3E7CB1; }
+
+.t-pt {
+  color: #E6E8E6; }
+
+.t-egg {
+  color: #EFE7DA; }
+
+.t-wht {
+  color: #fff; }
+
+.t-blk {
+  color: #000; }
+
+/******************************************************/
+/* Buttons */
+/******************************************************/
+.btn-sml {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 5px;
+  border-radius: 3px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  margin: 3px; }
+
+.btn-med {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  margin: 5px; }
+
+.btn-lrg {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  text-decoration: none;
+  padding: 7px 15px;
+  border-radius: 6px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  margin: 8px; }
+
+.btn-ext-lrg {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  text-decoration: none;
+  padding: 10px 17px;
+  border-radius: 7px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px; }
+
+.btn-sml:hover,
+.btn-med:hover,
+.btn-lrg:hover,
+.btn-ext-lrg:hover {
+  opacity: .7;
+  transition: all 300ms ease; }
+
+/******************************************************/
+/* Borders */
+/******************************************************/
+.border-blk {
+  border: 3px solid #000; }
+
+.border-flm {
+  border: 3px solid #E55812; }
+
+.border-yg {
+  border: 3px solid #95C623; }
+
+.border-djg {
+  border: 3px solid #0E4749; }
+
+.border-dg {
+  border: 3px solid #002626; }
+
+.border-eb {
+  border: 3px solid #5F634F; }
+
+.border-pc {
+  border: 3px solid #9BC4CB; }
+
+.border-sb {
+  border: 3px solid #3E7CB1; }
+
+.border-pt {
+  border: 3px solid #E6E8E6; }
+
+/*********************************************************/
+/* Forms */
+/*********************************************************/
+/*
+Creating an effective form in bs requires you to use
+the correct syntax for a form. Correct Syntax is:
+*/
+/*********************************************************/
+/* Lists */
+/*********************************************************/
+/*********Mobile First**********/
+.lst-generic {
+  list-style: none; }
+
+.lst-tool {
+  margin-right: 1em;
+  list-style: none;
+  padding: 0; }
+
+.lnk-generic {
+  list-style: none; }
+
+/*********Mobile First**********/
+/*============*/
+/*Social Links*/
+/*============*/
+.facebook:hover {
+  background-color: #3b5998;
+  transition: all 300ms ease; }
+
+.twitter:hover {
+  background-color: #0077b5;
+  transition: all 300ms ease; }
+
+.googleplus:hover {
+  background-color: #ea4335;
+  transition: all 300ms ease; }
+
+.github:hover {
+  background-color: #d1d1d1;
+  transition: all 300ms ease; }
+
+.youtube:hover {
+  transition: all 300ms ease;
+  background-color: #e62117; }
+
+.instagram:hover {
+  transition: all 300ms ease;
+  background-color: rosybrown; }
+
+.mail:hover {
+  transition: all 300ms ease;
+  background-color: #f7f7f7;
+  border-radius: 20%; }
+
+/*+++++++++++++++++++++++++++++++++*/
+/*Tags*/
+/*+++++++++++++++++++++++++++++++++*/
+.tag-lrg {
+  padding: 10px;
+  min-width: 150px;
+  margin: 1em;
+  border-radius: 8px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block; }
+.tag-lrg * {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center; }
+
+.tag-med {
+  padding: 8px;
+  min-width: 150px;
+  margin: 1em;
+  border-radius: 8px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block; }
+.tag-med * {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center; }
+
+.tag-sml {
+  padding: 5px;
+  min-width: 100px;
+  margin: 1em;
+  border-radius: 8px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block; }
+.tag-sml * {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center; }
+
+/*+++++++++++++++++++++++++++++++++*/
+/*Cards*/
+/*+++++++++++++++++++++++++++++++++*/
+.card {
+  min-height: 300px;
+  width: 320px;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 1em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.bx-shdw {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.bx-shdw:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+.blur-img {
+  transition: all 200ms ease;
+  /*  opacity: .5;*/
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+  cursor: pointer; }
+
+.card-img {
+  width: 100%;
+  border-radius: 5px 5px 0 0; }
+
+.card-info {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 16px 16px;
+  display: -ms-flexbox;
+  display: flex; }
+
+/*Card Profile*/
+.card-profile {
+  max-width: 300px;
+  min-height: 300px;
+  padding: 10px;
+  border-radius: 10px; }
+
+.card-profile-img {
+  max-width: 100%;
+  max-height: 300px;
+  margin: auto;
+  border-radius: 10px; }
+
+/*Card Profile Small*/
+.card-p-sml-vert {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 400px;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 1em; }
+
+.card-p-sml-img {
+  border-radius: 10px;
+  max-width: 200px; }
+
+.card-profile-sml {
+  max-width: 200px;
+  min-height: 200px;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 1em; }
+
+.card-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
+
+.staff-card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  min-width: 310px; }
+.staff-card > img {
+  width: 90px; }
+.staff-card figcaption {
+  width: 200px; }
+.staff-card figcaption h2 {
+  font-size: 20px;
+  margin: 0; }
+.staff-card figcaption span {
+  font-size: 12px; }
+.staff-card figcaption p {
+  margin: 0;
+  font-size: 15px; }
+
+@media screen and (min-width: 400px) {
+  .staff-card {
+    min-width: 380px; }
+  .staff-card > img {
+    min-width: 100px;
+    max-width: 300px;
+    margin-right: 1em;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+  .staff-card figcaption {
+    width: 250px; }
+  .staff-card figcaption h2 {
+    font-size: 25px;
+    margin: 0; }
+  .staff-card figcaption span {
+    font-size: 13px; }
+  .staff-card figcaption p {
+    font-size: 15px;
+    line-height: 130%; } }
+
+@media screen and (min-width: 600px) {
+  .staff-card {
+    min-width: 460px;
+    max-width: 480px; }
+  .staff-card > img {
+    min-width: 100px;
+    max-width: 300px;
+    margin-right: 1em;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+  .staff-card figcaption h2 {
+    font-size: 28px;
+    margin: 0; }
+  .staff-card figcaption span {
+    font-size: 15px; }
+  .staff-card figcaption p {
+    padding: 10px;
+    font-size: 17px;
+    line-height: 130%; } }
+
+@media screen and (min-width: 900px) {
+  .card-container {
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 1100px; } }
+
+/*+++++++++++++++++++++++++++++++++*/
+/*Thumbnails*/
+/*+++++++++++++++++++++++++++++++++*/
+/*item thumbnail*/
+.it {
+  margin-top: 2em;
+  height: 100px;
+  min-width: 300px;
+  max-width: 320px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.it-img {
+  height: 100%;
+  /*  Width: 150px;*/ }
+
+.it-info {
+  padding: 10px;
+  height: 100%;
+  /*  width: 150px;*/ }
+
+@media screen and (min-width: 650px) {
+  .it {
+    margin-left: 1em; } }
+
+/*Horizontal Thumbnail*/
+.ht {
+  /*  width: 100%;*/
+  max-width: 323px;
+  height: 90px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  margin-top: 1em; }
+
+/*Vertical Thumbnail*/
+.vt {
+  width: 180px;
+  min-height: 300px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
+
+.vt-image {
+  width: 180px; }
+
+/*thumbnail*/
+.t-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap; }
+
+.t-sub-item {
+  margin: 0; }
+
+.t-padding {
+  padding: 10px; }
+
+/*********************************************************/
+/* 10. Images and Video */
+/*********************************************************/
+.img-icon-responsive {
+  height: 20px;
+  vertical-align: middle; }
+
+@media screen and (min-width: 650px) {
+  .img-icon-responsive {
+    height: 30px; } }
+
+@media screen and (min-width: 1000px) {
+  .img-icon-responsive {
+    height: 50px; } }
+
+.img-icon-sml {
+  height: 1.5em; }
+
+.img-icon {
+  height: 40px;
+  width: 45px; }
+
+.img-icon-lrg {
+  height: 90px; }
+
+.img-sml {
+  width: 200px; }
+
+.img-med {
+  width: 300px; }
+
+.img-lrg {
+  max-width: 700px; }
+
+.img-backdrop {
+  background-position: center;
+  background-size: cover;
+  height: 32em; }
+
+/*img-backdrop requires an additional css rule
+created by you that is either an id or a class
+that has the background-image: url('image path')*/
+/*********Desktop Third**********/
+@media screen and (min-width: 1000px) {
+  .img-med {
+    width: 450px; } }
+
+/*videos*/
+.video-default {
+  margin: 1em auto;
+  display: block;
+  width: 100%;
+  /*  height: 60%;*/ }
+
+@media screen and (min-width: 650px) {
+  .video-default {
+    height: 60%;
+    width: auto; } }
+
+/*********************************************************/
+/* headers */
+/*********************************************************/
+/*=============*/
+/*Simple Header*/
+/*=============*/
+/*********Mobile First**********/
+.simple-header {
+  padding: 5px 1em; }
+
+/*********Tablet Second**********/
+@media screen and (min-width: 650px) {
+  .simple-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 0 0 1em; } }
+
+/*=============*/
+/*  Top Header */
+/*=============*/
+.top-header {
+  padding: 1em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  align-items: center; }
+
+/*=============*/
+/*  Logo Header*/
+/*=============*/
+.logo-header {
+  padding: 1em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  align-items: center;
+  transition: all 500ms ease; }
+
+@media screen and (min-width: 1000px) {
+  .logo-header {
+    min-height: 210px; } }
+
+/*=============*/
+/*Sticky Header*/
+/*=============*/
+.sticky {
+  width: 100%;
+  position: fixed;
+  top: 0; }
+
+.sticky-comp {
+  margin-top: 3em; }
+
+/*=============*/
+/*Logos*/
+/*=============*/
+.txt-logo {
+  display: block;
+  max-width: 50%;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration: underline; }
+
+.img-logo-sml {
+  height: 45px; }
+
+.img-logo-med {
+  height: 90px; }
+
+.img-logo-lrg {
+  height: 180px; }
+
+.img-logo-progressive {
+  height: 90px;
+  transition: all 500ms ease; }
+
+@media screen and (min-width: 650px) {
+  .img-logo-progressive {
+    height: 120px; } }
+
+@media screen and (min-width: 1000px) {
+  .img-logo-progressive {
+    height: 180px; } }
+
+/*********************************************************/
+/* 6. Navigation */
+/*********************************************************/
+/*==========================*/
+/*Simple Nav*/
+/*==========================*/
+/*********Mobile First**********/
+.n-img {
+  position: absolute;
+  right: 1em;
+  top: 0;
+  height: 40px;
+  width: 45px;
+  cursor: pointer; }
+
+.n-bar {
+  display: none;
+  padding: 0 1em;
+  list-style: none;
+  margin-top: 20px; }
+
+/*n-bar-itm and n-bar a can be used in all navigations*/
+.n-bar-itm {
+  border-bottom: white 2px solid; }
+
+.n-bar-a {
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 5px; }
+
+.n-b-a-g {
+  display: block;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 5px; }
+
+/*********Tablet Second**********/
+@media screen and (min-width: 650px) {
+  .n-simple {
+    height: 100%; }
+  .n-img {
+    display: none; }
+  .n-bar {
+    float: right;
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100%; }
+  .n-bar-itm {
+    display: inline-block;
+    border: none;
+    transition: all 500ms ease-in-out;
+    margin: 0; }
+  .n-bar-a {
+    padding: .75em 1em;
+    width: 100%;
+    transition: all 500ms ease-in-out; }
+  .n-b-a-g {
+    padding: .75em 1em;
+    width: 100%; }
+  .n-bar-itm:hover, .n-bar-a:hover {
+    background-color: white;
+    color: black; } }
+
+/*==========================*/
+/*Bottom Nav*/
+/*==========================*/
+/*********Mobile First**********/
+.nav-btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 120px;
+  cursor: pointer;
+  transition: all 700ms ease;
+  padding: 10px; }
+@media screen and (min-width: 650px) {
+  .nav-btn {
+    display: none; } }
+
+.nav-btn--icon {
+  position: relative;
+  height: 4px;
+  width: 35px;
+  background-color: black;
+  transition: all 300ms ease; }
+.nav-btn--icon::before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  background-color: black;
+  height: 4px;
+  width: 35px;
+  bottom: 10px;
+  transition: all 300ms ease; }
+.nav-btn--icon::after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  background-color: black;
+  height: 4px;
+  width: 35px;
+  top: 10px; }
+
+.nav-btn--icon_clicked {
+  transform: rotate(45deg); }
+.nav-btn--icon_clicked::before {
+  transform: rotate(-90deg);
+  bottom: 0; }
+.nav-btn--icon_clicked::after {
+  display: none;
+  transform: rotate(-45deg); }
+
+/*********************************************************/
+/* 5. footers */
+/*********************************************************/
+/*********Mobile First**********/
+.ftr {
+  min-height: 10em; }
+
+.ftr-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+/*********Tablet Second**********/
+@media screen and (min-width: 650px) {
+  .ftr {
+    padding: 2em; }
+  .ftr-section {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-align: center;
+    align-items: center; } }
+
+/*================*/
+/*Section document*/
+/*================*/
+/*
+- functions as a responsive document ideal for blog posts
+and document layout*/
+/*********Mobile First**********/
+.s-d {
+  padding: 1em;
+  max-width: 1000px;
+  min-height: 400px; }
+
+/*********Desktop Third**********/
+@media screen and (min-width: 1000px) {
+  .s-d {
+    margin: 0 3em 0 3em;
+    margin: auto;
+    min-height: 700px; } }
+
+/*section-document_heading*/
+.s-d_h {
+  font-size: 32px;
+  font-weight: 400;
+  padding: 10px; }
+
+/*section-document_paragraph*/
+.s-d_p {
+  line-height: 1.5;
+  padding: 10px; }
+
+/*===============*/
+/*Section General*/
+/*===============*/
+/* Description:
+- Section General is a compilation of
+containers and items that are used as
+the primary sectioning/layout tool of
+BS there is a plethera of Grids and
+other tools that make css images
+and layouts fast and easy.*/
+/*Table of contents
+- 1. Containers
+- 2. Container Configurations
+- 3. Items
+*/
+/*Containers
+- Container classes go inside of
+container elements such as section
+article or div. They can also be used
+for header of navigation as well.
+*/
+/*********Mobile Styles**********/
+.s-g-strip {
+  min-height: 100px; }
+
+/*Section General Small*/
+.s-g-sml {
+  min-height: 150px; }
+
+/*Section General Medium*/
+.s-g-med {
+  min-height: 300px; }
+
+/*Section General Large*/
+.s-g-lrg {
+  min-height: 450px; }
+
+/*********Tablet Styles**********/
+@media screen and (min-width: 650px) {
+  .s-g-sml {
+    min-height: 300px; }
+  .s-g-med {
+    min-height: 450px; }
+  .s-g-lrg {
+    min-height: 600px; } }
+
+/*********Desktop Styles**********/
+@media screen and (min-width: 1000px) {
+  .s-g-med {
+    min-height: 500px; } }
+
+/*Container Configurations
+- Container Configurations modify
+containers for specific purposes
+there are 3 different types of
+configurations. One of each type
+can be applied to a container so a
+container can have up to 3 configurations
+configurations can be applied to
+any kind of contianer not just
+section general
+*/
+/*Table of contents for configurations
+- 1. Limiters
+- 2. Backgrounds
+- 3. Layouts
+*/
+/*Limiters - limit the container size*/
+/*section-general-grale
+-sets a limit on the width to provide margins on each side*/
+.s-g-grale {
+  max-width: 1300px;
+  margin: auto; }
+
+/*Backgrounds - assigns background styles*/
+/*Section-General_Image -- aligns and centers image*/
+.s-g-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+/*Layouts -  dictates how content is presented*/
+/*section-general_center-item
+- only centers a single item/container*/
+.s-g_center {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+/*Section-General_Multiple-item
+- aligns a single row of multiple items/containers*/
+.s-g_multi {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  align-items: center; }
+@media screen and (min-width: 650px) {
+  .s-g_multi {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    margin: auto; } }
+
+/*Section-general_item-grid
+- responsive grid for items or containers unlimited row/col*/
+.s-g_grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  align-items: center; }
+@media screen and (min-width: 650px) {
+  .s-g_grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    -ms-flex-line-pack: center;
+    align-content: center; } }
+
+/*Items
+- Items are smaller contaienrs
+that are filled with content. They
+are smaller and can be forms, sevices
+or any kind of content;
+*/
+/*Section-General_item-article
+- a flexible container preferably an article or div*/
+.s-g_itm {
+  margin: 1em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1em 2em 1em 2em;
+  max-width: 320px; }
+
+@media screen and (min-width: 650px) {
+  .s-g_itm {
+    margin-top: 1em;
+    max-width: 350px; } }
+
+@media screen and (min-width: 1000px) {
+  .s-g_itm {
+    margin-top: 1em;
+    max-width: 550px; } }
+
+/*Section-General_item-article-fixed
+- a flixed-width container preferably an article or div*/
+.s-g_itm-fixed {
+  margin: 1em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  padding: 1em 2em 1em 2em;
+  max-width: 320px; }
+
+/* Section general item split
+-Splits the section in half if two elements
+are present fills section if only one elment
+is present
+*/
+@media screen and (min-width: 650px) {
+  .s-g_itm-split {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    min-height: 500px; } }
+
+/*===============*/
+/*Section Menu   */
+/*===============*/
+/*Primary section tool for menu style layouts
+- Optomized for pictures grids and for single elements*/
+/*Section-General-Small*/
+/*********Mobile First**********/
+.s-m_title {
+  min-height: 210px; }
+
+/*********Tablet**********/
+/*********Desktop**********/
+
+/*# sourceMappingURL=maps/current.css.map */
