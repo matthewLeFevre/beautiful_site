@@ -1,3 +1,4 @@
 /node_modules/*
 /maps/*
 /test/*
+gulpfile.js
