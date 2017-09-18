@@ -1,0 +1,47 @@
+/*================*/
+/*Section document*/
+/*================*/
+/*
+- functions as a responsive document ideal for blog posts
+  and document layout*/
+
+
+
+/*********Mobile First**********/
+.s-d {
+  padding: 1em;
+  max-width: 1000px;
+  min-height: 400px;
+}
+
+
+
+/*********Desktop Third**********/
+
+@media screen and (min-width: 1000px){
+  .s-d {
+    margin: 0 3em 0 3em;
+    margin: auto;
+    min-height: 700px;
+  }
+}
+
+
+
+/*section-document_heading*/
+
+.s-d_h {
+  font-size: 32px;
+  font-weight: 400;
+  padding: 10px;
+}
+
+
+
+
+/*section-document_paragraph*/
+
+.s-d_p {
+  line-height: 1.5;
+  padding: 10px;
+}

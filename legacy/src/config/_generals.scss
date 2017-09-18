@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.txt-ctr {
+    text-align: center;
+}
+
+.m-auto {
+    @include margin(auto);
+}
+
+.m-none {
+  @include margin(0);
+}
+
+.circle {
+  border-radius: 100%;
+}
+

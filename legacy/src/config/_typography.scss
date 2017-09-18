@@ -1,0 +1,66 @@
+/*********************************************************/
+/* fonts and text */
+/*********************************************************/
+
+//General Styles
+
+h1, h2, h3 {
+  font-family: $san-1;
+}
+
+h4, h5, h6, a, span {
+  font-family: $san-2;
+}
+
+p, input{
+  font-family: $san-3;
+}
+
+//
+// font - mixins
+//
+
+@mixin set-font-responsive ($small: 15px, $medium: 22.5px, $large: 25px){
+  font-size: $small;
+
+  @media screen and (min-width: 600px){
+    font-size: $medium;
+  }
+
+  @media screen and (min-width: 900px){
+    font-size: $large;
+  }
+}
+
+//
+// font-classes
+//
+
+.text-responsive {
+  @include set-font-responsive();
+  color: $dg;
+}
+
+.san-1 {
+  font-family: $san-1;
+}
+
+.san-2 {
+  font-family: $san-2;
+}
+
+.san-3 {
+  font-family: $san-3;
+}
+
+.san-4 {
+  font-family: $san-4;
+}
+
+.serif-1 {
+  font-family: $ser;
+}
+
+
+
+

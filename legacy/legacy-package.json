@@ -1,8 +1,8 @@
 {
   "name": "beautiful_site",
-  "version": "1.0.0",
-  "description": "CSS/SCSS component and desgin library with js tools.",
-  "main": "gulpfile.js",
+  "version": "1.0.2",
+  "description": "CSS/JavaScript framework",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,24 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/matthewLeFevre/beautiful_site.git"
   },
-  "keywords": [
-    "CSS",
-    "SCSS",
-    "JS",
-    "JQuery",
-    "HTML"
-  ],
-  "author": "Matthew R. LeFevre",
-  "license": "MIT",
+  "author": "Matthew LeFevre",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/matthewLeFevre/beautiful_site/issues"
   },
   "homepage": "https://github.com/matthewLeFevre/beautiful_site#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
+    "browser-sync": "^2.18.8",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1"
+    "gulp-sourcemaps": "^2.6.0"
   }
 }

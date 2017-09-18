@@ -1,0 +1,123 @@
+/*********************************************************/
+/* headers */
+/*********************************************************/
+
+/*=============*/
+/*Simple Header*/
+/*=============*/
+
+/*********Mobile First**********/
+
+.simple-header {
+  padding: 5px 1em;
+}
+
+/*********Tablet Second**********/
+@media screen and (min-width: 650px){
+  .simple-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 1em;
+  }
+}
+
+
+
+
+/*=============*/
+/*  Top Header */
+/*=============*/
+
+.top-header {
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (min-width: 650px){
+  .top-header {
+
+  }
+}
+
+
+
+
+/*=============*/
+/*  Logo Header*/
+/*=============*/
+.logo-header {
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 500ms ease;
+}
+
+@media screen and (min-width: 1000px){
+  .logo-header {
+    min-height: 210px;
+  }
+}
+
+
+
+/*=============*/
+/*Sticky Header*/
+/*=============*/
+.sticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.sticky-comp {
+  margin-top: 3em;
+}
+
+
+
+/*=============*/
+/*Logos*/
+/*=============*/
+.txt-logo {
+  display: block;
+  max-width: 50%;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.img-logo-sml {
+  height: 45px;
+
+}
+
+.img-logo-med {
+  height: 90px;
+}
+
+.img-logo-lrg {
+  height: 180px;
+}
+
+.img-logo-progressive {
+  height: 90px;
+  transition: all 500ms ease;
+}
+
+@media screen and (min-width: 650px){
+  .img-logo-progressive {
+    height: 120px;
+  }
+  }
+
+@media screen and (min-width: 1000px){
+    .img-logo-progressive {
+      height: 180px;
+  }
+}
