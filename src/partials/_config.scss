@@ -29,3 +29,11 @@ $bp-1: 400px;
 .upload--img {
   width: 300px;
 }
+
+.upload--img__blowup {
+  position: relative;
+  top: 10em;
+  left: 15%;
+  z-index: 10;
+  width: 500px;
+}

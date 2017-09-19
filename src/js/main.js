@@ -12,6 +12,16 @@ window.onload = function () {
     imgOutput = document.getElementsByTagName("main")[0],
     imgInputFile;
   
+  var clickableImages = function () {
+    var clickImages = document.getElementsByClassName('js-upload--img');
+    console.log("fireing", clickImages);
+    for (var i = 0; i < clickImages.length; i++){
+      clickImages[i].addEventListener("click", function () {
+        this.classList.toggle('upload--img__blowup');
+      });
+    }
+  }
+  
   function removeExistingImages(images) {
     var id, image;
     console.log(imgElGroup, "fireing");
@@ -29,19 +39,22 @@ window.onload = function () {
   
   var renderImgFromInput = function () {
     imgInput.addEventListener("change", function () {
-      removeExistingImages(imgElGroup, imgOutput);
+      removeExistingImages(imgElGroup);
       for (var i = 0; i < imgInput.files.length; i++) {
         var imgEl = document.createElement("img");
         imgInputFile = imgInput.files[i];
         imgEl.src = URL.createObjectURL(imgInputFile);
         imgEl.setAttribute("id", "imgNum" + i);
-        imgEl.setAttribute("class", "upload--img");
+        imgEl.setAttribute("class", "upload--img js-upload--img");
         imgElGroup.push(imgEl);
         imgOutput.appendChild(imgEl);
       }
+      clickableImages();
       console.log(imgInput.files);
     });
   };
+  
+  
   
   
   renderImgFromInput();
