@@ -1,0 +1,51 @@
+.model--container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 10;
+}
+.model {
+  max-width: 400px;
+  padding: 1em;
+  background-color: #EDEDED;
+  margin: 3.5em auto;
+}
+.model--title {
+  font-family: $head;
+  text-align: center;
+}
+.model--figure {
+  width: 100%;
+  margin: 0;
+}
+.model--caption {
+  
+}
+.model--sub-title {
+  font-family: $head;
+  text-align: center;
+}
+.model--img {
+  width: 100%;
+}
+.model--feature-list-container {
+  @include bp($bp-1) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+  
+}
+.model--feature-list {
+  margin: 1em auto;
+  max-width: 9em;
+  padding-left: .5em;
+}
+.model--feature-list-item {
+  font-family: $text;
+}
+.model--btn {
+  font-family: $text;
+}

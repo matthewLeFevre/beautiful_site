@@ -1,0 +1,69 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+main {
+  margin: 0;
+  padding: 0; }
+
+.upload--img {
+  width: 300px; }
+
+.model--container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10; }
+
+.model {
+  max-width: 400px;
+  padding: 1em;
+  background-color: #EDEDED;
+  margin: 3.5em auto; }
+
+.model--title {
+  font-family: Tahoma, Geneva, sans-serif;
+  text-align: center; }
+
+.model--figure {
+  width: 100%;
+  margin: 0; }
+
+.model--sub-title {
+  font-family: Tahoma, Geneva, sans-serif;
+  text-align: center; }
+
+.model--img {
+  width: 100%; }
+
+@media screen and (min-width: 400px) {
+  .model--feature-list-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: start;
+        align-content: flex-start; } }
+
+.model--feature-list {
+  margin: 1em auto;
+  max-width: 9em;
+  padding-left: .5em; }
+
+.model--feature-list-item {
+  font-family: "Trebuchet MS", Helvetica, sans-serif; }
+
+.model--btn {
+  font-family: "Trebuchet MS", Helvetica, sans-serif; }
+
+/*# sourceMappingURL=maps/bs.css.map */

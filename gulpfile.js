@@ -11,7 +11,7 @@ gulp.task('css', function() {
     .pipe( sass().on('error', sass.logError))
     .pipe( autoprefixer( {browsers: ['last 2 versions'] }))
     .pipe( sourcemaps.write('./maps'))
-    .pipe( gulp.dest('./'))
+    .pipe( gulp.dest('src/'))
     .pipe( browserSync.stream())
 });
 
