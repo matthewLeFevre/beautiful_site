@@ -108,6 +108,49 @@ window.onload = function () {
   }
   model.ready();
   typeFormat.ready();
+  
+   var imgElGroup = [],
+    imgInput = document.getElementsByName("imgIn")[0],
+    imgOutput = document.getElementsByTagName("main")[0],
+    imgInputFile;
+  
+  function clickableImages () {
+    var clickImages = document.getElementsByClassName('js-upload--img');
+    for (var i = 0; i < clickImages.length; i++){
+      clickImages[i].addEventListener("click", function () {
+        this.classList.toggle('upload--img__blowup');
+      });
+    }
+  }
+  
+  function removeExistingImages(images) {
+    var id, image;
+    for (var i = 0; i < images.length; i++) {
+        id = "imgNum" + i;
+        image = document.getElementById(id);
+        imgOutput.removeChild(image);
+        imgElGroup = [];
+      }
+  }
+  
+  var renderImgFromInput = function () {
+    imgInput.addEventListener("change", function () {
+      removeExistingImages(imgElGroup);
+      for (var i = 0; i < imgInput.files.length; i++) {
+        var imgEl = document.createElement("img");
+        imgInputFile = imgInput.files[i];
+        imgEl.src = URL.createObjectURL(imgInputFile);
+        imgEl.setAttribute("id", "imgNum" + i);
+        imgEl.setAttribute("class", "upload--img js-upload--img");
+        imgElGroup.push(imgEl);
+        imgOutput.appendChild(imgEl);
+      }
+      clickableImages();
+    });
+  };
+
+  renderImgFromInput();
+  
 };
 
  
