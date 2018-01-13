@@ -1,0 +1,30 @@
+.bs-btn {
+    padding: .25em .5em;
+    // margin: .25rem;
+    border: $border-width solid var(--grey);
+    background-color: var(--grey);
+    border-radius: 2px;
+    cursor: pointer;
+    color: var(--black);
+    &:active, &:visited, &:focus {
+      outline: none;
+    }
+    &__lng {
+      @extend .bs-btn;
+      padding: .25em 3em;
+      &__hollow {
+        @extend .bs-btn__lng;
+        border: $border-width solid var(--black);
+        background-color: transparent;
+      }
+    }
+    &__full {
+      @extend .bs-btn;
+      width: 100%;
+    }
+    &__hollow {
+      @extend .bs-btn;
+      border: $border-width solid var(--black);
+      background-color: transparent;
+    }
+	}

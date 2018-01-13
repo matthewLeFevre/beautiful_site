@@ -1,0 +1,38 @@
+.bs-card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: var(--white);
+    &--container {
+        border-radius: 0 0 10px 10px;
+    }
+    &--img {
+        max-width: 100%;
+        border-radius: 10px 10px 0 0;
+        &-container {
+            width: 300px;
+            height: 200px;
+        }
+    }
+    &--body {
+        padding: .5rem 1rem;
+    }
+    &--hdr {
+        background-color: var(--grey2);
+        color: var(--black);
+        padding: .5rem 1rem;
+    }
+    &--ftr {
+        padding: .5rem 1rem;
+        border-radius: 0 0 10px 10px;
+        background-color: var(--grey1);
+    }
+}
+
+.bs-img {
+    width: 100%;
+    &--container {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,92 @@
+.bs-h1 {
+	@include typ-hd($x2lrg);
+	&__sub {
+		@extend .bs-h1;
+		color: $faded;
+	}
+	&__link {
+		margin: 0;
+	}
+	&__link > a{
+		@extend .bs-h1;
+		color: black;
+	}
+}
+.bs-h2 {
+	@include typ-hd($xlrg);
+	&__sub {
+		@extend .bs-h2;
+		color: $faded;
+	}
+	&__link {
+		margin: 0;
+	}
+	&__link > a{
+		@extend .bs-h2;
+		color: black;
+	}
+}
+.bs-h3 {
+	@include typ-hd($lrg);
+	&__sub {
+		@extend .bs-h3;
+		color: $faded;
+	}
+	&__link {
+		margin: 0;
+	}
+	&__link > a{
+		@extend .bs-h3;
+		color: black;
+	}
+}
+.bs-h4 {
+	@include typ-hd($mod);
+	&__sub {
+		@extend .bs-h4;
+		color: $faded;
+	}
+	&__link {
+		margin: 0;
+	}
+	&__link > a{
+		@extend .bs-h4;
+			color: black;
+	}
+}
+.bs-h5 {
+	@include typ-hd($mdm);
+	&__sub {
+		@extend .bs-h5;
+		color: $faded;
+	}
+	&__link {
+		margin: 0;
+	}
+	&__link > a{
+		@extend .bs-h5;
+		color: black;
+	}
+}
+.bs-h6 {
+	@include typ-hd($mid);
+	&__sub {
+		@extend .bs-h6;
+		color: $faded;
+	}
+	&__link {
+		margin: 0;
+	}
+	&__link > a{
+		@extend .bs-h6;
+		color: black;
+	}
+}
+
+.bs-p {
+	@include txt-blk($main);
+	&__caption {
+		@include txt-blk($main);
+		color: $faded;
+	}
+}

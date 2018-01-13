@@ -1,0 +1,116 @@
+*  {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+//Variables
+
+:root {
+  --white: #fff;
+  --blue: #1982C4;
+  --blue1: #3F88C5;
+  --green: #95C623;
+  --yellow: #FFCA3A;
+  --red: #D72638;
+  --purple: #5F0F40;
+  --grey7: #464646;
+  --grey6: #5D5D5D;
+  --grey5: #8B8B8B;
+  --grey4: #A2A2A2;
+  --grey3: #B9B9B9;
+  --grey2: #EBEBEB;
+  --grey1: #D1D1D1;
+  --grey: #b2b2b2;
+  --black: #333;
+  --opac: rgba(0,0,0,.75);
+}
+  
+  $x3lrg:   60px;
+  $x2lrg:   50px;
+  $xlrg:    40px;
+  $lrg:     35px;
+  $mod:     30px;
+  $mdm:     25px;
+  $mid:     20px;
+  $main:    18px;
+  $sml:     15px;
+  $tiny:    12px;
+
+  $border-width: .1em;
+  
+  //font
+  $s-srf:   Arial, Helvetica, sans-serif;
+  $s-srf2: "Trebuchet MS", Helvetica, sans-serif;
+  $s-srf3: "Montserrat", sans-serif;
+  $srf:    "Noticia Text", serif;
+  
+  //color
+  $light: white;
+  $faded: rgba(0,0,0,.5);
+  $dark: #5C595D;
+  
+  //type
+  
+  @mixin typ-hd($size) {
+    margin: 0;
+    padding: 0;
+    font-family: $s-srf;
+    font-size: $size;
+    font-weight: 700;
+  }
+  @mixin txt-build($size) {
+    font-family: $s-srf2;
+    font-size: $size;
+  }
+
+	@mixin txt-blk($size) {
+		margin: 0;
+		padding: 0;
+		font-family: $s-srf2;
+		font-size: $size;
+  }
+  
+  // Z-Index
+  $zi-0000: 0;
+  $zi-0010: 10;
+  $zi-0020: 20;
+  $zi-0030: 30;
+  $zi-0040: 40;
+
+  // Media Quieries (break points)
+
+  $bp-10: 600px;
+  $bp-15: 800px;
+  $bp-20: 1000px;
+
+  @mixin bp($bp) {
+    @media screen and (min-width: $bp)  {
+      @content;
+    }
+  }
+
+  // Layout
+
+  @mixin flex-parent($content: center, $align: center) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: $content;
+    align-items: $align;
+	}
+
+  
+ 
+  
+
+  
+
+  
+
+

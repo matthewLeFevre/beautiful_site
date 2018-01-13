@@ -3,3 +3,6 @@
 /test/*
 gulpfile.js
 /stage/*
+/src/*
+/legacy/*
+/assets/scss/_custom.scss

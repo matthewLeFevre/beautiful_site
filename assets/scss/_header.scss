@@ -1,0 +1,344 @@
+$bp1: 600px;
+$bp1-5: 800px;
+$bp2: 1000px;
+
+// Beautiful site headers are wide and complex
+//
+// I want to organize and simplify this code so that it can
+// be reused.
+//
+@mixin hdr () {
+  position:         relative;
+  background-color: var(--grey2);
+  @include bp($bp-20) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.bs-hdr {
+  // This is a thin header
+  &__sml {
+    height: 50px;
+    @include hdr;  
+  }
+  &__mdm {
+    height: 80px;
+    @include hdr;
+  }
+  &__lrg {
+    height: 100px;
+    @include hdr;
+  }
+}
+
+
+
+@mixin nav () {
+  height: 0;
+  z-index: $zi-0040;
+  position: relative;
+  @include bp($bp-15) {
+    height: 100vh;
+    width: 0;
+    position: absolute;
+    right: 0;
+  }
+  @include bp($bp-20) {
+    height: 100%;
+    width: auto;
+    position: static;
+  }
+}
+.bs-nav {
+  @include nav;
+
+  &__drop {
+    height: 50vh;
+    @include bp($bp-15) {
+      height: 100vh;
+      width: 40vw;
+    }
+    @include bp($bp-20) {
+      height: auto;
+    }
+  }
+
+  &--item-list {
+    margin: 0;
+    padding: 0;
+    @include bp ($bp-20) {
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-flow: row nowrap;
+    }
+  }
+
+  &--item { 
+    height: 50px;
+    list-style: none; 
+    @include bp ($bp-20) {
+      height: 100%;
+    }
+  }
+
+  &--link { 
+    height: 100%;
+    padding: 0 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: $mdm;
+    font-family: $s-srf;
+    font-weight: 500; 
+    transition: all 300ms ease;
+    
+    &:hover {
+      background-color: var(--grey4);
+    }
+    
+    &__selected {
+      background-color: var(--grey4);
+    }
+  }
+  // Used in the header and not in the nav
+  &--btn {
+    height: 5px;
+    width: 45px;
+    position: relative;
+    background-color: var(--grey7);
+    transition: all 600ms ease;
+
+    &:before {
+      content: " ";
+      height: 5px;
+      width: 45px;
+      position: absolute;
+      bottom: 12px;
+      background-color: var(--grey7);
+      transition: all 300ms ease;
+    }
+    &:after {
+      content: " ";
+      height: 5px;
+      width: 45px;
+      position: absolute;
+      top: 12px;
+      background-color: var(--grey7);
+      transition: all 300ms ease;
+    }
+
+    &__closed {
+      background-color: transparent;
+      transition: none;
+    }
+    &__closed:before {
+      bottom: 0;
+      transform: rotate(-135deg);
+    }
+    &__closed:after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+    
+    &--panel {
+      height: 50px;
+      width: 60px;
+      position: absolute;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      @include bp($bp-20) {
+        display: none;
+      }
+    }
+  }
+
+}
+
+
+
+@mixin logo-txt (){
+  
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $s-srf;
+  transition: all 300ms ease;
+  @include bp($bp-20) {
+    justify-content: center;
+  }
+
+  &-link {
+    text-decoration: none;
+  }
+}
+.bs-logo {
+  &__sml-txt {
+    height:    50px;
+    font-size: $lrg;
+    @include logo-txt;
+  }
+  &__mdm-txt {
+    height:    80px;
+    font-size: $xlrg;
+    @include logo-txt;
+  }
+  &__lrg-txt {
+    height:    100px;
+    font-size: $x2lrg;
+    @include logo-txt;
+  }
+}
+
+
+
+.form {
+  padding: .5rem;
+  max-width: 400px;
+  margin: 0 auto;
+
+  &__page {}
+  &__small {}
+  &__large {}
+  &--title {
+    @include txt-build($mod);
+    margin: 0;
+  }
+  &--fldst__base {
+    border: 0;
+    padding: .5rem;
+    margin: 3em 0;
+    position: relative;
+  }
+  &--fldst__text {
+    display: flex;
+    flex-direction: column;
+  }
+  &--fldst__btn {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 2em;
+    
+    // width: 100%;
+  }
+  &--fldst__hidden {
+    display: none;
+  }
+  &--label {
+    display: block;
+    @include txt-build($mid);
+    position: relative;
+    padding: .5em;
+    &__pop {
+      position: absolute;
+      z-index: 50;
+      top: .5em;
+      transition: all ease 200ms;
+    }
+    &__radio {
+      border-radius: 100%;
+      height: 20px;
+      width: 20px;
+      background-color: white;
+      border: solid 3px black;
+      transition: all 300ms ease;
+      display: inline-block;
+        margin-right: 1em;
+    }
+    &__side {
+      @include txt-build($mid);
+    }
+  }
+  &--input__text {
+    display: block;
+    width: 100%;
+    padding: .5em .5em .2em .5em ;
+    position: relative;
+    z-index: 100;
+    border: 2px solid rgba(0,0,0,0);
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    @include txt-build(mid);
+    &:focus:invalid {
+      // border: none;
+      
+      border-bottom: 2px solid red;
+      outline: none;
+    }
+    &:valid {
+      outline: none;
+      border-bottom: 2px solid blue;
+    }
+    &:focus + .form--label__pop {
+      top: -1em;
+      @include txt-build($tiny);
+    }
+    &:valid + .form--label__pop {
+      top: -1em;
+      @include txt-build($tiny);
+    }
+  }
+  &--input__date {}
+  &--input__radio {
+    visibility: hidden;
+    &:checked + .form--label__radio {
+      background-color: var(--blue2);
+    }
+  }
+  &--textarea {
+    height: 6em;
+    width: 100%;
+    resize: none;
+    padding: .5em;
+    @include txt-blk($main);
+  }
+  &--btn {
+    border: none;
+    background: var(--blue2);
+    @include txt-blk($mod);
+    color: rgba(255,255,255,1.9);
+    padding: .5em 1em;
+    margin: 2px;
+    cursor: pointer;
+    transition: transition all 300ms;
+    &:hover {
+      background-color: rgba(0,0,0,.7);
+    }
+  }
+  &--btn__back {
+    border: none;
+    background: red;
+    @include txt-build($mid);
+    color: rgba(255,255,255,1.9);
+    padding: .5em 1em;
+    margin: 2px;
+    cursor: pointer;
+    transition: transition all 300ms;
+    visibility: hidden;
+    &:hover {
+      background-color: rgba(0,0,0,.7);
+    }
+  }
+  &--link {
+    margin: 2px;
+    @include txt-build($mid);
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.bs-img__banner__sml {
+  width: 300px;
+}

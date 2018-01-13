@@ -1,0 +1,35 @@
+.bs-s {
+	width: 100%;
+	padding: 2rem;
+	&__ribbon{
+		@extend .bs-s;
+		height: 80px;
+	}
+	&__banner {
+		padding: 1em;
+		min-height: 200px;
+		@include bp($bp-10) {
+			min-height: 250px;
+		}
+		@include bp($bp-15) {
+			min-height: 400px;
+		}
+	}
+	&__sml {
+		@extend .bs-s;
+		min-height: 200px;
+	}
+	&__mid {
+		@extend .bs-s;
+		min-height: 300px;
+	}
+	&__lrg {
+		@extend .bs-s;
+		min-height: 400px;
+	}
+	&__full {
+		@extend .bs-s;
+		height: 100%;
+		width: 100%;
+	}
+}
