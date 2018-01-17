@@ -8,8 +8,7 @@ $bp2: 1000px;
 // be reused.
 //
 @mixin hdr () {
-  position:         relative;
-  background-color: var(--grey2);
+  position: relative;
   @include bp($bp-20) {
     display: flex;
     justify-content: flex-start;
@@ -36,8 +35,11 @@ $bp2: 1000px;
 
 @mixin nav () {
   height: 0;
-  z-index: $zi-0040;
   position: relative;
+  z-index: $zi-0040;
+  overflow: hidden;
+  background-color: white;
+  transition: all 350ms ease;
   @include bp($bp-15) {
     height: 100vh;
     width: 0;
@@ -108,7 +110,7 @@ $bp2: 1000px;
   &--btn {
     height: 5px;
     width: 45px;
-    position: relative;
+    position: absolute;
     background-color: var(--grey7);
     transition: all 600ms ease;
 
@@ -147,7 +149,7 @@ $bp2: 1000px;
     &--panel {
       height: 50px;
       width: 60px;
-      position: absolute;
+      position: relative;
       right: 0;
       display: flex;
       justify-content: center;
@@ -176,7 +178,7 @@ $bp2: 1000px;
     justify-content: center;
   }
 
-  &-link {
+  &--link {
     text-decoration: none;
   }
 }

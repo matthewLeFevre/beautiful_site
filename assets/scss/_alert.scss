@@ -7,25 +7,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background-color: var(--grey3);
-
-  &__error {
-    @extend .bs-alert;
-    background-color: var(--red);
-    color: var(--white);
-  }
-
-  &__neutral {
-    @extend .bs-alert;
-    background-color: var(--blue1);
-    color: var(--black);
-  }
-
-  &__success {
-    @extend .bs-alert;
-    background-color: var(--green);
-    color: var(--black);
-  }
 
   &--close {
     height: 50px;

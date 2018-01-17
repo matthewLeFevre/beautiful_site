@@ -325,6 +325,18 @@ figure {
 .bs-border__none {
   border: none; }
 
+.bs-success {
+  background-color: var(--green);
+  color: var(--black); }
+
+.bs-neutral {
+  background-color: var(--blue1);
+  color: var(--black); }
+
+.bs-error {
+  background-color: var(--red);
+  color: var(--white); }
+
 .bs-s, .bs-s__ribbon, .bs-s__sml, .bs-s__mid, .bs-s__lrg, .bs-s__full {
   width: 100%;
   padding: 2rem; }
@@ -413,8 +425,7 @@ figure {
 
 .bs-hdr__sml {
   height: 50px;
-  position: relative;
-  background-color: var(--grey2); }
+  position: relative; }
   @media screen and (min-width: 1000px) {
     .bs-hdr__sml {
       display: -webkit-box;
@@ -429,8 +440,7 @@ figure {
 
 .bs-hdr__mdm {
   height: 80px;
-  position: relative;
-  background-color: var(--grey2); }
+  position: relative; }
   @media screen and (min-width: 1000px) {
     .bs-hdr__mdm {
       display: -webkit-box;
@@ -445,8 +455,7 @@ figure {
 
 .bs-hdr__lrg {
   height: 100px;
-  position: relative;
-  background-color: var(--grey2); }
+  position: relative; }
   @media screen and (min-width: 1000px) {
     .bs-hdr__lrg {
       display: -webkit-box;
@@ -461,8 +470,12 @@ figure {
 
 .bs-nav {
   height: 0;
+  position: relative;
   z-index: 40;
-  position: relative; }
+  overflow: hidden;
+  background-color: white;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease; }
   @media screen and (min-width: 800px) {
     .bs-nav {
       height: 100vh;
@@ -533,7 +546,7 @@ figure {
   .bs-nav--btn {
     height: 5px;
     width: 45px;
-    position: relative;
+    position: absolute;
     background-color: var(--grey7);
     -webkit-transition: all 600ms ease;
     transition: all 600ms ease; }
@@ -570,7 +583,7 @@ figure {
     .bs-nav--btn--panel {
       height: 50px;
       width: 60px;
-      position: absolute;
+      position: relative;
       right: 0;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -607,7 +620,7 @@ figure {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
-  .bs-logo__sml-txt-link {
+  .bs-logo__sml-txt--link {
     text-decoration: none; }
 
 .bs-logo__mdm-txt {
@@ -631,7 +644,7 @@ figure {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
-  .bs-logo__mdm-txt-link {
+  .bs-logo__mdm-txt--link {
     text-decoration: none; }
 
 .bs-logo__lrg-txt {
@@ -655,7 +668,7 @@ figure {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
-  .bs-logo__lrg-txt-link {
+  .bs-logo__lrg-txt--link {
     text-decoration: none; }
 
 .form {
@@ -840,7 +853,7 @@ figure {
     .c-logo-subltrs {
       display: block; } }
 
-.bs-alert, .bs-alert__error, .bs-alert__neutral, .bs-alert__success {
+.bs-alert {
   height: 50px;
   width: 300px;
   margin: .5em 0;
@@ -853,15 +866,6 @@ figure {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .bs-alert__error {
-    background-color: var(--red);
-    color: var(--white); }
-  .bs-alert__neutral {
-    background-color: var(--blue1);
-    color: var(--black); }
-  .bs-alert__success {
-    background-color: var(--green);
-    color: var(--black); }
   .bs-alert--close {
     height: 50px;
     width: 50px;

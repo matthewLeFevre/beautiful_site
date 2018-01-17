@@ -1,20 +1,24 @@
 
-// let menu_btn = document.getElementById("js-menu-btn"),
-//     menu_ico = document.getElementsByClassName("bs-hdr__sml--menu")[0],
-//     menu_nav = document.getElementById("js-bs-nav"),
-//     menu_height = document.getElementsByClassName("bs-nav--item").length * 50,
-//     logo        = document.getElementsByClassName("bs-hdr__sml--logo")[0];
+// Nav Btn Js
 
-// var open = false;
+let menu_btn    = document.getElementById("js-menu-btn"),
+    menu_ico    = document.getElementsByClassName("bs-nav--btn")[0],
+    menu_nav    = document.getElementById("js-bs-nav"),
+    menu_height = document.getElementsByClassName("bs-nav--item").length * 50;
 
-// menu_btn.addEventListener("click", slideToggle);
+var open = false;
+
+if(menu_btn != null) {
+  menu_btn.addEventListener("click", slideToggle);
+}
+
   
 
-// function slideToggle() {
-//   menu_ico.classList.toggle("bs-hdr__sml--menu__closed");
-//   menu_nav.classList.toggle("drop-down");
-//   logo.classList.toggle("bs-b__black");
-// }
+function slideToggle() {
+  menu_ico.classList.toggle("bs-nav--btn__closed");
+  menu_nav.classList.toggle("bs-nav__drop");
+  // logo.classList.toggle("bs-b__black");
+}
 
 
 // let btn = document.getElementsByClassName("js-btn")[0];
@@ -86,21 +90,17 @@
 
 // Alert js code
 
-let success = document.getElementsByClassName("bs-alert__success"),
-    neutral = document.getElementsByClassName("bs-alert__neutral"),
-    error   = document.getElementsByClassName("bs-alert__error");
+let alerts = document.getElementsByClassName("bs-alert");
 
-function removeAlert (alerts) {
-  for( let i = 0; i < alerts.length; i++) {
-    alerts[i].addEventListener("click", function(){
-      alerts[i].style.display = "none";
+function removeAlert (alertsArr) {
+  for( let i = 0; i < alertsArr.length; i++) {
+    alertsArr[i].addEventListener("click", function(){
+      alertsArr[i].style.display = "none";
     });
   }
 }
 
-removeAlert(success);
-removeAlert(neutral);
-removeAlert(error);
+removeAlert(alerts);
 
 
 
