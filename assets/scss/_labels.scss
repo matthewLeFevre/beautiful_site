@@ -1,0 +1,26 @@
+.bs-label {
+  min-width: 300px;
+  max-width: 650px;
+  margin: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  &--wrapper {
+   text-decoration: none; 
+  }
+  &--img {
+    height: 120px;
+    width: 120px;
+  }
+  &--txt {
+    margin-left: 1em;
+  }
+  &--heading {
+    margin-top: 0;
+    margin-bottom: .5em;
+  }
+  &--date {
+    font-size: $sml;
+    color: $dark;
+  }
+}

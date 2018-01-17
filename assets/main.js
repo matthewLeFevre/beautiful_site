@@ -1,20 +1,20 @@
 
-let menu_btn = document.getElementById("js-menu-btn"),
-    menu_ico = document.getElementsByClassName("bs-hdr__sml--menu")[0],
-    menu_nav = document.getElementById("js-bs-nav"),
-    menu_height = document.getElementsByClassName("bs-nav--item").length * 50,
-    logo        = document.getElementsByClassName("bs-hdr__sml--logo")[0];
+// let menu_btn = document.getElementById("js-menu-btn"),
+//     menu_ico = document.getElementsByClassName("bs-hdr__sml--menu")[0],
+//     menu_nav = document.getElementById("js-bs-nav"),
+//     menu_height = document.getElementsByClassName("bs-nav--item").length * 50,
+//     logo        = document.getElementsByClassName("bs-hdr__sml--logo")[0];
 
-var open = false;
+// var open = false;
 
-menu_btn.addEventListener("click", slideToggle);
+// menu_btn.addEventListener("click", slideToggle);
   
 
-function slideToggle() {
-  menu_ico.classList.toggle("bs-hdr__sml--menu__closed");
-  menu_nav.classList.toggle("drop-down");
-  logo.classList.toggle("bs-b__black");
-}
+// function slideToggle() {
+//   menu_ico.classList.toggle("bs-hdr__sml--menu__closed");
+//   menu_nav.classList.toggle("drop-down");
+//   logo.classList.toggle("bs-b__black");
+// }
 
 
 // let btn = document.getElementsByClassName("js-btn")[0];
@@ -72,3 +72,35 @@ function slideToggle() {
 //     });
     
 // });
+
+
+
+//Alert
+
+
+// 
+
+
+
+
+
+// Alert js code
+
+let success = document.getElementsByClassName("bs-alert__success"),
+    neutral = document.getElementsByClassName("bs-alert__neutral"),
+    error   = document.getElementsByClassName("bs-alert__error");
+
+function removeAlert (alerts) {
+  for( let i = 0; i < alerts.length; i++) {
+    alerts[i].addEventListener("click", function(){
+      alerts[i].style.display = "none";
+    });
+  }
+}
+
+removeAlert(success);
+removeAlert(neutral);
+removeAlert(error);
+
+
+
