@@ -36,3 +36,42 @@
         height: auto;
     }
 }
+
+.bs-media {
+	min-width: 300px;
+	max-width: 650px;
+	text-decoration: none;
+	font-family: $s-srf;
+	margin: 1em;
+	display: block;
+	&--body {
+		margin: 0;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start; 
+	 }
+	 &--img {
+		 height: 120px;
+		 width: 120px;
+	 }
+	 &--cnt {
+		 margin-left: 1em;
+	 }
+	 &--heading {
+		 margin-top: 0;
+		 margin-bottom: .5em;
+		 font-family: $s-srf2;
+	 }
+	 &--date {
+		 font-size: $sml;
+		 color: $dark;
+	 }
+	 &--txt {
+		 margin-bottom: 0;
+	 }
+	 &--ftr {
+		 width: 100%;
+		 padding: 1em;
+		 background-color: var(--grey3);
+	 }
+}

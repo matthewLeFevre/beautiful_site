@@ -2,7 +2,7 @@
 
 ## Components
 
-  1. Label
+  1. Media
   2. Card
   3. Alert
 
@@ -34,18 +34,18 @@ The Card Component markup
     
 ```
 
-### Label Component
+### Media Component
 
 The Label component markup is as follows
 
 ```html
 
-<a class="bs-label--wrapper">
-  <figure class="bs-label">
-    <img class="bs-label--img" src="#" alt="Mountain Area">
+<a class="bs-media--wrapper">
+  <figure class="bs-media">
+    <img class="bs-media--img" src="#" alt="Mountain Area">
     <figcaption class="bs-label--txt">
-      <h3 class="bs-label--heading">Label Title</h3>
-      <span class="bs-label--date">1/16/2018</span>
+      <h3 class="bs-media--heading">Label Title</h3>
+      <span class="bs-media--date">1/16/2018</span>
       <p>
           Bacon ipsum dolor amet swine landjaeger andouille ground round, turducken shoulder buffalo beef ribs ham hock sausage cow meatloaf beef.
       </p>

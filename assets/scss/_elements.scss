@@ -1,0 +1,224 @@
+/*
+* Beautiful Site Elements
+*
+* Elements are simple and reusable pieces of code that are  
+* commonly used in BS components. 
+*
+* They can be used in any location or area.
+*/
+
+/***********************************************************
+* Buttons
+***********************************************************/
+
+// template mixin
+@mixin btn () {
+  @include effect(250ms);
+  padding: .5em 1.75em;
+  background-color: var(--grey1);
+  border: none;
+  border-radius: .1em;
+  font-family: $s-srf;
+  font-weight: 700;
+  color: var(--black);
+  transition-property: background-color, color;
+  display:block;
+  margin-top: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--grey2);
+    color: var(--grey7);
+  }
+};
+
+.bs-btn {
+  @include btn();
+  &__ico {
+    @include btn();
+    padding: 8.5px;
+  }
+  &__lng {
+    @include btn();
+    width: 280px;
+  }
+  &__ful {
+    @include btn();
+    width: 100%;
+  }
+}
+
+/***********************************************************
+* Links
+***********************************************************/
+
+//template mixin
+@mixin lnk () {
+  text-decoration: none;
+  cursor: pointer;
+  &:visited {}
+  &:hover {}
+  &:focus {}
+}
+
+.bs-lnk {
+  &__hed {
+    @include lnk();
+    color: inherit;
+  }
+  &__wrp {
+    @include lnk();
+  }
+  &__txt {
+    @include lnk();
+    color: blue;
+  }
+}
+
+// Form centered
+
+/***********************************************************
+* Inputs
+***********************************************************/
+
+.bs-ipt {}
+
+/***********************************************************
+* Labels
+***********************************************************/
+
+.bs-lbl {}
+
+// Typographic
+
+/***********************************************************
+* Lists
+***********************************************************/
+
+.bs-lst {
+  font-family: $s-srf;
+  &--item {
+    padding: .30em;
+    &__nst {
+      padding: .25em;
+    }
+  }
+}
+
+/***********************************************************
+* Headings
+***********************************************************/
+// template mixins
+@mixin hed () {
+  font-family: $s-srf;
+  margin: .2em 16px .5em 16px;
+}
+.bs-hed {
+  @include hed();
+  &__scd {
+    @include hed();
+    color: var(--grey6);
+  }
+  &__trd {
+    @include hed();
+    font-style: italic;
+    color: var(--grey6);
+  }
+}
+
+/***********************************************************
+* Paragraphs
+***********************************************************/
+// template mixin
+@mixin par ($margin: 1em,
+            $line-height: 150%) {
+
+  margin: $margin 16px;
+  font-family: $s-srf2;
+  line-height: $line-height;
+}
+
+.bs-par {
+  @include par();
+  &__summary {
+    @include par();
+    font-style: italic;
+    color: var(--grey4);
+  }
+  &__caption {
+    @include par(.5em, 120%);
+  } 
+}
+
+/***********************************************************
+* Images
+***********************************************************/
+
+//template img
+@mixin img($w: 0, $h: 0) {
+  display: block;
+  width: $w;
+  height: $h;
+}
+
+@mixin img__responsive () {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@mixin img__force-full () {
+  display: block;
+}
+
+@mixin img__container--force-img ($w: 0px, $h: 0px) {
+  width: $w;
+  height: $h;
+  overflow: none;
+}
+
+.test__container {
+  width: 400px;
+  height: 600px;
+  background-color: tan;
+  padding: 0 50px;
+}
+
+.bs-img {
+  @include img();
+  &__ico {
+    @include img(28px, 28px);
+  };
+  &__1x1 {
+    @include img(300px, 300px);
+  }
+  &__5x4 {
+    @include img(300px, 240px);
+  }
+  &__4x3 {
+    @include img(300px, 225px);
+  }
+  &__3x2 {
+    @include img(300px, 200px);
+  }
+  &__8x5 {
+    @include img(300px, 187.5px);
+  }
+  &__16x9 {
+    @include img(300px, 168.75px);
+  }
+  &__3x1 {
+    @include img(300px, 100px);
+  }
+  &__responsive {
+    @include img__responsive ();
+  }
+  &__custom {
+    display: block;
+    width: 500px;
+    height: 400px;
+  }
+  &--container__force-img {
+    @include img__container--force-img (300px, 225px);
+  }
+}

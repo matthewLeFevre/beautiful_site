@@ -39,7 +39,7 @@ $bp2: 1000px;
   z-index: $zi-0040;
   overflow: hidden;
   background-color: white;
-  transition: all 350ms ease;
+  transition: all 300ms ease;
   @include bp($bp-15) {
     height: 100vh;
     width: 0;
@@ -56,13 +56,26 @@ $bp2: 1000px;
   @include nav;
 
   &__drop {
-    height: 50vh;
+    height: 275px;
+    overflow: auto;
+    overflow-x: hidden;
     @include bp($bp-15) {
       height: 100vh;
       width: 40vw;
+      overflow: hidden;
     }
     @include bp($bp-20) {
       height: auto;
+    }
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: var(--grey5);
     }
   }
 

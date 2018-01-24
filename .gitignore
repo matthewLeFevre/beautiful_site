@@ -8,3 +8,4 @@ gulpfile.js
 /assets/scss/_custom.scss
 /assets/img/*
 /legacy/*
+/.vscode/*

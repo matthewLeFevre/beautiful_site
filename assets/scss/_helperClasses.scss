@@ -1,107 +1,4 @@
-//
-// text coloring
-//
-.bs-blue {
-  color: var(--blue);
-  &__hollow {
-    color: var(--blue);
-    border: $border-width solid var(--blue);}
-    &__background {
-      color: var(--white);
-      border: $border-width solid var(--blue);
-    background-color: var(--blue);
-  }
- }
-.bs-green {
-  color: var(--green);
-  &__hollow {
-    color: var(--green);
-    border: $border-width solid var(--green);
-  }
-  &__background {
-    border: $border-width solid var(--green);
-    color: var(--white);
-    background-color: var(--green);
-  }
- }
-.bs-yellow {
-  color: var(--yellow);
-  &__hollow {
-    color: var(--yellow);
-    border: $border-width solid var(--yellow);
-  }
-  &__background {
-    border: $border-width solid var(--yellow);
-    color: var(--white);
-    background-color: var(--yellow);
-  }
- }
-.bs-red {
-  color: var(--red);
-  &__hollow {
-    color: var(--red);
-    border: $border-width solid var(--red);
-  }
-  &__background {
-    border: $border-width solid var(--red);
-    color: var(--white);
-    background-color: var(--red);
-  }
- }
-.bs-purple {
-  color: var(--purple);
-  &__hollow {
-    color: var(--purple);
-    border: $border-width solid var(--purple);
-  }
-  &__background {
-    border: $border-width solid var(--purple);
-    color: var(--white);
-    background-color: var(--purple);
-  }
- }
-.bs-grey {
-  color: var(--grey);
-  &__hollow {
-    color: var(--grey);
-    border: $border-width solid var(--grey);
-  }
-  &__background {
-    border: $border-width solid var(--grey);
-    color: var(--white);
-    background-color: var(--grey);
-  }
- }
-.bs-black {
-  color: var(--black);
-  &__hollow {
-    color: var(--black);
-    border: $border-width solid var(--black);
-  }
-  &__background {
-    border: $border-width solid var(--black);
-    color: var(--white);
-    background-color: var(--black);
-  }
- }
- .bs-white {
-  color: var(--white);
-  &__background {
-    color: var(--black);
-    background-color: var(--white);
-  }
-  &__card {
-    background-color: var(--white);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
- }
 
- .bs-b__black {
-   background-color: var(--black);
- }
- .bs-b__blue1 {
-   background-color: var(--blue1);
- }
 //
 // text sizing
 //
@@ -126,38 +23,6 @@
   @include flex-parent(space-between, flex-start);
 }
 
-.bs-space {
-  margin: 1em;
-  &__top {
-    margin-top: 1em;
-  }
-  &__bottom {
-    margin-bottom: 1em;
-  }
-  &__top-bot {
-    margin:1em 0;
-  }
-  &__left {
-    margin-left: 1em;
-  }
-  &__right {
-    margin-right: 1em;
-  }
-  &__sides {
-    margin: 0 1em;
-  }
-  &__ctr-vrt {
-    margin: 0 auto;
-    display: block;
-  }
-}
-
-.bs-border {
-  &__none {
-    border: none;
-  }
-}
-
 // behaviors
 .bs-success {
   background-color: var(--green);
@@ -170,4 +35,19 @@
 .bs-error {
   background-color: var(--red);
   color: var(--white);
+}
+
+.bs-code {
+  padding: 1em;
+  background-color: var(--grey3);
+  font-size: $main;
+  font-family: $s-srf;
+}
+
+.bs-tag {
+  color: blue;
+}
+
+.bs-attr {
+  color: red;
 }

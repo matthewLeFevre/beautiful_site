@@ -4,7 +4,8 @@
 let menu_btn    = document.getElementById("js-menu-btn"),
     menu_ico    = document.getElementsByClassName("bs-nav--btn")[0],
     menu_nav    = document.getElementById("js-bs-nav"),
-    menu_height = document.getElementsByClassName("bs-nav--item").length * 50;
+    menu_height = document.getElementsByClassName("bs-nav--item").length * 50,
+    menu_on     = false;
 
 var open = false;
 
@@ -17,7 +18,74 @@ if(menu_btn != null) {
 function slideToggle() {
   menu_ico.classList.toggle("bs-nav--btn__closed");
   menu_nav.classList.toggle("bs-nav__drop");
+  // if (menu_on && window.innerWidth < 800) {
+  //   menu_on = false;
+  //   menu_nav.style.height = "0px";
+  // } else {
+  //   menu_on = true;
+  //   menu_nav.style.height = menu_height + "px";
+  // }
   // logo.classList.toggle("bs-b__black");
+}
+
+// color code js
+
+let code = document.getElementsByClassName("bs-code");
+
+for (let i = 0; i < code.length; i++) {
+  let colored = colorCode(code[i]);
+  code[i].innerHTML = colored;
+}
+
+function colorCode(codeString) {
+  codeString = codeString.innerHTML.trim();
+  let words  = codeString.split(" ");
+  let code   = "";
+  for(let i = 0; i < words.length; i++) {
+
+    words[i] = checkTag(words[i]);
+    // words[i] = checkAttr;
+    
+    code += " " + words[i];
+  }
+  return code;
+}
+function checkTag(word){
+  // Check if it is a full tag
+  if(word.startsWith("-") && word.endsWith("-") && word.length > 3) {
+
+    let wordLen = word.length;
+    if(word.indexOf("/")){
+      let tag     = word.substr(2, wordLen - 3);
+          tag     = "&lt;/<span class='bs-tag'>" + tag + "</span>&gt;",
+          word    = tag;
+      return word;
+    }
+    let tag     = word.substr(1, wordLen - 2);
+        tag     = "&lt;<span class='bs-tag'>" + tag + "</span>&gt;",
+        word    = tag;
+    return word;
+  } else { // Check to see if it is closing or opening
+
+    if(word.startsWith("-") && word.length > 1) { // its an opening tag
+      let wordLen = word.length,
+          tag     = "&lt;<span class='bs-tag'>" + word.substr(1, wordLen) + "</span>";
+          word    = tag;
+      return word;
+    }
+    if (word.endsWith("-")) { // its a closing tag
+      let wordLen = word.length,
+          tag     = word.substr(1, wordLen - 1) + "&gt;";
+          word    = tag;
+      return word;
+    }
+
+  }
+
+  return word;
+}
+function checkAttr(word) {
+  return word;
 }
 
 

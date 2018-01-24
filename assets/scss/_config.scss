@@ -98,12 +98,23 @@ figure {
 
   // Layout
 
-  @mixin flex-parent($content: center, $align: center) {
+  @mixin flex-parent($content: center, 
+                     $align: center) {
+
     display: flex;
     flex-flow: row wrap;
     justify-content: $content;
     align-items: $align;
-	}
+  }
+  
+  // transitions
+
+  @mixin effect($time: 300ms, 
+                $type: all, 
+                $role: ease-in-out) {
+                  
+    transition: $type $time $role;
+  }
 
   
  
