@@ -130,7 +130,7 @@ $bp2: 1000px;
 
 @mixin nav () {
   height: 0;
-  position: relative;
+  position: absolute;
   z-index: $zi-0040;
   overflow: hidden;
   background-color: white;
@@ -265,7 +265,9 @@ $bp2: 1000px;
 
   &--basic {
     height: 0;
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
     z-index: $zi-0040;
     overflow: hidden;
     background-color: var(--white);
@@ -274,6 +276,7 @@ $bp2: 1000px;
       height: 100vh;
       width: 0;
       position: absolute;
+      left: auto;
       right: 0;
     }
     @include bp($bp-20) {
