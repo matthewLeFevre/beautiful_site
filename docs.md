@@ -1,15 +1,27 @@
 # BS Docs
 
-## Elements
+## Contents
 
-  1. Buttons
-  2. Links
-  3. Inputs
-  4. Lables
-  5. Lists
-  6. Headings
-  7. Paragraphs
-  8. Images
+### Elements
+
+  1. [Buttons](#buttons)
+  2. [Links](#links)
+  3. [Inputs]()
+  4. [Lables]()
+  5. [Lists]()
+  6. [Headings]()
+  7. [Paragraphs]()
+  8. [Images]()
+
+### Components
+
+  1. [Media](#media)
+  2. [Card](#card)
+  3. [Alert](#alert)
+
+
+
+## Elements
 
 ### 1 Buttons
 
@@ -25,7 +37,7 @@ Generic buttons can be anchor tags buttons divs or any other kind of tag. The si
   <button class="bs-btn bs-lrg">Click Here</button>
 ```
 
-["See it on CodePen"]()
+[See it on CodePen]()
 
 #### 1.2 Icon Buttons
 
@@ -36,7 +48,7 @@ Icon buttons are meant for small icon images like social media links
    <img class="bs-img__ico" src="#">
  </a>
 ````
-["See it on CodePen"]()
+[See it on CodePen]()
 
 #### 1.3 Long Buttons
 
@@ -45,7 +57,7 @@ Long buttons are an alternative to normal buttons. They are just wider.
 ````html
 <button class="bs-btn__lng">Click Here</button>
 ````
-["See it on CodePen"]()
+[See it on CodePen]()
 
 #### 1.4 Full Buttons
 
@@ -65,9 +77,14 @@ We already have covered that links can be given the button class. Now lets dive 
 These links go right into a paragraph or any block of text.
 
 ````html
-<p class="bs-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <a class="bs-lnk__txt" href="#">magna</a> aliqua. Ut enim ad minim <a class="bs-lnk__txt" href="#">veniam</a>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p class="bs-par">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+  ut labore et dolore <a class="bs-lnk__txt" href="#">magna</a> aliqua. Ut enim ad minim 
+  <a class="bs-lnk__txt" href="#">veniam</a>, quis nostrud exercitation ullamco laboris 
+  nisi ut aliquip ex ea commodo consequat.
+</p>
 ````
-["See it on CodePen"]()
+[See it on CodePen]()
 
 #### 2.2 Wrap Links
 
@@ -76,11 +93,7 @@ These links go right into a paragraph or any block of text.
  
 ## Components
 
-  1. Media
-  2. Card
-  3. Alert
-
-### Card Component
+### Card 
 
 The Card Component markup
 
@@ -108,7 +121,7 @@ The Card Component markup
     
 ```
 
-### Media Component
+### Media 
 
 The Media component markup is as follows
 
@@ -129,7 +142,7 @@ The Media component markup is as follows
 
 ```
 
-### Alert Component
+### Alert 
 
 Alert Component markup
 
