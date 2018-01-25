@@ -245,6 +245,9 @@ figure {
   .bs-s__full {
     height: 100%;
     width: 100%; }
+  .bs-s--article {
+    max-width: 800px;
+    margin: 0 auto; }
 
 .bs-card {
   width: 300px;
@@ -871,7 +874,7 @@ figure {
     display: block;
     margin-top: 10px;
     cursor: pointer;
-    width: 280px; }
+    min-width: 280px; }
     .bs-btn__lng:hover {
       background-color: var(--grey2);
       color: var(--grey7); }
@@ -894,6 +897,8 @@ figure {
     .bs-btn__ful:hover {
       background-color: var(--grey2);
       color: var(--grey7); }
+  .bs-btn--group > .bs-btn, .bs-btn--group .bs-btn__ico, .bs-btn--group .bs-btn__lng {
+    display: inline; }
 
 /***********************************************************
 * Links
@@ -910,14 +915,74 @@ figure {
 .bs-lnk__txt {
   text-decoration: none;
   cursor: pointer;
-  color: blue; }
+  color: var(--opac); }
 
 /***********************************************************
 * Inputs
 ***********************************************************/
+.bs-ipt__txt {
+  border: 1px solid var(--opac);
+  border-radius: 3px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: var(--opac);
+  background-color: #fafafa;
+  padding: .5em;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease; }
+  .bs-ipt__txt:focus {
+    outline: 0;
+    background-color: #eaeaea; }
+
+.bs-ipt__radio {
+  visibility: hidden; }
+  .bs-ipt__radio:checked + .bs-lbl__radio {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .bs-ipt__radio:checked + .bs-lbl__radio:after {
+      content: " ";
+      display: block;
+      height: 12px;
+      width: 12px;
+      background-color: var(--black);
+      border-radius: 100%; }
+
+.bs-ipt__checkbox {
+  visibility: hidden; }
+
+.bs-ipt__file {
+  visibility: hidden; }
+
+.bs-ipt__dat {
+  border: 1px solid var(--opac);
+  border-radius: 3px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: var(--opac);
+  background-color: #fafafa; }
+
 /***********************************************************
 * Labels
 ***********************************************************/
+.bs-lbl__txt {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--black); }
+
+.bs-lbl__radio {
+  height: 20px;
+  width: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #fafafa;
+  border: 1.5px solid var(--opac);
+  border-radius: 100%; }
+
 /***********************************************************
 * Lists
 ***********************************************************/
@@ -927,6 +992,102 @@ figure {
     padding: .30em; }
     .bs-lst--item__nst {
       padding: .25em; }
+
+.bs-menu-row__left {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.bs-menu-row__right {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.bs-menu-row__center {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.bs-menu-column__left {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.bs-menu-column__right {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap; }
+
+.bs-menu-column__center {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
 
 /***********************************************************
 * Headings
@@ -950,9 +1111,10 @@ figure {
 .bs-par {
   margin: 1em 16px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  line-height: 150%; }
+  line-height: 150%;
+  font-family: "Noticia Text", serif; }
   .bs-par__summary {
-    margin: 1em 16px;
+    margin: 1.5em 16px 2em 16px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     line-height: 150%;
     font-style: italic;
