@@ -4,14 +4,14 @@
 
 ### Elements
 
-  1. [Buttons](#buttons)
-  2. [Links](#links)
-  3. [Inputs]()
-  4. [Lables]()
-  5. [Lists]()
-  6. [Headings]()
-  7. [Paragraphs]()
-  8. [Images]()
+  1. [Buttons](#1-buttons)
+  2. [Links](#2-links)
+  3. [Inputs](#3-inputs)
+  4. [Lables](#4-labels)
+  5. [Lists](#5-lists)
+  6. [Headings](#6-headings)
+  7. [Paragraphs](#7-paragraphs)
+  8. [Images](#8-images)
 
 ### Components
 
@@ -19,9 +19,14 @@
   2. [Card](#card)
   3. [Alert](#alert)
 
+### Layout
+  1. [Headers](#1-headers)
+
 
 
 ## Elements
+
+
 
 ### 1 Buttons
 
@@ -68,6 +73,8 @@ Full buttons take up the entire width of the container however. They are not up 
 ````
 Not avaliable on CodePen yet
 
+
+
 ### 2 Links
 
 We already have covered that links can be given the button class. Now lets dive into some of the other link types avaliable with Beautiful Site.
@@ -90,36 +97,145 @@ These links go right into a paragraph or any block of text.
 
 #### 2.3 Heading Links
 
+
+
+### 3 Inputs
+
+#### 3.1 Text Inputs
+
+#### 3.2 Radio Inputs
+
+#### 3.3 Checkbox Inputs
+
+#### 3.4 File Inputs
+
+#### 3.5 Date Inputs
+
+**Will be developed in later version**
+
+
+
+### 4 Labels
+
+#### 4.1 Text Labels
+
+#### 4.2 Radio Labels
+
+#### 4.3 Checkbox Labels
+
+#### 4.4 File Labels
+
+
+
+### 5 Lists
+
+Lists are still undergoing major changes.
+
+#### 5.1 Basic List
+
+````html
+<ul class="bs-lst">
+  <li class="bs-lst--item">Item 1</li>
+  <li class="bs-lst--item">Item 2</li>
+  <li class="bs-lst--item">Item 3</li>
+  <li class="bs-lst--item">Item 4
+    <ul>
+      <li class="bs-lst--item__nst">Sub Item 1</li>
+      <li class="bs-lst--item__nst">Sub Item 2</li>
+    </ul>
+  </li>
+</ul>
+````
+
+#### 5.2 Menu List
+
+
+
+### 6 Headings
+
+#### 6.1 Primary Heading
+
+````html
+
+<h1 class=".bs-hed">Heading</h1>
+
+````
+
+#### 6.2 Secondary Heading
+
+````html
+
+<h2 class=".bs-hed_scd_">Heading</h2>
+
+````
+
+#### 6.3 Tertiary Heading
+
+````html
+
+<h3 class=".bs-hed__trd">Heading</h3>
+
+````
+
+
+
+### 7 Paragraphs
+
+#### 7.1 Basic Paragraph
+
+General formating for an all purpose paragraph tag.
+
+````html
+
+<p class="bs-par">Lorem ipsum dolor sit amet, consectetur
+   adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    dolore magna aliqua.</p>
+
+````
+
+#### 7.2 Summary Paragraph
+
+Emphasis paragraph on key points in content. Stands out from other paragraph text.
+
+````html
+
+<p class="bs-par__summary">Lorem ipsum dolor sit amet, consectetur
+   adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    dolore magna aliqua.</p>
+
+````
+
+#### 7.3 Caption Paragraph
+
+Functions as any kind of caption.
+
+````html
+
+<p class="bs-par__caption">Lorem ipsum dolor sit amet, consectetur
+   adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    dolore magna aliqua.</p>
+
+````
+
+
+
+### 8 Images
+
+#### 8.1 Icon Image
+
+#### 8.2 Responsive Image
  
+
+
+
+
+
 ## Components
 
 ### Card 
 
 The Card Component markup
 
-#### Main Card
-
-```html
-
-<figure class="bs-card bs-space">
-  <div class="bs-card--img-container">
-    <img class="bs-card--img" src="#">
-  </div>
-  <figcaption class="bs-card--container">
-    <header class="bs-card--hdr">
-      <h3 class="bs-mdm bs-h3">Card Heading</h3>
-    </header>
-    <div class="bs-card--body">
-      <p class="bs-space__top-bot bs-p">This is some caption text for the card</p>
-      <button class="bs-btn bs-mid">Link</button>
-    </div>
-    <footer class="bs-card--ftr">
-      <p class="bs-small bs-p">Footer Content</p>
-    </footer>
-  </figcaption>
-</figure>
-    
-```
 
 ### Media 
 
@@ -141,6 +257,7 @@ The Media component markup is as follows
 </a>
 
 ```
+[See it on CodePen]()
 
 ### Alert 
 
@@ -157,56 +274,76 @@ Alert Component markup
   3. Footer
   4. Section
 
-### Header Component
+### 1 Headers
 
 Header Component markup
 
-```html
+#### Basic Header
 
-<header class="bs-hdr__sml">
-  <div class="bs-logo__sml-txt">
-    <a class="bs-logo__sml-txt--link" href="#">Text Logo</a>
-    <div class="bs-nav--btn--panel" id="js-menu-btn">
-      <div class="bs-nav--btn"></div>
-    </div>
-  </div>
-  <nav class="bs-nav" id="js-bs-nav">
-    <ul class="bs-nav--item-list">
-      <li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
-      <li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
-      <li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
-      <li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
-      <li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
-    </ul>
-  </nav>
-</header>
-
-```
-
-### Nav Component
-
-Nav Component markup
+Traditional mobile responsive headers with navigation. Has a hamburger menu through mobile device screen widths but relinquishes the mobile menu upon reaching desktop/laptop screen sizes.
 
 ```html
-<nav class="bs-nav" id="js-bs-nav">
-  <ul class="bs-nav--item-list">
-    <li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
-    <li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
-    <li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
-    <li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
-    <li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
-  </ul>
-</nav>
-```
 
-### Footer Component
+	<header class="bs-hdr__nav-right">
+		<div class="bs-hdr--badge">
+			<a class="bs-lnk__hed" href="#">Text Logo</a>
+			<div class="bs-nav--btn-panel" id="js-menu-btn">
+				<div class="bs-nav--btn"></div>
+			</div>
+		</div>
+		<nav class="bs-nav--basic" id="js-bs-nav">
+			<ul class="bs-nav--item-list">
+				<li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
+				<li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
+				<li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
+				<li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
+				<li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
+				<li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
+			</ul>
+		</nav>
+	</header>
+
+```
+[See it on CodePen]()
+
+#### Toggle Header
+
+Identical to the basic header through mobile devices however in desktop/laptop screens the hamburger menu remains a toggle.
+
+````html
+
+	<header class="bs-hdr">
+		<div class="bs-hdr--badge__toggle">
+			<a class="bs-lnk__hed" href="#">Text Logo</a>
+			<div class="bs-nav--btn-panel" id="js-menu-btn">
+				<div class="bs-nav--btn"></div>
+			</div>
+		</div>
+		<nav class="bs-nav--toggle" id="js-bs-nav">
+			<ul class="bs-nav--item-list">
+				<li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
+				<li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
+				<li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
+				<li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
+				<li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
+				<li class="bs-nav--item"><a class="bs-nav--link" href="">Item</a></li>
+			</ul>
+		</nav>
+	</header>
+
+````
+[See it on CodePen]()
+
+
+
+### Footer
 
 Footer Component markup
 
 ```html
 ```
 
-### Section Component
+### Section
 
 Section Component markup
 

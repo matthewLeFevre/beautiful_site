@@ -8,14 +8,31 @@ $bp2: 1000px;
 // be reused.
 //
 @mixin hdr () {
+  height: 50px;
   position: relative;
-  @include bp($bp-20) {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+
+  &__nav-right {
+    @include bp($bp-20) {
+      height: 50px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
+  &__nav-left {
+    @include bp($bp-20) {
+      height: 50px;
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  
 }
 .bs-hdr {
+  @include hdr;
   // This is a thin header
   &__sml {
     height: 50px;
@@ -29,8 +46,86 @@ $bp2: 1000px;
     height: 100px;
     @include hdr;
   }
+
+/***********************************************************
+* Full Toggle Header
+***********************************************************/  
+
+
+
+/***********************************************************
+* Media Header
+***********************************************************/
+
+&__media-header {}
+
+/***********************************************************
+* Header Badge
+***********************************************************/
+  @mixin hdr-badge () {
+    height: 100%;
+    padding: 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $s-srf;
+    font-size: $lrg;
+  }
+  &--badge {
+    @include hdr-badge;
+    @include effect ();
+    @include bp($bp-20) {
+      justify-content: center;
+    }
+
+    &__toggle {
+      @include hdr-badge;
+      @include effect ();
+    }
+
+    & > .bs-nav--btn-panel {
+      @include bp($bp-20) {
+        display: none;
+      }
+    }
+  }
 }
 
+// Deprecate this soon==
+@mixin logo-txt (){
+  
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $s-srf;
+  transition: all 300ms ease;
+  @include bp($bp-20) {
+    justify-content: center;
+  }
+
+  &--link {
+    text-decoration: none;
+  }
+}
+.bs-logo {
+  &__sml-txt {
+    height:    50px;
+    font-size: $lrg;
+    @include logo-txt;
+  }
+  &__mdm-txt {
+    height:    80px;
+    font-size: $xlrg;
+    @include logo-txt;
+  }
+  &__lrg-txt {
+    height:    100px;
+    font-size: $x2lrg;
+    @include logo-txt;
+  }
+}
+//======================
 
 
 @mixin nav () {
@@ -46,15 +141,15 @@ $bp2: 1000px;
     position: absolute;
     right: 0;
   }
+
+}
+.bs-nav {
+  @include nav;
   @include bp($bp-20) {
     height: 100%;
     width: auto;
     position: static;
   }
-}
-.bs-nav {
-  @include nav;
-
   &__drop {
     height: 275px;
     overflow: auto;
@@ -82,21 +177,14 @@ $bp2: 1000px;
   &--item-list {
     margin: 0;
     padding: 0;
-    @include bp ($bp-20) {
-      height: 100%;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-flow: row nowrap;
-    }
   }
 
   &--item { 
     height: 50px;
     list-style: none; 
-    @include bp ($bp-20) {
-      height: 100%;
-    }
+    // @include bp ($bp-20) {
+    //   height: 100%;
+    // }
   }
 
   &--link { 
@@ -112,11 +200,11 @@ $bp2: 1000px;
     transition: all 300ms ease;
     
     &:hover {
-      background-color: var(--grey4);
+      color: var(--grey4);
     }
     
     &__selected {
-      background-color: var(--grey4);
+      color: var(--grey4);
     }
   }
   // Used in the header and not in the nav
@@ -159,7 +247,7 @@ $bp2: 1000px;
       transform: rotate(-45deg);
     }
     
-    &--panel {
+    &-panel {
       height: 50px;
       width: 60px;
       position: relative;
@@ -168,50 +256,126 @@ $bp2: 1000px;
       justify-content: center;
       align-items: center;
       cursor: pointer;
+    }
+  }
 
+/***********************************************************
+* traditional
+***********************************************************/
+
+  &--basic {
+    height: 0;
+    position: relative;
+    z-index: $zi-0040;
+    overflow: hidden;
+    background-color: var(--white);
+    @include effect;
+    @include bp($bp-15) {
+      height: 100vh;
+      width: 0;
+      position: absolute;
+      right: 0;
+    }
+    @include bp($bp-20) {
+      height: 100%;
+      width: auto;
+      position: static;
+    }
+
+    &__drop {
+      height: 275px;
+      overflow: auto;
+      overflow-x: hidden;
+      @include bp($bp-15) {
+        height: 100vh;
+        width: 35vw;
+        overflow: hidden;
+      }
       @include bp($bp-20) {
+        height: auto;
+      }
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+      &::-webkit-scrollbar-track {
         display: none;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: var(--grey5);
+      }
+    }
+
+    & > .bs-nav--item-list {
+      @include bp ($bp-20) {
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-flow: row nowrap;
       }
     }
   }
 
-}
+/***********************************************************
+* Full Toggle
+***********************************************************/
 
+  &--toggle {
+    height: 0;
+    position: relative;
+    z-index: $zi-0040;
+    overflow: hidden;
+    background-color: var(--white);
+    @include effect;
+    @include bp($bp-15) {
+      height: 100vh;
+      width: 0;
+      position: absolute;
+      right: 0;
+    }
 
+    &__drop {
+      height: 275px;
+      overflow: auto;
+      overflow-x: hidden;
+      @include bp($bp-15) {
+        height: 100vh;
+        width: 35vw;
+        // min-width: 300px;
+        overflow: hidden;
+      }
+      @include bp($bp-20) {
+        width: 20vw;
+        
+      }
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+      &::-webkit-scrollbar-track {
+        display: none;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: var(--grey5);
+      }
+    }
 
-@mixin logo-txt (){
+  }
+
+/***********************************************************
+* Collapsable
+***********************************************************/
   
-  padding: 0 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: $s-srf;
-  transition: all 300ms ease;
-  @include bp($bp-20) {
-    justify-content: center;
+  &--collapsable {
+    
   }
 
-  &--link {
-    text-decoration: none;
-  }
 }
-.bs-logo {
-  &__sml-txt {
-    height:    50px;
-    font-size: $lrg;
-    @include logo-txt;
-  }
-  &__mdm-txt {
-    height:    80px;
-    font-size: $xlrg;
-    @include logo-txt;
-  }
-  &__lrg-txt {
-    height:    100px;
-    font-size: $x2lrg;
-    @include logo-txt;
-  }
-}
+
+
+
+
 
 
 

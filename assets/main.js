@@ -17,7 +17,13 @@ if(menu_btn != null) {
 
 function slideToggle() {
   menu_ico.classList.toggle("bs-nav--btn__closed");
-  menu_nav.classList.toggle("bs-nav__drop");
+  if(menu_nav.classList.contains("bs-nav--basic")){
+    menu_nav.classList.toggle("bs-nav--basic__drop");
+  }
+  if(menu_nav.classList.contains("bs-nav--toggle")){
+    menu_nav.classList.toggle("bs-nav--toggle__drop");
+  }
+  
   // if (menu_on && window.innerWidth < 800) {
   //   menu_on = false;
   //   menu_nav.style.height = "0px";
