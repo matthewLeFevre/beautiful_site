@@ -13,17 +13,22 @@
 
 // template mixin
 @mixin btn () {
+
   @include effect(250ms);
+  min-width: 100px;
   padding: .5em 1.75em;
+  margin-top: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--grey1);
   border: none;
   border-radius: .1em;
   font-family: $s-srf;
   font-weight: 700;
+  text-decoration: none;
   color: var(--black);
   transition-property: background-color, color;
-  display:block;
-  margin-top: 10px;
   cursor: pointer;
 
   &:hover {
@@ -40,18 +45,14 @@
   }
   &__lng {
     @include btn();
-    min-width: 280px;
+    min-width: 10em;
+    text-align: center;
   }
   &__ful {
     @include btn();
     width: 100%;
   }
   
-  &--group {
-    & > .bs-btn, .bs-btn__ico, .bs-btn__lng {
-      display: inline;
-    }
-  }
 }
 
 /***********************************************************
@@ -78,6 +79,7 @@
   &__txt {
     @include lnk();
     color: var(--opac);
+    text-decoration: underline;
   }
 }
 
@@ -251,7 +253,6 @@
 
 //template img
 @mixin img($w: 0, $h: 0) {
-  display: block;
   width: $w;
   height: $h;
 }

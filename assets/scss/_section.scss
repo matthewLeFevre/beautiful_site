@@ -3,7 +3,7 @@
 	padding: 2rem;
 	&__ribbon{
 		@extend .bs-s;
-		height: 80px;
+		min-height: 80px;
 	}
 	&__banner {
 		padding: 1em;

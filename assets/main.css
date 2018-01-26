@@ -226,7 +226,7 @@ figure {
   width: 100%;
   padding: 2rem; }
   .bs-s__ribbon {
-    height: 80px; }
+    min-height: 80px; }
   .bs-s__banner {
     padding: 1em;
     min-height: 200px; }
@@ -943,9 +943,6 @@ figure {
     .form--link:hover {
       color: red; }
 
-.bs-img__banner__sml {
-  width: 300px; }
-
 .bs-alert {
   height: 50px;
   width: 300px;
@@ -1020,17 +1017,27 @@ figure {
 .bs-btn {
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
+  min-width: 100px;
   padding: .5em 1.75em;
+  margin-top: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: var(--grey1);
   border: none;
   border-radius: .1em;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
+  text-decoration: none;
   color: var(--black);
   -webkit-transition-property: background-color, color;
   transition-property: background-color, color;
-  display: block;
-  margin-top: 10px;
   cursor: pointer; }
   .bs-btn:hover {
     background-color: var(--grey2);
@@ -1038,17 +1045,27 @@ figure {
   .bs-btn__ico {
     -webkit-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
+    min-width: 100px;
     padding: .5em 1.75em;
+    margin-top: 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: var(--grey1);
     border: none;
     border-radius: .1em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
+    text-decoration: none;
     color: var(--black);
     -webkit-transition-property: background-color, color;
     transition-property: background-color, color;
-    display: block;
-    margin-top: 10px;
     cursor: pointer;
     padding: 8.5px; }
     .bs-btn__ico:hover {
@@ -1057,43 +1074,62 @@ figure {
   .bs-btn__lng {
     -webkit-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
+    min-width: 100px;
     padding: .5em 1.75em;
+    margin-top: 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: var(--grey1);
     border: none;
     border-radius: .1em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
+    text-decoration: none;
     color: var(--black);
     -webkit-transition-property: background-color, color;
     transition-property: background-color, color;
-    display: block;
-    margin-top: 10px;
     cursor: pointer;
-    min-width: 280px; }
+    min-width: 10em;
+    text-align: center; }
     .bs-btn__lng:hover {
       background-color: var(--grey2);
       color: var(--grey7); }
   .bs-btn__ful {
     -webkit-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
+    min-width: 100px;
     padding: .5em 1.75em;
+    margin-top: 10px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: var(--grey1);
     border: none;
     border-radius: .1em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
+    text-decoration: none;
     color: var(--black);
     -webkit-transition-property: background-color, color;
     transition-property: background-color, color;
-    display: block;
-    margin-top: 10px;
     cursor: pointer;
     width: 100%; }
     .bs-btn__ful:hover {
       background-color: var(--grey2);
       color: var(--grey7); }
-  .bs-btn--group > .bs-btn, .bs-btn--group .bs-btn__ico, .bs-btn--group .bs-btn__lng {
-    display: inline; }
 
 /***********************************************************
 * Links
@@ -1110,7 +1146,8 @@ figure {
 .bs-lnk__txt {
   text-decoration: none;
   cursor: pointer;
-  color: var(--opac); }
+  color: var(--opac);
+  text-decoration: underline; }
 
 /***********************************************************
 * Inputs
@@ -1329,39 +1366,30 @@ figure {
   padding: 0 50px; }
 
 .bs-img {
-  display: block;
   width: 0;
   height: 0; }
   .bs-img__ico {
-    display: block;
     width: 28px;
     height: 28px; }
   .bs-img__1x1 {
-    display: block;
     width: 300px;
     height: 300px; }
   .bs-img__5x4 {
-    display: block;
     width: 300px;
     height: 240px; }
   .bs-img__4x3 {
-    display: block;
     width: 300px;
     height: 225px; }
   .bs-img__3x2 {
-    display: block;
     width: 300px;
     height: 200px; }
   .bs-img__8x5 {
-    display: block;
     width: 300px;
     height: 187.5px; }
   .bs-img__16x9 {
-    display: block;
     width: 300px;
     height: 168.75px; }
   .bs-img__3x1 {
-    display: block;
     width: 300px;
     height: 100px; }
   .bs-img__responsive {

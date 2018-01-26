@@ -53,7 +53,7 @@ Icon buttons are meant for small icon images like social media links
    <img class="bs-img__ico" src="#">
  </a>
 ````
-[See it on CodePen]()
+[See it on CodePen](https://codepen.io/MatthewLeFevre/pen/mpZjYN)
 
 #### 1.3 Long Buttons
 
@@ -62,7 +62,7 @@ Long buttons are an alternative to normal buttons. They are just wider.
 ````html
 <button class="bs-btn__lng">Click Here</button>
 ````
-[See it on CodePen]()
+[See it on CodePen](https://codepen.io/MatthewLeFevre/pen/mpZjYN)
 
 #### 1.4 Full Buttons
 
@@ -261,10 +261,41 @@ The Media component markup is as follows
 
 ### Alert 
 
+A single container holds all alerts
+
 Alert Component markup
 
 ```html
 
+<div class="bs-alert--container">
+   <div class="bs-alert bs-success">
+    <span class="bs-alert--msg">
+      Success Alert
+    </span>
+    <div class="bs-alert--close"></div>
+  </div>
+
+  <div class="bs-alert bs-neutral">
+    <span class="bs-alert--msg">
+      Neutral Alert
+    </span>
+    <div class="bs-alert--close"></div>
+  </div>
+  
+  <div class="bs-alert bs-error">
+    <span class="bs-alert--msg">
+      Error Alert
+    </span>
+    <div class="bs-alert--close"></div>
+  </div>
+
+  <div class="bs-alert">
+    <span class="bs-alert--msg">
+      Unspecified Alert
+    </span>
+    <div class="bs-alert--close"></div>
+  </div>
+</div>
 ```
 
 ## Layout Components
