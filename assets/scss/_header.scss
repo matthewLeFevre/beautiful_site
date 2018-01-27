@@ -62,7 +62,7 @@ $bp2: 1000px;
 /***********************************************************
 * Header Badge
 ***********************************************************/
-  @mixin hdr-badge () {
+@mixin hdr-badge () {
     height: 100%;
     padding: 0 1em;
     display: flex;
@@ -380,7 +380,7 @@ $bp2: 1000px;
 
 
 
-
+// come back to forms
 
 .form {
   padding: .5rem;
@@ -518,5 +518,33 @@ $bp2: 1000px;
     &:hover {
       color: red;
     }
+  }
+}
+
+
+.bs-frt {
+  &__basic {}
+  &__sml {
+    @include flex-parent;
+    padding: 2rem;
+    margin: 0;
+    background-color: var(--grey4);
+    color: var(--grey7);
+  }
+  &--link-group {
+    padding: 0;
+    margin: 1rem;
+    max-width: 300px;
+  }
+  &--link {
+    padding: .5rem;
+    color: var(--grey7);
+    text-decoration: none;
+  }
+  &--link:hover {
+    text-decoration: underline;
+  }
+  &--link__social {
+
   }
 }

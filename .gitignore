@@ -6,6 +6,7 @@ gulpfile.js
 /src/*
 /legacy/*
 /assets/scss/_custom.scss
+/assets/video
 /assets/img/*
 /legacy/*
 /.vscode/*

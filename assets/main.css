@@ -224,18 +224,23 @@ figure {
 
 .bs-s, .bs-s__ribbon, .bs-s__sml, .bs-s__mid, .bs-s__lrg, .bs-s__full {
   width: 100%;
-  padding: 2rem; }
+  padding: 2rem 0; }
   .bs-s__ribbon {
     min-height: 80px; }
   .bs-s__banner {
     padding: 1em;
-    min-height: 200px; }
+    min-height: 200px;
+    max-height: 300px;
+    position: relative;
+    overflow: hidden; }
     @media screen and (min-width: 600px) {
       .bs-s__banner {
-        min-height: 250px; } }
+        min-height: 250px;
+        max-height: 325px; } }
     @media screen and (min-width: 800px) {
       .bs-s__banner {
-        min-height: 400px; } }
+        min-height: 400px;
+        max-height: 450px; } }
   .bs-s__sml {
     min-height: 200px; }
   .bs-s__mid {
@@ -277,10 +282,18 @@ figure {
 .bs-media {
   min-width: 300px;
   max-width: 650px;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: .5rem;
   margin: 1em;
-  display: block; }
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .bs-media:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
   .bs-media--body {
     margin: 0;
     display: -webkit-box;
@@ -293,8 +306,7 @@ figure {
         -ms-flex-align: start;
             align-items: flex-start; }
   .bs-media--img {
-    height: 120px;
-    width: 120px; }
+    height: 120px; }
   .bs-media--cnt {
     margin-left: 1em; }
   .bs-media--heading {
@@ -309,7 +321,7 @@ figure {
   .bs-media--ftr {
     width: 100%;
     padding: 1em;
-    background-color: var(--grey3); }
+    background-color: var(--grey); }
 
 .bs-modal--container {
   height: 100vh;
@@ -943,6 +955,38 @@ figure {
     .form--link:hover {
       color: red; }
 
+.bs-frt__sml {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  margin: 0;
+  background-color: var(--grey4);
+  color: var(--grey7); }
+
+.bs-frt--link-group {
+  padding: 0;
+  margin: 1rem;
+  max-width: 300px; }
+
+.bs-frt--link {
+  padding: .5rem;
+  color: var(--grey7);
+  text-decoration: none; }
+
+.bs-frt--link:hover {
+  text-decoration: underline; }
+
 .bs-alert {
   height: 50px;
   width: 300px;
@@ -1017,7 +1061,6 @@ figure {
 .bs-btn {
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  min-width: 100px;
   padding: .5em 1.75em;
   margin-top: 10px;
   display: -webkit-inline-box;
@@ -1038,14 +1081,14 @@ figure {
   color: var(--black);
   -webkit-transition-property: background-color, color;
   transition-property: background-color, color;
-  cursor: pointer; }
+  cursor: pointer;
+  min-width: 100px; }
   .bs-btn:hover {
     background-color: var(--grey2);
     color: var(--grey7); }
   .bs-btn__ico {
     -webkit-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
-    min-width: 100px;
     padding: .5em 1.75em;
     margin-top: 10px;
     display: -webkit-inline-box;
@@ -1074,7 +1117,6 @@ figure {
   .bs-btn__lng {
     -webkit-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
-    min-width: 100px;
     padding: .5em 1.75em;
     margin-top: 10px;
     display: -webkit-inline-box;
@@ -1104,7 +1146,6 @@ figure {
   .bs-btn__ful {
     -webkit-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
-    min-width: 100px;
     padding: .5em 1.75em;
     margin-top: 10px;
     display: -webkit-inline-box;
@@ -1404,6 +1445,16 @@ figure {
     width: 300px;
     height: 225px;
     overflow: none; }
+
+/***********************************************************
+* Video
+***********************************************************/
+.bs-vid__banner {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
 
 .banner-c {
   display: -webkit-box;

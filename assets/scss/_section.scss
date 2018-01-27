@@ -1,6 +1,6 @@
 .bs-s {
 	width: 100%;
-	padding: 2rem;
+	padding: 2rem 0;
 	&__ribbon{
 		@extend .bs-s;
 		min-height: 80px;
@@ -8,11 +8,16 @@
 	&__banner {
 		padding: 1em;
 		min-height: 200px;
+		max-height: 300px;
+		position: relative;
+		overflow: hidden;
 		@include bp($bp-10) {
 			min-height: 250px;
+			max-height: 325px;
 		}
 		@include bp($bp-15) {
 			min-height: 400px;
+			max-height: 450px;
 		}
 	}
 	&__sml {

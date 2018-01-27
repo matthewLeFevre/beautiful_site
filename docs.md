@@ -239,7 +239,9 @@ The Card Component markup
 
 ### Media 
 
-The Media component markup is as follows
+If you would like your media card to be a link in of itself without any smaller components inside of it being links then use the markup bellow.
+
+**Warning: if you use internal links like anchor tag buttons the card will break. Look instead at variation two**
 
 ```html
 
@@ -255,6 +257,33 @@ The Media component markup is as follows
     </figcaption>
   </figure>
 </a>
+
+```
+
+If you would like individual elements of your media card to be links then don't make the container a link. Instead use link tags on the individual pars.
+
+```html
+
+<div class="bs-media--wrapper">
+  <figure class="bs-media">
+    <!-- Image Link -->
+    <a class="bs-lnk__wrp" href="#">
+      <img class="bs-media--img" src="#" alt="Mountain Area">
+    </a>
+    <figcaption class="bs-label--txt">
+      <!-- Heading Link -->
+      <h3 class="bs-media--heading"> 
+        <a class="bs-lnk__hed" href="#">Label Title</a>
+      </h3>
+      <span class="bs-media--date">1/16/2018</span>
+      <p>
+          Bacon ipsum dolor amet swine landjaeger andouille ground round, turducken shoulder buffalo beef ribs ham hock sausage cow meatloaf beef.
+      </p>
+      <!-- Buttons will work -->
+      <a class="bs-btn" href="#"></a>
+    </figcaption>
+  </figure>
+</div>
 
 ```
 [See it on CodePen]()

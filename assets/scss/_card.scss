@@ -32,10 +32,16 @@
 .bs-media {
 	min-width: 300px;
 	max-width: 650px;
-	text-decoration: none;
-	font-family: $s-srf;
+	padding: .5rem;
 	margin: 1em;
 	display: block;
+	font-family: $s-srf;
+	text-decoration: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	&:hover {
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	}
 	&--body {
 		margin: 0;
 		display: flex;
@@ -43,27 +49,26 @@
 		align-items: flex-start; 
 	 }
 	 &--img {
-		 height: 120px;
-		 width: 120px;
+		height: 120px;
 	 }
 	 &--cnt {
-		 margin-left: 1em;
+		margin-left: 1em;
 	 }
 	 &--heading {
-		 margin-top: 0;
-		 margin-bottom: .5em;
-		 font-family: $s-srf2;
+		margin-top: 0;
+		margin-bottom: .5em;
+		font-family: $s-srf2;
 	 }
 	 &--date {
-		 font-size: $sml;
-		 color: $dark;
+		font-size: $sml;
+		color: $dark;
 	 }
 	 &--txt {
-		 margin-bottom: 0;
+		margin-bottom: 0;
 	 }
 	 &--ftr {
-		 width: 100%;
-		 padding: 1em;
-		 background-color: var(--grey3);
+		width: 100%;
+		padding: 1em;
+		background-color: var(--grey);
 	 }
 }

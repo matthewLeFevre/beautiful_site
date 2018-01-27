@@ -15,7 +15,6 @@
 @mixin btn () {
 
   @include effect(250ms);
-  min-width: 100px;
   padding: .5em 1.75em;
   margin-top: 10px;
   display: inline-flex;
@@ -39,6 +38,7 @@
 
 .bs-btn {
   @include btn();
+  min-width: 100px;
   &__ico {
     @include btn();
     padding: 8.5px;
@@ -316,5 +316,19 @@
   }
   &--container__force-img {
     @include img__container--force-img (300px, 225px);
+  }
+}
+
+/***********************************************************
+* Video
+***********************************************************/
+
+.bs-vid {
+  &__banner {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
 }
