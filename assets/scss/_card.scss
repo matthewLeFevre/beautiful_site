@@ -45,11 +45,13 @@
 	&--body {
 		margin: 0;
 		display: flex;
+		flex-flow: row nowrap;
 		justify-content: flex-start;
 		align-items: flex-start; 
 	 }
 	 &--img {
 		height: 120px;
+		display: block;
 	 }
 	 &--cnt {
 		margin-left: 1em;

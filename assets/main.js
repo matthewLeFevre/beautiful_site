@@ -23,6 +23,9 @@ function slideToggle() {
   if(menu_nav.classList.contains("bs-nav--toggle")){
     menu_nav.classList.toggle("bs-nav--toggle__drop");
   }
+  if(menu_nav.classList.contains("bs-nav--3")) {
+    menu_nav.classList.toggle("bs-nav--3__drop");
+  }
   
   // if (menu_on && window.innerWidth < 800) {
   //   menu_on = false;

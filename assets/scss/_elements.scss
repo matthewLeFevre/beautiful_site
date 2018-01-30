@@ -42,6 +42,7 @@
   &__ico {
     @include btn();
     padding: 8.5px;
+    margin-top: 10;
   }
   &__lng {
     @include btn();
@@ -52,7 +53,9 @@
     @include btn();
     width: 100%;
   }
-  
+  &--cont {
+    padding: .2em;
+  }
 }
 
 /***********************************************************

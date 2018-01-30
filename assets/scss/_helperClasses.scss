@@ -22,6 +22,12 @@
 .bs-flex-apart {
   @include flex-parent(space-between, flex-start);
 }
+.bs-flex-apart__center {
+  @include flex-parent(space-between, center);
+}
+.bs-flex-around {
+  @include flex-parent(space-around, center);
+}
 
 // behaviors
 .bs-success {

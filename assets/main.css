@@ -198,6 +198,35 @@ figure {
       -ms-flex-align: start;
           align-items: flex-start; }
 
+.bs-flex-apart__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.bs-flex-around {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .bs-success {
   background-color: var(--green);
   color: var(--black); }
@@ -224,9 +253,10 @@ figure {
 
 .bs-s, .bs-s__ribbon, .bs-s__sml, .bs-s__mid, .bs-s__lrg, .bs-s__full {
   width: 100%;
-  padding: 2rem 0; }
+  padding: 1rem 0; }
   .bs-s__ribbon {
-    min-height: 80px; }
+    min-height: 80px;
+    padding: 1rem; }
   .bs-s__banner {
     padding: 1em;
     min-height: 200px;
@@ -299,6 +329,10 @@ figure {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -306,7 +340,8 @@ figure {
         -ms-flex-align: start;
             align-items: flex-start; }
   .bs-media--img {
-    height: 120px; }
+    height: 120px;
+    display: block; }
   .bs-media--cnt {
     margin-left: 1em; }
   .bs-media--heading {
@@ -359,6 +394,9 @@ figure {
   position: relative;
   /***********************************************************
 * Full Toggle Header
+***********************************************************/
+  /***********************************************************
+* 3 Header
 ***********************************************************/
   /***********************************************************
 * Media Header
@@ -482,6 +520,36 @@ figure {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; } }
+  .bs-hdr__3 {
+    height: 50px;
+    position: relative;
+    position: initial; }
+    @media screen and (min-width: 1000px) {
+      .bs-hdr__3__nav-right {
+        height: 50px;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+    @media screen and (min-width: 1000px) {
+      .bs-hdr__3__nav-left {
+        height: 50px;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
   .bs-hdr--badge {
     height: 100%;
     padding: 0 1em;
@@ -519,6 +587,25 @@ figure {
       font-size: 35px;
       -webkit-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out; }
+    .bs-hdr--badge__3 {
+      height: 100%;
+      padding: 0 1em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 35px;
+      -webkit-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
     @media screen and (min-width: 1000px) {
       .bs-hdr--badge > .bs-nav--btn-panel {
         display: none; } }
@@ -611,6 +698,9 @@ figure {
 ***********************************************************/
   /***********************************************************
 * Collapsable
+***********************************************************/
+  /***********************************************************
+* 3 prototype
 ***********************************************************/ }
   @media screen and (min-width: 800px) {
     .bs-nav {
@@ -722,6 +812,22 @@ figure {
           -ms-flex-align: center;
               align-items: center;
       cursor: pointer; }
+    .bs-nav--btn-panel__3 {
+      height: 50px;
+      width: 60px;
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      cursor: pointer; }
   .bs-nav--basic {
     height: 0;
     position: absolute;
@@ -812,6 +918,31 @@ figure {
       .bs-nav--toggle__drop::-webkit-scrollbar-thumb {
         border-radius: 5px;
         background-color: var(--grey5); }
+  .bs-nav--3 {
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    overflow: hidden;
+    background-color: white;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+  .bs-nav--3__drop {
+    height: 275px;
+    overflow: auto;
+    overflow-x: hidden; }
+    @media screen and (min-width: 1000px) {
+      .bs-nav--3__drop {
+        height: auto; } }
+    .bs-nav--3__drop::-webkit-scrollbar {
+      width: 5px; }
+    .bs-nav--3__drop::-webkit-scrollbar-track {
+      display: none; }
+    .bs-nav--3__drop::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: var(--grey5); }
 
 .form {
   padding: .5rem;
@@ -955,7 +1086,12 @@ figure {
     .form--link:hover {
       color: red; }
 
-.bs-frt__sml {
+.bs-ftr__sml {
+  margin: 0;
+  background-color: var(--grey4);
+  color: var(--grey7); }
+
+.bs-ftr--cont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -963,28 +1099,34 @@ figure {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem;
-  margin: 0;
-  background-color: var(--grey4);
-  color: var(--grey7); }
+  padding: 2rem; }
 
-.bs-frt--link-group {
+.bs-ftr--lnk-group {
   padding: 0;
   margin: 1rem;
-  max-width: 300px; }
+  max-width: 300px;
+  list-style: none; }
 
-.bs-frt--link {
-  padding: .5rem;
+.bs-ftr--lnk-group-title {
   color: var(--grey7);
-  text-decoration: none; }
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1rem; }
 
-.bs-frt--link:hover {
+.bs-ftr--lnk {
+  padding: .25rem;
+  display: block;
+  color: var(--grey7);
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.bs-ftr--lnk:hover {
   text-decoration: underline; }
 
 .bs-alert {
@@ -1110,7 +1252,8 @@ figure {
     -webkit-transition-property: background-color, color;
     transition-property: background-color, color;
     cursor: pointer;
-    padding: 8.5px; }
+    padding: 8.5px;
+    margin-top: 10; }
     .bs-btn__ico:hover {
       background-color: var(--grey2);
       color: var(--grey7); }
@@ -1171,6 +1314,8 @@ figure {
     .bs-btn__ful:hover {
       background-color: var(--grey2);
       color: var(--grey7); }
+  .bs-btn--cont {
+    padding: .2em; }
 
 /***********************************************************
 * Links

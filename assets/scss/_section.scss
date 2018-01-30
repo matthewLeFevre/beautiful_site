@@ -1,9 +1,10 @@
 .bs-s {
 	width: 100%;
-	padding: 2rem 0;
+	padding: 1rem 0;
 	&__ribbon{
 		@extend .bs-s;
 		min-height: 80px;
+		padding: 1rem;
 	}
 	&__banner {
 		padding: 1em;

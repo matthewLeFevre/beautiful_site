@@ -52,6 +52,14 @@ $bp2: 1000px;
 ***********************************************************/  
 
 
+/***********************************************************
+* 3 Header
+***********************************************************/ 
+
+  &__3  {
+    @include hdr;
+    position: initial;
+  }
 
 /***********************************************************
 * Media Header
@@ -81,6 +89,11 @@ $bp2: 1000px;
     &__toggle {
       @include hdr-badge;
       @include effect ();
+    }
+    &__3 {
+      @include hdr-badge;
+      @include effect;
+      justify-content: center;
     }
 
     & > .bs-nav--btn-panel {
@@ -141,8 +154,8 @@ $bp2: 1000px;
     position: absolute;
     right: 0;
   }
-
 }
+
 .bs-nav {
   @include nav;
   @include bp($bp-20) {
@@ -252,6 +265,17 @@ $bp2: 1000px;
       width: 60px;
       position: relative;
       right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    &-panel__3 {
+      height: 50px;
+      width: 60px;
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -374,6 +398,38 @@ $bp2: 1000px;
     
   }
 
+/***********************************************************
+* 3 prototype
+***********************************************************/
+  &--3 {
+    height: 0; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: $zi-0040;
+    overflow: hidden;
+    background-color: white;
+    @include effect;
+  }
+  &--3__drop {
+    height: 275px;
+    overflow: auto;
+    overflow-x: hidden;
+    @include bp($bp-20) {
+      height: auto;
+    }
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: var(--grey5);
+    }
+  }
 }
 
 
@@ -522,26 +578,38 @@ $bp2: 1000px;
 }
 
 
-.bs-frt {
+.bs-ftr {
   &__basic {}
   &__sml {
-    @include flex-parent;
-    padding: 2rem;
     margin: 0;
     background-color: var(--grey4);
     color: var(--grey7);
   }
-  &--link-group {
+  &--cont {
+    @include flex-parent(space-around, center);
+    padding: 2rem;
+  }
+  &--lnk-group {
     padding: 0;
     margin: 1rem;
     max-width: 300px;
+    list-style: none;
   }
-  &--link {
-    padding: .5rem;
+  &--lnk-group-title {
+    color: var(--grey7);
+    font-size: $mdm;
+    font-family: $s-srf;
+    margin-bottom: 1rem;
+  }
+  &--lnk {
+    padding: .25rem;
+    display: block;
     color: var(--grey7);
     text-decoration: none;
+    font-size: $main;
+    font-family: $s-srf;
   }
-  &--link:hover {
+  &--lnk:hover {
     text-decoration: underline;
   }
   &--link__social {
