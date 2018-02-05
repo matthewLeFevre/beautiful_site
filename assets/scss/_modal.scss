@@ -1,4 +1,22 @@
+@mixin modal {
+  background-color: var(--grey1);
+  margin: 1rem;
+}
 .bs-modal {
+  @include modal;
+  min-width: 300px;
+  max-width: 400px;
+
+
+  &__lng {
+    @include modal;
+    min-width: 300px;
+    max-width: 600px;
+  }
+
+  &--body {
+    padding: .5rem;
+  }
 
   &--container {
     height: 100vh;
@@ -9,21 +27,60 @@
     bottom: 0;
     left: 0;
     right: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
   }
   &--hdr {
+    background-color: var(--grey3);
     display: flex;
     flex-flow: row nowrap;
     height: 50px;
-    padding-left: 1em;
+    padding-left: .5rem;
     align-items: center;
     justify-content: space-between;
   }
-  &--ftr {}
+  &--ftr {
+    padding: .5rem;
+    background-color: var(--grey3);
+    color: white;
+  }
 }
 
 .bs-close {
+  @include effect(200ms);
+  width: 45px;
+  height: 5px;
+  position: relative;
+  border-radius: 5px;
+  background-color: var(--grey7);
+  transform: rotate(45deg);
+  
+  &:before {
+    @include effect(200ms);
+    content: " ";
+    width: 45px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--grey7);
+    position: absolute;
+    transform: rotate(-90deg);
+  }
+
   &--box {
+    @include effect;
     width: 50px;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover > .bs-close {
+      background-color: var(--grey5);
+      &:before {
+        background-color: var(--grey5);
+      }
+    }
   }
 }
