@@ -1,31 +1,95 @@
+/*
+* Beautiful site has a modest amount of JavaScript
+* these are the main objects
+*
+* Title_______Alias
+*===================
+* elements   | el
+* components | cp
+* layout     | ly
+*
+*
+* Configuration
+*
+*/
+
+var el = {}
+
+var cp = {
+  bs_nav: {
+    menu_btn    : document.getElementById("js-menu-btn"),
+    menu_ico    : document.getElementsByClassName("bs-nav--btn")[0],
+    menu_nav    : document.getElementById("js-bs-nav"),
+    menu_height : document.getElementsByClassName("bs-nav--item").length * 50,
+    menu_on     : false,
+    menu_config : function() {
+      if(cp.bs_nav.menu_btn != null) {
+        cp.bs_nav.menu_btn.addEventListener("click", this.menu_slideToggle);
+      }
+    },
+    menu_slideToggle : function () {
+      cp.bs_nav.menu_ico.classList.toggle("bs-nav--btn__closed");
+      if(cp.bs_nav.menu_nav.classList.contains("bs-nav--basic")){
+        cp.bs_nav.menu_nav.classList.toggle("bs-nav--basic__drop");
+      }
+      if(cp.bs_nav.menu_nav.classList.contains("bs-nav--toggle")){
+        cp.bs_nav.menu_nav.classList.toggle("bs-nav--toggle__drop");
+      }
+      if(cp.bs_nav.menu_nav.classList.contains("bs-nav--3")) {
+        cp.bs_nav.menu_nav.classList.toggle("bs-nav--3__drop");
+      }
+    }
+  },
+  bs_alert: {
+    alerts: document.getElementsByClassName("bs-alert"),
+  }
+}
+
+cp.bs_nav.menu_config();
+
+var ly = {}
+
+
+let alerts = document.getElementsByClassName("bs-alert");
+
+function removeAlert (alertsArr) {
+  for( let i = 0; i < alertsArr.length; i++) {
+    alertsArr[i].addEventListener("click", function(){
+      alertsArr[i].style.display = "none";
+    });
+  }
+}
+
+removeAlert(alerts);
+
 
 // Nav Btn Js
 
-let menu_btn    = document.getElementById("js-menu-btn"),
-    menu_ico    = document.getElementsByClassName("bs-nav--btn")[0],
-    menu_nav    = document.getElementById("js-bs-nav"),
-    menu_height = document.getElementsByClassName("bs-nav--item").length * 50,
-    menu_on     = false;
+// let menu_btn    = document.getElementById("js-menu-btn"),
+//     menu_ico    = document.getElementsByClassName("bs-nav--btn")[0],
+//     menu_nav    = document.getElementById("js-bs-nav"),
+//     menu_height = document.getElementsByClassName("bs-nav--item").length * 50,
+//     menu_on     = false;
 
-var open = false;
+// var open = false;
 
-if(menu_btn != null) {
-  menu_btn.addEventListener("click", slideToggle);
-}
+// if(menu_btn != null) {
+//   menu_btn.addEventListener("click", slideToggle);
+// }
 
   
 
-function slideToggle() {
-  menu_ico.classList.toggle("bs-nav--btn__closed");
-  if(menu_nav.classList.contains("bs-nav--basic")){
-    menu_nav.classList.toggle("bs-nav--basic__drop");
-  }
-  if(menu_nav.classList.contains("bs-nav--toggle")){
-    menu_nav.classList.toggle("bs-nav--toggle__drop");
-  }
-  if(menu_nav.classList.contains("bs-nav--3")) {
-    menu_nav.classList.toggle("bs-nav--3__drop");
-  }
+// function slideToggle() {
+  // menu_ico.classList.toggle("bs-nav--btn__closed");
+  // if(menu_nav.classList.contains("bs-nav--basic")){
+  //   menu_nav.classList.toggle("bs-nav--basic__drop");
+  // }
+  // if(menu_nav.classList.contains("bs-nav--toggle")){
+  //   menu_nav.classList.toggle("bs-nav--toggle__drop");
+  // }
+  // if(menu_nav.classList.contains("bs-nav--3")) {
+  //   menu_nav.classList.toggle("bs-nav--3__drop");
+  // }
   
   // if (menu_on && window.innerWidth < 800) {
   //   menu_on = false;
@@ -35,7 +99,7 @@ function slideToggle() {
   //   menu_nav.style.height = menu_height + "px";
   // }
   // logo.classList.toggle("bs-b__black");
-}
+// }
 
 // color code js
 
@@ -167,17 +231,7 @@ function checkAttr(word) {
 
 // Alert js code
 
-let alerts = document.getElementsByClassName("bs-alert");
 
-function removeAlert (alertsArr) {
-  for( let i = 0; i < alertsArr.length; i++) {
-    alertsArr[i].addEventListener("click", function(){
-      alertsArr[i].style.display = "none";
-    });
-  }
-}
-
-removeAlert(alerts);
 
 
 

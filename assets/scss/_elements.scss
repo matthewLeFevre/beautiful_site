@@ -13,23 +13,32 @@
 
 // template mixin
 @mixin btn () {
-
+  //includes
   @include effect(250ms);
-  padding: .5em 1.75em;
-  margin-top: 10px;
+
+  /*box-model*/
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--grey1);
-  border: none;
-  border-radius: .1em;
+  padding: .5em 1.75em;
+  margin-top: 10px;
+  
+  /*Typographic*/
   font-family: $s-srf;
   font-weight: 700;
   text-decoration: none;
   color: var(--black);
+
+  /*Visual*/
+  background-color: var(--grey1);
+  border: none;
+  border-radius: .1em;
+  
+  /*Misc*/
   transition-property: background-color, color;
   cursor: pointer;
 
+  //psudo elements
   &:hover {
     background-color: var(--grey2);
     color: var(--grey7);
@@ -42,7 +51,6 @@
   &__ico {
     @include btn();
     padding: 8.5px;
-    margin-top: 10;
   }
   &__lng {
     @include btn();
@@ -86,7 +94,6 @@
   }
 }
 
-// Form centered
 
 /***********************************************************
 * Inputs
@@ -118,7 +125,6 @@
   &__radio {
     @include ipt__hid;
     &:checked + .bs-lbl__radio {
-      // background-color: blue;
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -151,12 +157,13 @@
 .bs-lbl {
   &__txt {
     font-family: $s-srf;
-  color: var(--black);
+    color: var(--black);
   }
+  // revisit this ruleset
   &__radio {
+    display: inline-flex;
     height: 20px;
     width: 20px;
-    display: inline-flex;
     background-color: #fafafa;
     border: 1.5px solid var(--opac);
     border-radius: 100%;
@@ -165,7 +172,6 @@
   &__checkbox {}
 }
 
-// Typographic
 
 /***********************************************************
 * Lists
@@ -182,13 +188,16 @@
 }
 
 @mixin menu ($x: center, $y: center, $orientation: row) {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  /*Box-Model*/
   display: flex;
   flex-flow: $orientation wrap;
   justify-content: $x;
   align-items: $y;
+  padding: 0;
+  margin: 0;
+
+  /*Misc*/
+  list-style: none;
 }
 
 .bs-menu {
@@ -209,8 +218,8 @@
 ***********************************************************/
 // template mixins
 @mixin hed () {
-  font-family: $s-srf;
   margin: .2em 16px .5em 16px;
+  font-family: $s-srf;
 }
 .bs-hed {
   @include hed();
@@ -229,9 +238,7 @@
 * Paragraphs
 ***********************************************************/
 // template mixin
-@mixin par ($margin: 1em,
-            $line-height: 150%) {
-
+@mixin par ($margin: 1em, $line-height: 150%) {
   margin: $margin 16px;
   font-family: $s-srf2;
   line-height: $line-height;
@@ -279,8 +286,8 @@
 .test__container {
   width: 400px;
   height: 600px;
-  background-color: tan;
   padding: 0 50px;
+  background-color: tan;
 }
 
 .bs-img {
@@ -328,10 +335,10 @@
 
 .bs-vid {
   &__banner {
-    min-width: 100%;
-    min-height: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
   }
 }

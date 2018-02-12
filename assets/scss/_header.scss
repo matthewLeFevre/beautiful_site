@@ -33,6 +33,12 @@ $bp2: 1000px;
 }
 .bs-hdr {
   @include hdr;
+
+  &__fixed {
+    position: fixed;
+    left:0;
+    right: 0;
+}
   // This is a thin header
   &__sml {
     height: 50px;
@@ -582,8 +588,6 @@ $bp2: 1000px;
   &__basic {}
   &__sml {
     margin: 0;
-    background-color: var(--grey4);
-    color: var(--grey7);
   }
   &--cont {
     @include flex-parent(space-around, center);

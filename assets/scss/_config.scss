@@ -30,6 +30,11 @@ figure {
   --grey: #b2b2b2;
   --black: #333;
   --opac: rgba(0,0,0,.75);
+
+  /*Break-Points*/
+  --bp-10: 600px;
+  --bp-15: 800px;
+  --bp-20: 1000px;
 }
   
   $x3lrg:   60px;
@@ -98,9 +103,7 @@ figure {
 
   // Layout
 
-  @mixin flex-parent($content: center, 
-                     $align: center) {
-
+  @mixin flex-parent($content: center, $align: center) {
     display: flex;
     flex-flow: row wrap;
     justify-content: $content;
@@ -109,10 +112,7 @@ figure {
   
   // transitions
 
-  @mixin effect($time: 300ms, 
-                $type: all, 
-                $role: ease-in-out) {
-                  
+  @mixin effect($time: 300ms, $type: all, $role: ease-in-out) {       
     transition: $type $time $role;
   }
 
