@@ -9,7 +9,7 @@ figure {
   margin: 0; }
 
 :root {
-  --white: #fff;
+  --white: white;
   --blue: #1982C4;
   --blue1: #3F88C5;
   --green: #95C623;
@@ -120,80 +120,6 @@ figure {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 18px;
     color: rgba(0, 0, 0, 0.5); }
-
-.bs-card {
-  width: 300px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: var(--white); }
-  .bs-card--container {
-    border-radius: 0 0 10px 10px; }
-  .bs-card--img {
-    max-width: 100%;
-    border-radius: 10px 10px 0 0; }
-    .bs-card--img-container {
-      width: 300px;
-      height: 200px; }
-  .bs-card--body {
-    padding: .5rem 1rem; }
-  .bs-card--hdr {
-    background-color: var(--grey2);
-    color: var(--black);
-    padding: .5rem 1rem; }
-  .bs-card--ftr {
-    padding: .5rem 1rem;
-    border-radius: 0 0 10px 10px;
-    background-color: var(--grey1); }
-
-.bs-media {
-  min-width: 300px;
-  max-width: 650px;
-  padding: .5rem;
-  margin: 1em;
-  display: block;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
-  .bs-media:hover {
-    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-  .bs-media--body {
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-  .bs-media--img {
-    height: 120px;
-    display: block; }
-  .bs-media--cnt {
-    margin-left: 1em; }
-  .bs-media--heading {
-    margin-top: 0;
-    margin-bottom: .5em;
-    font-family: "Trebuchet MS", Helvetica, sans-serif; }
-  .bs-media--date {
-    font-size: 15px;
-    color: #5C595D; }
-  .bs-media--txt {
-    margin-bottom: 0; }
-  .bs-media--ftr {
-    width: 100%;
-    padding: 1em;
-    background-color: var(--grey); }
 
 .bs-modal {
   background-color: var(--grey1);
@@ -1289,6 +1215,21 @@ figure {
     outline: 0;
     background-color: #eaeaea; }
 
+.bs-ipt__area, .bs-ipt__area__sml, .bs-ipt__area__mdm, .bs-ipt__area__lrg {
+  border: 1px solid var(--opac);
+  border-radius: 3px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: var(--opac);
+  background-color: #fafafa;
+  padding: 1em;
+  resize: none; }
+  .bs-ipt__area__sml {
+    height: 5em; }
+  .bs-ipt__area__mdm {
+    height: 10em; }
+  .bs-ipt__area__lrg {
+    height: 15em; }
+
 .bs-ipt__radio {
   visibility: hidden; }
   .bs-ipt__radio:checked + .bs-lbl__radio {
@@ -1552,16 +1493,130 @@ figure {
   min-height: 100%; }
 
 /*
-* Beautiful Site Elements
+* Beautiful Site Components
 *
-* Elements are simple and reusable pieces of code that are  
-* commonly used in BS components. 
+* Components are clusters of elements that form a larger 
+* structure on the page.
 *
-* They can be used in any location or area.
 */
 /***********************************************************
-* Buttons
+* Forms
 ***********************************************************/
+.bs-form__responsive {
+  padding: 1em; }
+
+.bs-form--set__left > .bs-ipt__txt {
+  margin-left: 5px; }
+
+.bs-form--set__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 1em; }
+  .bs-form--set__top > .bs-ipt__txt {
+    margin-top: 5px; }
+
+/***********************************************************
+* Panel Card
+***********************************************************/
+.bs-shadow {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.bs-c__panel {
+  margin: .5rem;
+  width: 300px;
+  background-color: white; }
+
+.bs-c--img {
+  display: block;
+  max-width: 100%; }
+
+.bs-c--video {
+  display: block;
+  max-width: 100%; }
+
+.bs-c--img-cnt {
+  width: 300px;
+  height: 200px; }
+
+.bs-c--body {
+  background-color: var();
+  padding: .5rem 1rem; }
+
+.bs-c--hdr {
+  background-color: var(--grey2);
+  color: var(--opac);
+  padding: .5rem 1rem; }
+
+.bs-c--ftr {
+  padding: .5rem 1rem;
+  background-color: var(--grey2); }
+
+/***********************************************************
+* Media 
+***********************************************************/
+.bs-media {
+  /* Box-Model */
+  display: block;
+  min-width: 300px;
+  max-width: 650px;
+  padding: .5rem;
+  margin: 1em;
+  /*Typography*/
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none; }
+
+.bs-media--body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0; }
+
+.bs-media--img {
+  display: block;
+  height: 120px; }
+
+.bs-media--cnt {
+  margin-left: 1em; }
+
+.bs-media--heading {
+  margin-top: 0;
+  margin-bottom: .5em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif; }
+
+.bs-media--date {
+  font-size: 15px;
+  color: #5C595D; }
+
+.bs-media--txt {
+  margin-bottom: 0; }
+
+.bs-media--ftr {
+  width: 100%;
+  padding: 1em;
+  background-color: var(--grey); }
+
 /*
 * Beautiful Site Layout
 *
@@ -1661,6 +1716,18 @@ figure {
 .green {
   background-color: var(--green);
   color: var(--white); }
+
+.bs-size-300px {
+  max-width: 300px; }
+
+.bs-size-400px {
+  max-width: 400px; }
+
+.bs-size-600px {
+  max-width: 600px; }
+
+.bs-size-800px {
+  max-width: 800px; }
 
 .bs-lrg {
   font-size: 35px; }

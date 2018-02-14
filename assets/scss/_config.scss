@@ -13,7 +13,7 @@ figure {
 //Variables
 
 :root {
-  --white: #fff;
+  --white: white;
   --blue: #1982C4;
   --blue1: #3F88C5;
   --green: #95C623;
@@ -30,7 +30,6 @@ figure {
   --grey: #b2b2b2;
   --black: #333;
   --opac: rgba(0,0,0,.75);
-
   /*Break-Points*/
   --bp-10: 600px;
   --bp-15: 800px;

@@ -1,12 +1,120 @@
 /*
-* Beautiful Site Elements
+* Beautiful Site Components
 *
-* Elements are simple and reusable pieces of code that are  
-* commonly used in BS components. 
+* Components are clusters of elements that form a larger 
+* structure on the page.
 *
-* They can be used in any location or area.
 */
 
 /***********************************************************
-* Buttons
+* Forms
 ***********************************************************/
+@mixin form () {}
+.bs-form {
+  &__responsive {
+    padding: 1em;
+  }
+}
+
+.bs-form--set {
+  &__left {
+    & > .bs-ipt__txt {
+      margin-left: 5px;
+    }
+  }
+  &__top {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1em;
+    & > .bs-ipt__txt {
+      margin-top: 5px;
+    }
+  }
+}
+
+
+/***********************************************************
+* Panel Card
+***********************************************************/
+
+.bs-shadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.bs-c__panel {
+  margin: .5rem;
+  width: 300px;
+  background-color: white;
+}
+.bs-c--img {
+  display: block;
+  max-width: 100%;
+}
+.bs-c--video {
+  display: block;
+  max-width: 100%;
+}
+.bs-c--img-cnt {
+  width: 300px;
+  height: 200px;
+}
+.bs-c--body {
+  background-color: var();
+  padding: .5rem 1rem;
+}
+.bs-c--hdr {
+  background-color: var(--grey2);
+  color: var(--opac);
+  padding: .5rem 1rem;
+}
+.bs-c--ftr {
+  padding: .5rem 1rem;
+  background-color: var(--grey2);
+}
+
+/***********************************************************
+* Media 
+***********************************************************/
+
+.bs-media {
+  /* Box-Model */
+  display: block;
+  min-width: 300px;
+	max-width: 650px;
+	padding: .5rem;
+	margin: 1em;
+
+  /*Typography*/
+	font-family: $s-srf;
+  text-decoration: none;
+  
+}
+.bs-media--body {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start; 
+  margin: 0;
+}
+.bs-media--img {
+  display: block;
+  height: 120px;
+}
+.bs-media--cnt {margin-left: 1em;}
+.bs-media--heading {
+  margin-top: 0;
+  margin-bottom: .5em;
+  font-family: $s-srf2;
+}
+.bs-media--date {
+  font-size: $sml;
+  color: $dark;
+}
+.bs-media--txt {margin-bottom: 0;}
+.bs-media--ftr {
+  width: 100%;
+  padding: 1em;
+  background-color: var(--grey);
+}

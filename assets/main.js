@@ -22,7 +22,7 @@ var cp = {
     menu_nav    : document.getElementById("js-bs-nav"),
     menu_height : document.getElementsByClassName("bs-nav--item").length * 50,
     menu_on     : false,
-    menu_config : function() {
+    menu_config : function () {
       if(cp.bs_nav.menu_btn != null) {
         cp.bs_nav.menu_btn.addEventListener("click", this.menu_slideToggle);
       }
@@ -42,25 +42,40 @@ var cp = {
   },
   bs_alert: {
     alerts: document.getElementsByClassName("bs-alert"),
+    remove_alert: function ( ) {
+      if(this.alerts == null) {
+        return "No alerts exist"
+      }
+      let alertArr = this.alerts;
+      for(let i = 0; i < alertArr.length; i++) {
+        alertArr[i].addEventListener("click", function(){
+          alertArr[i].style.display = "none";
+        });
+      }
+    }
+  },
+  bs_form: {
+
   }
 }
 
 cp.bs_nav.menu_config();
+cp.bs_alert.remove_alert();
 
 var ly = {}
 
 
-let alerts = document.getElementsByClassName("bs-alert");
+// let alerts = document.getElementsByClassName("bs-alert");
 
-function removeAlert (alertsArr) {
-  for( let i = 0; i < alertsArr.length; i++) {
-    alertsArr[i].addEventListener("click", function(){
-      alertsArr[i].style.display = "none";
-    });
-  }
-}
+// function removeAlert (alertsArr) {
+//   for( let i = 0; i < alertsArr.length; i++) {
+//     alertsArr[i].addEventListener("click", function(){
+//       alertsArr[i].style.display = "none";
+//     });
+//   }
+// }
 
-removeAlert(alerts);
+// removeAlert(alerts);
 
 
 // Nav Btn Js

@@ -15,9 +15,9 @@
 
 ### Components
 
-  1. [Media](#media)
-  2. [Card](#card)
-  3. [Alert](#alert)
+  1. [Cards](#cards)
+  2. [Alerts](#alerts)
+  3. [Modals](#modals)
 
 ### Layout
   1. [Headers](#1-headers)
@@ -232,9 +232,60 @@ Functions as any kind of caption.
 
 ## Components
 
-### Card 
+### Cards
 
 The Card Component markup
+
+```html
+
+<!-- Traditional -->
+<div class="bs-c__panel bs-shadow">
+  <img src="image path" alt="E" class="bs-c--img">
+  <div class="bs-c--hdr">
+      <h3 class="bs-hed bs-mdm">Card Title</h3>
+  </div>
+  <div class="bs-c--body">
+      <p class="bs-par__caption">This is the card main content. Here are some extra words to add volume to the card.</p>
+  </div>
+  <div class="bs-c--ftr">
+      <button class="bs-btn bs-small bs-success">Create</button>
+      <button class="bs-btn bs-small bs-error">Delete</button>
+  </div>
+</div>
+
+<!-- Video -->
+
+<div class="bs-c__panel">
+  <video class="bs-c--video" controls>
+    <source src="video path">
+  </video>
+  <div class="bs-c--hdr">
+    <h3 class="bs-hed bs-mdm">Card Title</h3>
+  </div>
+  <div class="bs-c--body">
+      <p class="bs-par__caption">This is the card main content. Here are some extra words to add volume to the card.</p>
+  </div>
+  <div class="bs-c--ftr">
+    <button class="bs-btn bs-small bs-success">Create</button>
+    <button class="bs-btn bs-small bs-error">Delete</button>
+  </div>
+</div>
+
+<!-- No Image -->
+
+<div class="bs-c__panel">
+  <div class="bs-c--hdr">
+    <h3 class="bs-hed bs-mdm">Card Title</h3>
+  </div>
+  <div class="bs-c--body">
+    <p class="bs-par__caption">This is the card main content. Here are some extra words to add volume to the card.</p>
+  </div>
+  <div class="bs-c--ftr">
+    <button class="bs-btn bs-small bs-success">Create</button>
+    <button class="bs-btn bs-small bs-error">Delete</button>
+  </div>
+</div>
+```
 
 
 ### Media 
@@ -245,7 +296,7 @@ If you would like your media card to be a link in of itself without any smaller 
 
 ```html
 
-<a class="bs-media--wrapper">
+<a class="bs-lnk__wrp..">
   <figure class="bs-media">
     <img class="bs-media--img" src="#" alt="Mountain Area">
     <figcaption class="bs-label--txt">
@@ -264,19 +315,19 @@ If you would like individual elements of your media card to be links then don't 
 
 ```html
 
-<div class="bs-media--wrapper">
-  <figure class="bs-media">
+<div class="bs-media">
+  <figure class="bs-media--body">
     <!-- Image Link -->
     <a class="bs-lnk__wrp" href="#">
       <img class="bs-media--img" src="#" alt="Mountain Area">
     </a>
-    <figcaption class="bs-label--txt">
+    <figcaption class="bs-media--cnt">
       <!-- Heading Link -->
       <h3 class="bs-media--heading"> 
         <a class="bs-lnk__hed" href="#">Label Title</a>
       </h3>
       <span class="bs-media--date">1/16/2018</span>
-      <p>
+      <p class="bs-media--txt">
           Bacon ipsum dolor amet swine landjaeger andouille ground round, turducken shoulder buffalo beef ribs ham hock sausage cow meatloaf beef.
       </p>
       <!-- Buttons will work -->

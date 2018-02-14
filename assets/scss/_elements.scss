@@ -38,7 +38,7 @@
   transition-property: background-color, color;
   cursor: pointer;
 
-  //psudo elements
+  //Psuedo elements
   &:hover {
     background-color: var(--grey2);
     color: var(--grey7);
@@ -120,6 +120,23 @@
     &:focus {
       outline: 0;
       background-color: #eaeaea;
+    }
+  }
+  &__area {
+    @include ipt;
+    padding: 1em;
+    resize: none;
+    &__sml {
+      @extend .bs-ipt__area;
+      height: 5em;
+    }
+    &__mdm {
+      height: 10em;
+      @extend .bs-ipt__area;
+    }
+    &__lrg {
+      height: 15em;
+      @extend .bs-ipt__area;
     }
   }
   &__radio {
