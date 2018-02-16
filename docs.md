@@ -103,6 +103,24 @@ These links go right into a paragraph or any block of text.
 
 #### 3.1 Text Inputs
 
+```html
+<!-- Email -->
+<div class="bs-form--set__align-left">
+  <label for="" class="bs-lbl__txt bs-mdm">Email:</label>
+  <input type="email" class="bs-ipt__txt bs-main" required>
+</div>
+<!-- Password -->
+<div class="bs-form--set__align-left">
+  <label for="" class="bs-lbl__txt bs-mdm">Password:</label>
+  <input type="password" class="bs-ipt__txt bs-main" required>
+</div>
+<!-- Generic Text -->
+<div class="bs-form--set__align-left">
+  <label for="" class="bs-lbl__txt bs-mdm">Username:</label>
+  <input type="text" class="bs-ipt__txt bs-main" required>
+</div>
+```
+
 #### 3.2 Radio Inputs
 
 #### 3.3 Checkbox Inputs

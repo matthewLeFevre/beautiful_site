@@ -9,28 +9,38 @@
 /***********************************************************
 * Forms
 ***********************************************************/
-@mixin form () {}
+@mixin form () {
+  padding: 1em;
+}
 .bs-form {
   &__responsive {
-    padding: 1em;
+    @include form();
+  }
+  &__sml {
+    @include form();
+    max-width: 320px;
+  }
+  &__mid {
+    @include form();
+    max-width: 540px;
+  }
+  &__lrg {
+    @include form();
+    max-width: 800px;
   }
 }
 
 .bs-form--set {
-  &__left {
-    & > .bs-ipt__txt {
-      margin-left: 5px;
-    }
+  margin: 1em 0;
+  &__align-right {
+    @extend .bs-form--set;
+    text-align: right;
   }
-  &__top {
+  &__align-left {
+    @extend .bs-form--set;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 1em;
-    & > .bs-ipt__txt {
-      margin-top: 5px;
-    }
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

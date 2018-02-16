@@ -31,16 +31,22 @@
 
 // behaviors
 .bs-success {
-  background-color: var(--green);
   color: var(--black);
+  &:hover {
+    background-color: var(--green);
+  }
 }
 .bs-neutral {
-  background-color: var(--blue1);
   color: var(--black);
+  &:hover {
+    background-color: var(--blue1);
+  }
 }
 .bs-error {
-  background-color: var(--red);
   color: var(--white);
+  &:hover {
+    background-color: var(--red);
+  }
 }
 
 .bs-code {
@@ -60,4 +66,7 @@
 }
 .bs-inline {
   display: inline;
+}
+.bs-center-margin {
+  margin: 0 auto;
 }
