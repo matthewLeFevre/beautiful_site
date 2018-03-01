@@ -13,17 +13,14 @@
 
 // template mixin
 @mixin btn () {
-  //includes
-  @include effect(250ms);
-
   /*box-model*/
   display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: .5em 1.75em;
-  margin-top: 10px;
   
   /*Typographic*/
+  font-size: $sml;
   font-family: $s-srf;
   font-weight: 700;
   text-decoration: none;
@@ -38,33 +35,31 @@
   transition-property: background-color, color;
   cursor: pointer;
 
-  //Psuedo elements
-  &:hover {
-    background-color: var(--grey2);
-    color: var(--grey7);
-  }
+  //includes
+  @include effect(250ms);
 };
 
 .bs-btn {
-  @include btn();
+  @include btn;
   min-width: 100px;
-  &__ico {
-    @include btn();
-    padding: 8.5px;
-  }
-  &__lng {
-    @include btn();
-    min-width: 10em;
-    text-align: center;
-  }
-  &__ful {
-    @include btn();
-    width: 100%;
-  }
-  &--cont {
-    padding: .2em;
-  }
 }
+
+.bs-btn__ico {
+  @include btn;
+  padding: 8.5px;
+}
+
+.bs-btn__lng {
+  @include btn;
+  min-width: 10em;
+}
+
+.bs-btn__ful {
+  @include btn;
+  width: 100%;
+}
+
+.bs-btn--cont {padding: .2em;}
 
 /***********************************************************
 * Links
@@ -74,26 +69,22 @@
 @mixin lnk () {
   text-decoration: none;
   cursor: pointer;
-  &:visited {}
-  &:hover {}
-  &:focus {}
 }
 
-.bs-lnk {
-  &__hed {
-    @include lnk();
-    color: inherit;
-  }
-  &__wrp {
-    @include lnk();
-  }
-  &__txt {
-    @include lnk();
-    color: var(--opac);
-    text-decoration: underline;
-  }
+.bs-lnk__hed {
+  @include lnk();
+  color: inherit;
 }
 
+.bs-lnk__wrp {
+  @include lnk();
+}
+
+.bs-lnk__txt {
+  @include lnk();
+  color: var(--opac);
+  text-decoration: underline;
+}
 
 /***********************************************************
 * Inputs
@@ -110,93 +101,126 @@
 
 @mixin ipt__hid () {
   visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
 }
 
-.bs-ipt {
-  &__txt {
-    @include ipt;
-    padding: .5em;
-    transition: all 300ms ease;
-    width: 11em;
+.bs-ipt__txt {
+  @include ipt;
+  padding: .5em;
+  transition: all 300ms ease;
+  width: 11em;
 
-    &:focus {
-      outline: 0;
-      background-color: #eaeaea;
-    }
-
-    &__full {
-      @extend .bs-ipt__txt;
-      width: 100%;
-    }
+  &:focus {
+    outline: 0;
+    background-color: #eaeaea;
   }
-  &__area {
-    @include ipt;
+
+  &__full {
+    @extend .bs-ipt__txt;
     width: 100%;
-    padding: .5em;
-    resize: none;
-    display:block;
-    overflow: none;
-    &__sml {
-      @extend .bs-ipt__area;
-      height: 5em;
-    }
-    &__mid {
-      height: 10em;
-      @extend .bs-ipt__area;
-    }
-    &__lrg {
-      height: 15em;
-      @extend .bs-ipt__area;
-    }
-  }
-  &__radio {
-    @include ipt__hid;
-    &:checked + .bs-lbl__radio {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      &:after {
-        content: " ";
-        display: block;
-        height: 12px;
-        width: 12px;
-        background-color: var(--black);
-        border-radius: 100%;
-      }
-    }
-  }
-  &__checkbox {
-    @include ipt__hid;
-  }
-  &__file {
-    @include ipt__hid;
-  }
-  &__date {
-    @include ipt;
   }
 }
+
+.bs-ipt__area {
+  @include ipt;
+  width: 100%;
+  padding: .5em;
+  resize: none;
+  display:block;
+  overflow: none;
+  &__sml {
+    @extend .bs-ipt__area;
+    height: 5em;
+  }
+  &__mid {
+    height: 10em;
+    @extend .bs-ipt__area;
+  }
+  &__lrg {
+    height: 15em;
+    @extend .bs-ipt__area;
+  }
+}
+
+.bs-ipt__radio {
+  @include ipt__hid;
+  &:checked + .bs-lbl__radio:after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      background-color: var(--grey3);
+      border-radius: 50px;
+  }
+}
+
+.bs-ipt__checkbox {
+  @include ipt__hid;
+  &:checked + .bs-lbl__checkbox:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: var(--grey3);
+    @include effect(1000);
+  }
+}
+
+.bs-ipt__file {@include ipt__hid;}
+
+.bs-ipt__date {@include ipt;}
 
 /***********************************************************
 * Labels
 ***********************************************************/
 
 @mixin lbl (){}
-.bs-lbl {
-  &__txt {
-    font-family: $s-srf;
-    color: var(--black);
-  }
-  // revisit this ruleset
-  &__radio {
-    display: inline-flex;
-    height: 20px;
-    width: 20px;
-    background-color: #fafafa;
-    border: 1.5px solid var(--opac);
-    border-radius: 100%;
-  }
-  &__file {}
-  &__checkbox {}
+.bs-lbl__txt {
+  font-family: $s-srf;
+  color: var(--black);
+}
+
+.bs-lbl__radio {
+  // positioning
+  position: relative;
+  vertical-align: middle;
+
+  // box model
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  margin: 0 .5em;
+
+  // Misc
+  background-color: var(--grey2);
+  border: 1.5px solid var(--grey3);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.bs-lbl__checkbox {
+  // positioning
+  position: relative;
+  vertical-align: middle;
+
+  // box model
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  margin: 0 .5em;
+
+  // Misc
+  background-color: var(--grey2);
+  border: 1.5px solid var(--grey3);
+  cursor: pointer;
 }
 
 

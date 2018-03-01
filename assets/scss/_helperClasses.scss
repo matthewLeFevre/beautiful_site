@@ -70,3 +70,14 @@
 .bs-center-margin {
   margin: 0 auto;
 }
+
+.bs-round {
+  border-radius: 10px;
+}
+
+.bs-round-top {
+  border-radius: 10px 0;
+}
+.bs-round-bot {
+  border-radius: 0 10px;
+}

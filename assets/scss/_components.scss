@@ -12,23 +12,24 @@
 @mixin form () {
   padding: 1em;
 }
-.bs-form {
-  &__responsive {
-    @include form();
-  }
-  &__sml {
-    @include form();
-    max-width: 320px;
-  }
-  &__mid {
-    @include form();
-    max-width: 540px;
-  }
-  &__lrg {
-    @include form();
-    max-width: 800px;
-  }
+
+.bs-form__responsive {@include form();}
+
+.bs-form__sml {
+  @include form();
+  max-width: 320px;
 }
+
+.bs-form__mid {
+  @include form();
+  max-width: 540px;
+}
+
+.bs-form__lrg {
+  @include form();
+  max-width: 800px;
+}
+
 
 .bs-form--set {
   margin: 1em 0;
@@ -69,6 +70,9 @@
 .bs-c--img-cnt {
   width: 300px;
   height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .bs-c--body {
   background-color: var();
@@ -128,3 +132,7 @@
   padding: 1em;
   background-color: var(--grey);
 }
+
+/***********************************************************
+* Display Card
+***********************************************************/

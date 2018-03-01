@@ -91,17 +91,27 @@ These links go right into a paragraph or any block of text.
   nisi ut aliquip ex ea commodo consequat.
 </p>
 ````
-[See it on CodePen]()
+**Examples Comming Soon**
 
 #### 2.2 Wrap Links
 
+Wrap links can surround any component that you would like to have the behavior 
+of a link they can be used for cards, sections, and a variety of other components.
+
+**Examples Comming Soon**
+
 #### 2.3 Heading Links
 
+Heading links are meant to make h1-h2 clickable links without effecting the headings
+styles. Simple apply the link and set the href.
 
+**Examples Comming Soon**
 
 ### 3 Inputs
 
 #### 3.1 Text Inputs
+
+Generic text inputs styled to be visually pleasing.
 
 ```html
 <!-- Email -->
@@ -121,35 +131,20 @@ These links go right into a paragraph or any block of text.
 </div>
 ```
 
-#### 3.2 Radio Inputs
-
-#### 3.3 Checkbox Inputs
-
-#### 3.4 File Inputs
-
-#### 3.5 Date Inputs
-
-**Will be developed in later version**
-
-
+**Examples Comming Soon**
 
 ### 4 Labels
 
-#### 4.1 Text Labels
+Labels are used in forms to give form inputs meaning and in some cases styling
+Beautiful site has a variety of different label solutions.
 
-#### 4.2 Radio Labels
-
-#### 4.3 Checkbox Labels
-
-#### 4.4 File Labels
-
-
+**Examples Comming Soon**
 
 ### 5 Lists
 
-Lists are still undergoing major changes.
-
 #### 5.1 Basic List
+
+Currently the only kind of list avaliable in BS.
 
 ````html
 <ul class="bs-lst">
@@ -165,9 +160,7 @@ Lists are still undergoing major changes.
 </ul>
 ````
 
-#### 5.2 Menu List
-
-
+**Examples Comming Soon**
 
 ### 6 Headings
 
@@ -239,16 +232,13 @@ Functions as any kind of caption.
 
 ### 8 Images
 
-#### 8.1 Icon Image
-
-#### 8.2 Responsive Image
- 
-
-
-
-
+**Examples Comming Soon**
 
 ## Components
+
+Components are more complex structures that in some cases impliment elements link
+images and form inputs. Think of components as pre-built packages of html and css 
+that are styled attractively.
 
 ### Cards
 
@@ -305,6 +295,7 @@ The Card Component markup
 </div>
 ```
 
+**Examples Comming Soon**
 
 ### Media 
 

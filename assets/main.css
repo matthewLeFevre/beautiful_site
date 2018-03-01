@@ -1237,30 +1237,39 @@ figure {
     height: 15em; }
 
 .bs-ipt__radio {
-  visibility: hidden; }
-  .bs-ipt__radio:checked + .bs-lbl__radio {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .bs-ipt__radio:checked + .bs-lbl__radio:after {
-      content: " ";
-      display: block;
-      height: 12px;
-      width: 12px;
-      background-color: var(--black);
-      border-radius: 100%; }
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 50%; }
+  .bs-ipt__radio:checked + .bs-lbl__radio:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: var(--grey3);
+    border-radius: 50px; }
 
 .bs-ipt__checkbox {
-  visibility: hidden; }
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 50%; }
+  .bs-ipt__checkbox:checked + .bs-lbl__checkbox:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: var(--grey3);
+    -webkit-transition: all 1000 ease-in-out;
+    transition: all 1000 ease-in-out; }
 
 .bs-ipt__file {
-  visibility: hidden; }
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 50%; }
 
 .bs-ipt__date {
   border: 1px solid var(--grey7);
@@ -1277,14 +1286,43 @@ figure {
   color: var(--black); }
 
 .bs-lbl__radio {
+  position: relative;
+  vertical-align: middle;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 20px;
   width: 20px;
-  background-color: #fafafa;
-  border: 1.5px solid var(--opac);
-  border-radius: 100%; }
+  margin: 0 .5em;
+  background-color: var(--grey2);
+  border: 1.5px solid var(--grey3);
+  border-radius: 50px;
+  cursor: pointer; }
+
+.bs-lbl__checkbox {
+  position: relative;
+  vertical-align: middle;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20px;
+  width: 20px;
+  margin: 0 .5em;
+  background-color: var(--grey2);
+  border: 1.5px solid var(--grey3);
+  cursor: pointer; }
 
 /***********************************************************
 * Lists
@@ -1560,7 +1598,16 @@ figure {
 
 .bs-c--img-cnt {
   width: 300px;
-  height: 200px; }
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .bs-c--body {
   background-color: var();
@@ -1629,6 +1676,9 @@ figure {
   padding: 1em;
   background-color: var(--grey); }
 
+/***********************************************************
+* Display Card
+***********************************************************/
 /*
 * Beautiful Site Layout
 *
@@ -1886,5 +1936,14 @@ figure {
 
 .bs-center-margin {
   margin: 0 auto; }
+
+.bs-round {
+  border-radius: 10px; }
+
+.bs-round-top {
+  border-radius: 10px 0; }
+
+.bs-round-bot {
+  border-radius: 0 10px; }
 
 /*# sourceMappingURL=maps/main.css.map */
