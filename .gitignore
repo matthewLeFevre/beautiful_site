@@ -10,3 +10,4 @@ gulpfile.js
 /assets/img/*
 /legacy/*
 /.vscode/*
+docs.md
