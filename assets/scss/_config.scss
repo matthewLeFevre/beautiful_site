@@ -33,6 +33,8 @@ figure {
   /*Break-Points*/
   --bp-10: 600px;
   --bp-15: 800px;
+  --bp-16: 850px;
+  --bp-17: 900px;
   --bp-20: 1000px;
 }
   
@@ -92,6 +94,7 @@ figure {
 
   $bp-10: 600px;
   $bp-15: 800px;
+  $bp-17: 900px;
   $bp-20: 1000px;
 
   @mixin bp($bp) {

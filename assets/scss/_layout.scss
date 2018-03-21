@@ -67,3 +67,57 @@
 		margin: 0 auto;
 	}
 }
+
+/***********************************************************
+* BS CSS Grid
+***********************************************************/
+
+.bs-grid {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(12, 1fr);
+	grid-auto-rows: minmax(50px, auto);
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.bs-grid--item-3c {
+	grid-column: span 12;
+	@include bp($bp-10) {
+		grid-column: span 6;
+	}
+	@include bp($bp-17){
+		grid-column: span 3;
+	}
+}
+
+.bs-grid--item-4c {
+	grid-column: span 12;
+	@include bp($bp-10) {
+		grid-column: span 6;
+	}
+	@include bp($bp-17){
+		grid-column: span 4;
+	}
+}
+
+.bs-grid--item-6c {
+	grid-column: span 12;
+	@include bp($bp-10) {
+		grid-column: span 6;
+	}
+}
+
+.bs-grid--item-9c {
+	grid-column: span 12;
+	@include bp($bp-10) {
+		grid-column: span 6;
+	}
+	@include bp($bp-17){
+		grid-column: span 9;
+	}
+}
+
+.bs-grid--item-12c {
+	grid-column: span 12;
+}

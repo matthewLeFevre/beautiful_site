@@ -54,13 +54,25 @@ var cp = {
       }
     }
   },
-  bs_form: {
+  bs_form: {},
+  bs_accord: {
+    head: document.getElementsByClassName("bs-accord--heading"),
 
+    // method
+    config: function () {
+      let cont = document.getElementsByClassName("bs-accord--content");
+      for(let i = 0; i < this.head.length; i++) {
+        this.head[i].addEventListener('click', function(){
+          cont[i].classList.toggle("collapsed");
+        });
+      }
+    }
   }
 }
 
 cp.bs_nav.menu_config();
 cp.bs_alert.remove_alert();
+cp.bs_accord.config();
 
 var ly = {}
 

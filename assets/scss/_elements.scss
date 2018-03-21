@@ -170,6 +170,18 @@
   }
 }
 
+.bs-ipt__menu--sb {
+  @include ipt__hid;
+  &:checked ~ .bs-menu__sb--sub-item {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+  }
+  &:checked + .bs-menu__sb--item {
+    
+  }
+}
+
 .bs-ipt__file {@include ipt__hid;}
 
 .bs-ipt__date {@include ipt;}
@@ -272,25 +284,24 @@
   margin: 1em 0;
   font-family: $s-srf;
 }
-.bs-hed {
-  @include hed();
-  &__scd {
-    @include hed();
-    color: var(--grey6);
-  }
-  &__trd {
-    @include hed();
-    font-style: italic;
-    color: var(--grey6);
-  }
+
+.bs-hed{@include hed;}
+
+.bs-hed__scd {
+  @include hed;
+}
+
+.bs-hed__trd {
+  @include hed;
+  font-style: italic;
 }
 
 /***********************************************************
 * Paragraphs
 ***********************************************************/
 // template mixin
-@mixin par ($margin: 1em, $line-height: 150%) {
-  margin: $margin 16px;
+@mixin par ($margin__top: 1em, $line-height: 150%, $margin_sides: 16px) {
+  margin: $margin__top $margin_sides;
   font-family: $s-srf2;
   line-height: $line-height;
 }
@@ -298,14 +309,20 @@
 .bs-par {
   @include par();
   font-family: $srf;
-  &__summary {
-    @include par(1.5em 16px 2em);
-    font-style: italic;
-    color: var(--grey4);
-  }
-  &__caption {
-    @include par(.5em, 120%);
-  } 
+}
+
+.bs-par__summary {
+  @include par(1.5em 16px 2em);
+  font-style: italic;
+  color: var(--grey4);
+}
+
+.bs-par__caption {
+  @include par(.5em, 120%);
+}
+
+.bs-par__basic {
+  @include par(1em, 120%, 0);
 }
 
 /***********************************************************

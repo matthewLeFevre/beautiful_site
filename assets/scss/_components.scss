@@ -136,3 +136,88 @@
 /***********************************************************
 * Display Card
 ***********************************************************/
+
+
+
+
+/***********************************************************
+* Documentation Navigation
+***********************************************************/
+
+.bs-menu__sb {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;  
+}
+.bs-menu__sb--title {
+  display: block;
+  font-family: $s-srf2;
+}
+.bs-menu__sb--item {
+  @include effect;
+  padding: .5em;
+  display: block;
+  font-family: $s-srf2;
+  background-color: var(--grey);
+  border-bottom: 2px solid var(--grey2);
+}
+
+.bs-menu__sb--sub-item {
+  @include effect;
+  padding-left: 1em;
+  height: 1.5em;
+  display: flex;
+  align-items: center;
+  background-color: var(--grey2);
+
+  font-family: $s-srf2;
+  text-decoration: none;
+}
+
+
+// Option 2 collapsable menu
+
+.bs-accord {
+  padding: 0;
+  list-style: none;
+}
+
+.bs-accord--cont {}
+.bs-accord--heading {
+  padding: .5em;
+  background-color: var(--grey);
+  border-bottom: 2px solid var(--grey2);
+  font-family: $s-srf2;
+  font-size: $mid;
+  cursor: pointer;
+  @include effect;
+}
+.bs-accord--heading:hover {
+  background-color: var(--grey4);
+}
+.bs-accord--content {
+  overflow: hidden;
+  background-color: var(--grey2);
+  @include effect;
+}
+
+.bs-accord--content.collapsed > .bs-accord--item {
+  height: 0;
+}
+
+.bs-accord--item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 2.2em;
+  padding-left: 1em;
+  overflow: hidden;
+  font-family: $s-srf;
+  font-size: $sml;
+  text-decoration: none;
+  @include effect();
+}
+.bs-accord--item:hover {
+  text-decoration: underline;
+  background-color: var(--grey1);
+}
